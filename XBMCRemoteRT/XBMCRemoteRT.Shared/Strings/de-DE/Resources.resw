@@ -135,7 +135,7 @@
   </data>
   <data name="NotAvailable" xml:space="preserve">
     <value>nicht vorhanden</value>
-    <comment>When artists aren&apos;t available</comment>
+    <comment>When artists aren't available</comment>
   </data>
   <data name="NothingIsPlaying" xml:space="preserve">
     <value>Keine Wiedergabe</value>
@@ -300,7 +300,7 @@
   </data>
   <data name="Track" xml:space="preserve">
     <value>song</value>
-    <comment>I&apos;m assuming this is for audio/video tracks in movies/tv shows and not &quot;track&quot; as synonym for &quot;song&quot;?</comment>
+    <comment>I'm assuming this is for audio/video tracks in movies/tv shows and not "track" as synonym for "song"?</comment>
   </data>
   <data name="Tracks" xml:space="preserve">
     <value>songs</value>
@@ -501,7 +501,7 @@ Diese App ist eine Open Source Entwicklung. Du kannst dich an der Entwicklung be
   </data>
   <data name="ConnectingTo" xml:space="preserve">
     <value>Verbinde mit {0}...</value>
-    <comment>{0} is a placeholder for server name. It will be replaced AUTOMATICALLY. (For example, &quot;Connecting to mediaserver&quot; Please use it in your translations.</comment>
+    <comment>{0} is a placeholder for server name. It will be replaced AUTOMATICALLY. (For example, "Connecting to mediaserver" Please use it in your translations.</comment>
   </data>
   <data name="IPErrorMessage" xml:space="preserve">
     <value>Legen Sie eine IP-Adresse anstatt des Hostnamens fest, um die Aufweck-Funktion nutzen zu können.</value>
@@ -517,7 +517,7 @@ Diese App ist eine Open Source Entwicklung. Du kannst dich an der Entwicklung be
   </data>
   <data name="WakeupPatientMessage" xml:space="preserve">
     <value>Das Aufwecken dauert gewöhnlich {0} bis {1} Sekunden. Es wird weiter versucht...</value>
-    <comment>{0} and {1} are placeholders for lower and upper limit respectively. Sentence automatically becomes &quot;takes 5 to 10&quot; seconds&quot;. Use the same placeholders in translations.</comment>
+    <comment>{0} and {1} are placeholders for lower and upper limit respectively. Sentence automatically becomes "takes 5 to 10" seconds". Use the same placeholders in translations.</comment>
   </data>
   <data name="WakingUp" xml:space="preserve">
     <value>Wecke auf...</value>
@@ -610,5 +610,7 @@ Diese App ist eine Open Source Entwicklung. Du kannst dich an der Entwicklung be
   <data name="MessageOptionYes" xml:space="preserve">
     <value>ja</value>
   </data>
-
+  <data name="EjectDisc" xml:space="preserve">
+    <value>Disk auswerfen</value>
+  </data>
 </root>

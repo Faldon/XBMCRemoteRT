@@ -622,4 +622,7 @@ And to top it all, the app is fully open source. You can view, edit and modify e
   <data name="Suspend" xml:space="preserve">
     <value>sleep</value>
   </data>
+  <data name="EjectDisc" xml:space="preserve">
+    <value>eject disc</value>
+  </data>
 </root>

@@ -329,14 +329,15 @@ namespace XBMCRemoteRT.Pages
             AdvancedMenuFlyout.SelectedItem = null;
         }
 
-        private string audioLibUpdate;// = "update audio library";
-        private string videoLibUpdate;// = "update video library";
-        private string audioLibClean;// = "clean audio library";
-        private string videoLibClean;// ="clean video library";
-        private string showSubtitleSerach;// = "download subtitles";
-        private string showVideoInfo;// = "show codec info";
-        private string shutDown;// = "shut down";
-        private string suspend;// = "suspend";
+        private string audioLibUpdate;
+        private string videoLibUpdate;
+        private string audioLibClean;
+        private string videoLibClean;
+        private string showSubtitleSerach;
+        private string showVideoInfo;
+        private string ejectDisc;
+        private string shutDown;
+        private string suspend;
 
         private void PopulateFlyout()
         {
@@ -347,32 +348,36 @@ namespace XBMCRemoteRT.Pages
             videoLibClean = loader.GetString("CleanVideoLibrary");
             showSubtitleSerach = loader.GetString("DownloadSubtitles");
             showVideoInfo = loader.GetString("ShowCodecInfo");
+            ejectDisc = loader.GetString("EjectDisc");
             shutDown = loader.GetString("ShutDown");
             suspend = loader.GetString("Suspend");
 
-            AdvancedMenuFlyout.ItemsSource = new List<string> { audioLibUpdate, videoLibUpdate, audioLibClean, videoLibClean, showSubtitleSerach, showVideoInfo, suspend, shutDown };
+            AdvancedMenuFlyout.ItemsSource = new List<string> { audioLibUpdate, videoLibUpdate, audioLibClean, videoLibClean, showSubtitleSerach, showVideoInfo, ejectDisc, suspend, shutDown };
         }
 
         private async void AdvancedMenuFlyout_ItemsPicked(ListPickerFlyout sender, ItemsPickedEventArgs args)
         {
             string pickedCommand = (string)AdvancedMenuFlyout.SelectedItem;
 
-            if (pickedCommand == audioLibUpdate)
+            if (pickedCommand == audioLibUpdate) {
                 AudioLibrary.Scan();
-            else if (pickedCommand == videoLibUpdate)
+            } else if (pickedCommand == videoLibUpdate) {
                 VideoLibrary.Scan();
-            else if (pickedCommand == audioLibClean)
+            } else if (pickedCommand == audioLibClean) {
                 AudioLibrary.Clean();
-            else if (pickedCommand == videoLibClean)
+            } else if (pickedCommand == videoLibClean) {
                 VideoLibrary.Clean();
-            else if (pickedCommand == showSubtitleSerach)
+            } else if (pickedCommand == showSubtitleSerach) {
                 GUI.ShowSubtitleSearch();
-            else if (pickedCommand == showVideoInfo)
+            } else if (pickedCommand == showVideoInfo) {
                 Input.ExecuteAction("codecinfo");
-            else if (pickedCommand == suspend)
-                await Input.ExecuteAction(SystemCommands.Suspend);  // send command System.Suspend to Kodi server - sleep
-            else if (pickedCommand == shutDown)
-                await Input.ExecuteAction(SystemCommands.Shutdown);  // send command System.Shutdown to Kodi - restart Kodi server
+            } else if (pickedCommand == ejectDisc) {
+                await Input.ExecuteAction(SystemCommands.EjectOpticalDrive);
+            } else if (pickedCommand == suspend) {
+                await Input.ExecuteAction(SystemCommands.Suspend);
+            } else if (pickedCommand == shutDown) {
+                await Input.ExecuteAction(SystemCommands.Shutdown);
+            }
         }
 
         private void vibrate()
