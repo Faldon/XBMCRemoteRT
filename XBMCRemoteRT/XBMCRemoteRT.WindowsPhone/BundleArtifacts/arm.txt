@@ -1,0 +1,13 @@
+MainPackage=C:\Users\thopu\Source\Repos\XBMCRemoteRT\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\XBMCRemoteRT.WindowsPhone_1.1.0.0_ARM.appx
+SymbolPackage=C:\Users\thopu\Source\Repos\XBMCRemoteRT\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\AppPackages\XBMCRemoteRT.WindowsPhone_1.1.0.0_Test\XBMCRemoteRT.WindowsPhone_1.1.0.0_ARM.appxsym
+ResourcePack=C:\Users\thopu\Source\Repos\XBMCRemoteRT\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\XBMCRemoteRT.WindowsPhone_1.1.0.0_language-ar.appx
+ResourcePack=C:\Users\thopu\Source\Repos\XBMCRemoteRT\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\XBMCRemoteRT.WindowsPhone_1.1.0.0_language-cs.appx
+ResourcePack=C:\Users\thopu\Source\Repos\XBMCRemoteRT\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\XBMCRemoteRT.WindowsPhone_1.1.0.0_language-da.appx
+ResourcePack=C:\Users\thopu\Source\Repos\XBMCRemoteRT\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\XBMCRemoteRT.WindowsPhone_1.1.0.0_language-de.appx
+ResourcePack=C:\Users\thopu\Source\Repos\XBMCRemoteRT\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\XBMCRemoteRT.WindowsPhone_1.1.0.0_language-es.appx
+ResourcePack=C:\Users\thopu\Source\Repos\XBMCRemoteRT\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\XBMCRemoteRT.WindowsPhone_1.1.0.0_language-he.appx
+ResourcePack=C:\Users\thopu\Source\Repos\XBMCRemoteRT\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\XBMCRemoteRT.WindowsPhone_1.1.0.0_language-hu.appx
+ResourcePack=C:\Users\thopu\Source\Repos\XBMCRemoteRT\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\XBMCRemoteRT.WindowsPhone_1.1.0.0_language-pt.appx
+ResourcePack=C:\Users\thopu\Source\Repos\XBMCRemoteRT\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\XBMCRemoteRT.WindowsPhone_1.1.0.0_language-ru.appx
+ResourcePack=C:\Users\thopu\Source\Repos\XBMCRemoteRT\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\XBMCRemoteRT.WindowsPhone_1.1.0.0_language-sr-latn.appx
+ResourcePack=C:\Users\thopu\Source\Repos\XBMCRemoteRT\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\XBMCRemoteRT.WindowsPhone_1.1.0.0_language-sv.appx

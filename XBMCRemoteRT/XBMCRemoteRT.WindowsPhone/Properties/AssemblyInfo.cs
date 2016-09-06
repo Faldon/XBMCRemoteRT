@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("XBMCRemoteRT.WindowsPhone")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Kodi Assistant")]
+[assembly: AssemblyDescription("Remote control for Kodi and XBMC")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Pulzer IT")]
 [assembly: AssemblyProduct("XBMCRemoteRT.WindowsPhone")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
