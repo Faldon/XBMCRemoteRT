@@ -157,6 +157,19 @@ namespace XBMCRemoteRT.Models
             }
         }
 
+        private string repeat;
+        public string Repeat
+        {
+            get { return repeat; }
+            set
+            {
+                if(repeat != value) {
+                    repeat = value;
+                    NotifyPropertyChanged("Repeat");
+                }
+            }
+        }
+
         #endregion
 
         private Players playerType;

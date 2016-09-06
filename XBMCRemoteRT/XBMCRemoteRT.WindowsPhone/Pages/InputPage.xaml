@@ -509,6 +509,15 @@
 
             <!--Dpad and big buttons-->
             <Grid Grid.Row="3">
+                <AppBarButton x:Name="CycleRepeatButton" Click="CycleRepeatButton_Click" Margin="24,0,0,10" Style="{StaticResource ExtraLargeRoundButton}" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <AppBarButton.Icon>
+                        <SymbolIcon Foreground="{Binding Repeat, Converter={StaticResource RepeatToBrushConverter}}" Symbol="{Binding Repeat, Converter={StaticResource RepeatToSymbolIconConverter}}" RenderTransformOrigin="0.5,0.5" >
+                            <SymbolIcon.RenderTransform>
+                                <CompositeTransform ScaleX="1.6" ScaleY="1.6" Rotation="45"/>
+                            </SymbolIcon.RenderTransform>
+                        </SymbolIcon>
+                    </AppBarButton.Icon>
+                </AppBarButton>
                 <Grid Margin="0,0,0,18" Height="255" Width="260" HorizontalAlignment="Center" VerticalAlignment="Center" >
                     <RepeatButton x:Name="UpButton" Click="UpButton_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Width="104" Height="104" RenderTransformOrigin="0.5,0.5" Style="{StaticResource PizzaPieButton}" UseLayoutRounding="False" d:LayoutRounding="Auto" Delay="500" Interval="100">
                         <RepeatButton.RenderTransform>

@@ -18,6 +18,8 @@
                     <converters:ListTrimmer x:Key="ListTrimmer"/>
                     <converters:BoolToOpacityConverter x:Key="BoolToOpacityConverter"/>
                     <converters:SpeedToSymbolIconConverter x:Key="SpeedToSymbolIconConverter"/>
+                    <converters:RepeatToSymbolIconConverter x:Key="RepeatToSymbolIconConverter" />
+                    <converters:RepeatToBrushConverter x:Key="RepeatToBrushConverter"/>
                     <converters:RepeatStateConverter x:Key="RepeatStateConverter"/>
                     <converters:RatingConverter x:Key="RatingConverter"/>
                     <converters:StringToImageBrushConverter x:Key="StringToImageBrushConverter"/>

@@ -129,6 +129,16 @@ namespace XBMCRemoteRT.RPCWrappers
             await ConnectionManager.ExecuteRPCRequest("Player.SetSpeed", parameters);
         }
 
+        public async static Task SetRepeat(Players player, string repeat) {
+            if (player == Players.None) {
+                return;
+            }
+            JObject parameters = new JObject(
+               new JProperty("playerid", getIdFromPlayers(player)),
+               new JProperty("repeat", repeat));
+            await ConnectionManager.ExecuteRPCRequest("Player.SetRepeat", parameters);
+        }
+
         public async static Task SetPartyMode(Players player, bool partymode)
         {
             if (player == Players.None)
