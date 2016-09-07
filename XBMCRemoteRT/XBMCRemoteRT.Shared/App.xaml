@@ -10,7 +10,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary>
                     <!--App name is held as a resource-->
-                    <x:String x:Key="AppName">KODI ASSIST</x:String>
+                    <x:String x:Key="AppName">KODI ASSISTANT</x:String>
 
                     <!--Converters-->
                     <converters:ListToStringConverter x:Key="ListToStringConverter"/>
@@ -19,7 +19,6 @@
                     <converters:BoolToOpacityConverter x:Key="BoolToOpacityConverter"/>
                     <converters:SpeedToSymbolIconConverter x:Key="SpeedToSymbolIconConverter"/>
                     <converters:RepeatToSymbolIconConverter x:Key="RepeatToSymbolIconConverter" />
-                    <converters:RepeatToBrushConverter x:Key="RepeatToBrushConverter"/>
                     <converters:RepeatStateConverter x:Key="RepeatStateConverter"/>
                     <converters:RatingConverter x:Key="RatingConverter"/>
                     <converters:StringToImageBrushConverter x:Key="StringToImageBrushConverter"/>

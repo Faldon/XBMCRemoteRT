@@ -288,7 +288,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Converter\" />
+    <Folder Include="Converters\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Coding4Fun.Toolkit, Version=2.0.8.0, Culture=neutral, PublicKeyToken=c5fd7b72b1a17ce4, processorArchitecture=MSIL">

@@ -348,11 +348,10 @@ namespace XBMCRemoteRT.Pages
             videoLibClean = loader.GetString("CleanVideoLibrary");
             showSubtitleSerach = loader.GetString("DownloadSubtitles");
             showVideoInfo = loader.GetString("ShowCodecInfo");
-            ejectDisc = loader.GetString("EjectDisc");
             shutDown = loader.GetString("ShutDown");
             suspend = loader.GetString("Suspend");
 
-            AdvancedMenuFlyout.ItemsSource = new List<string> { audioLibUpdate, videoLibUpdate, audioLibClean, videoLibClean, showSubtitleSerach, showVideoInfo, ejectDisc, suspend, shutDown };
+            AdvancedMenuFlyout.ItemsSource = new List<string> { audioLibUpdate, videoLibUpdate, audioLibClean, videoLibClean, showSubtitleSerach, showVideoInfo, suspend, shutDown };
         }
 
         private async void AdvancedMenuFlyout_ItemsPicked(ListPickerFlyout sender, ItemsPickedEventArgs args)
@@ -371,8 +370,6 @@ namespace XBMCRemoteRT.Pages
                 GUI.ShowSubtitleSearch();
             } else if (pickedCommand == showVideoInfo) {
                 Input.ExecuteAction("codecinfo");
-            } else if (pickedCommand == ejectDisc) {
-                await Input.ExecuteAction(SystemCommands.EjectOpticalDrive);
             } else if (pickedCommand == suspend) {
                 await Input.ExecuteAction(SystemCommands.Suspend);
             } else if (pickedCommand == shutDown) {
@@ -470,6 +467,10 @@ namespace XBMCRemoteRT.Pages
             }
             await Player.SetRepeat(GlobalVariables.CurrentPlayerState.PlayerType, nextRepeat);
             await PlayerHelper.RefreshPlayerState();
+        }
+
+        private async void EjectOpticalDisk_Click(object sender, RoutedEventArgs e) {
+            await Input.ExecuteAction(SystemCommands.EjectOpticalDrive);
         }
     }
 }

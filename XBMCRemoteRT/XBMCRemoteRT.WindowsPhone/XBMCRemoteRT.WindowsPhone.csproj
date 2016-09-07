@@ -183,6 +183,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\RepeatToBrushConverter.cs" />
     <Compile Include="CoverPage.xaml.cs">
       <DependentUpon>CoverPage.xaml</DependentUpon>
     </Compile>
@@ -305,6 +306,7 @@
       <Private>True</Private>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>
