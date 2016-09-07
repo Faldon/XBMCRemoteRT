@@ -124,17 +124,17 @@
     <value>FILME</value>
   </data>
   <data name="MoviesHubSectionSubHeader.Text" xml:space="preserve">
-    <value>alle filme anzeigen</value>
+    <value>Alle filme anzeigen</value>
   </data>
   <data name="MusicHubSectionHeader.Text" xml:space="preserve">
     <value>MUSIK</value>
     <comment>Header of music section on cover page</comment>
   </data>
   <data name="MusicHubSectionSubHeader.Text" xml:space="preserve">
-    <value>gesamte musik anzeigen</value>
+    <value>Gesamte musik anzeigen</value>
   </data>
   <data name="NotAvailable" xml:space="preserve">
-    <value>nicht vorhanden</value>
+    <value>Nicht vorhanden</value>
     <comment>When artists aren't available</comment>
   </data>
   <data name="NothingIsPlaying" xml:space="preserve">
@@ -145,22 +145,22 @@
     <comment>Header of now playing on cover page</comment>
   </data>
   <data name="NowPlayingSubHeader.Text" xml:space="preserve">
-    <value>fernbedienung öffnen</value>
+    <value>Fernbedienung öffnen</value>
     <comment>Subheader of now playing on cover page</comment>
   </data>
   <data name="RemoteMenu.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>fernbedienung</value>
+    <value>Fernbedienung</value>
     <comment>Appbar menu item</comment>
   </data>
   <data name="SettingsMenu.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>einstellungen</value>
+    <value>Einstellungen</value>
   </data>
   <data name="TVShowsHubSectionHeader.Text" xml:space="preserve">
     <value>SERIEN</value>
     <comment>Why was the hyphen (-) being used here? Why not just TV SENDUNGEN.</comment>
   </data>
   <data name="TVShowsHubSectionSubHeader.Text" xml:space="preserve">
-    <value>alle serien anzeigen</value>
+    <value>Alle Serien anzeigen</value>
   </data>
   <data name="AboutAppBarMenu.Label" xml:space="preserve">
     <value>über</value>
@@ -169,7 +169,7 @@
     <value>VERBINDUNG HINZUFÜGEN</value>
   </data>
   <data name="AddServer.Label" xml:space="preserve">
-    <value>server hinzufügen</value>
+    <value>Server hinzufügen</value>
     <comment>This should be in complete lowercase!</comment>
   </data>
   <data name="AlbumPageTitle.Text" xml:space="preserve">
@@ -194,16 +194,16 @@
     <value>BIO</value>
   </data>
   <data name="CancelAppBarMenu.Label" xml:space="preserve">
-    <value>abbrechen</value>
+    <value>Abbrechen</value>
   </data>
   <data name="Cast.Header" xml:space="preserve">
     <value>DARSTELLER</value>
   </data>
   <data name="CleanAudioLibrary" xml:space="preserve">
-    <value>audio-bibliothek säubern</value>
+    <value>Audio-Bibliothek säubern</value>
   </data>
   <data name="CleanVideoLibrary" xml:space="preserve">
-    <value>video-bibliothek säubern</value>
+    <value>Video-Bibliothek säubern</value>
   </data>
   <data name="ConnectionName.Header" xml:space="preserve">
     <value>Name</value>
@@ -215,7 +215,7 @@
     <value>REGISSEUR</value>
   </data>
   <data name="DownloadSubtitles" xml:space="preserve">
-    <value>untertitel herunterladen</value>
+    <value>Untertitel herunterladen</value>
     <comment>Use complete lower case here!</comment>
   </data>
   <data name="Genre.Text" xml:space="preserve">
@@ -231,14 +231,14 @@
     <value>Passwort</value>
   </data>
   <data name="PlayAlbumAppBarMenu.Label" xml:space="preserve">
-    <value>album abspielen</value>
+    <value>Album abspielen</value>
     <comment>Lowercase please!</comment>
   </data>
   <data name="PlayArtistAppBarMenu.Label" xml:space="preserve">
-    <value>künstler abspielen</value>
+    <value>Künstler abspielen</value>
   </data>
   <data name="PlayMovieAppBarMenu.Label" xml:space="preserve">
-    <value>film abspielen</value>
+    <value>Film abspielen</value>
   </data>
   <data name="Plot.Header" xml:space="preserve">
     <value>HANDLUNG</value>
@@ -253,20 +253,20 @@
     <value>BEWERTUNG</value>
   </data>
   <data name="RefreshAppBarMenu.Label" xml:space="preserve">
-    <value>aktualisieren</value>
+    <value>Aktualisieren</value>
   </data>
   <data name="RemoteAppBarMenu.Label" xml:space="preserve">
-    <value>fernbedienung</value>
+    <value>Fernbedienung</value>
     <comment>Appbar menu item</comment>
   </data>
   <data name="Runtime.Text" xml:space="preserve">
     <value>SPIELZEIT</value>
   </data>
   <data name="SaveAppBarMenu.Label" xml:space="preserve">
-    <value>speichern</value>
+    <value>Speichern</value>
   </data>
   <data name="SearchAppBarMenu.Lable" xml:space="preserve">
-    <value>suchen</value>
+    <value>Suchen</value>
   </data>
   <data name="SearchMoviesTitle.Text" xml:space="preserve">
     <value>FILME SUCHEN</value>
@@ -281,7 +281,7 @@
     <value>Serveradresse</value>
   </data>
   <data name="SettingsAppBarMenu.Label" xml:space="preserve">
-    <value>einstellungen</value>
+    <value>Einstellungen</value>
   </data>
   <data name="Songs.Header" xml:space="preserve">
     <value>SONGS</value>
@@ -293,7 +293,7 @@
     <value>STUDIO</value>
   </data>
   <data name="SwitchServerAppBarMenu.Label" xml:space="preserve">
-    <value>server wechseln</value>
+    <value>Server wechseln</value>
   </data>
   <data name="Tagline.Text" xml:space="preserve">
     <value>TAGLINE</value>
@@ -312,10 +312,10 @@
     <value>NEU</value>
   </data>
   <data name="UpdateAudioLibrary" xml:space="preserve">
-    <value>audio-bibliothek aktualisieren</value>
+    <value>Audio-Bibliothek aktualisieren</value>
   </data>
   <data name="UpdateVideoLibrary" xml:space="preserve">
-    <value>video-bibliothek aktualisieren</value>
+    <value>Video-Bibliothek aktualisieren</value>
   </data>
   <data name="Username.Header" xml:space="preserve">
     <value>Benutzername</value>
@@ -330,10 +330,10 @@
     <value>DREHBUCH</value>
   </data>
   <data name="QueueAlbumMenu.Label" xml:space="preserve">
-    <value>album einreihen</value>
+    <value>Album einreihen</value>
   </data>
   <data name="QueueArtistMenu.Label" xml:space="preserve">
-    <value>küntler einreihen</value>
+    <value>Künstler einreihen</value>
   </data>
   <data name="BackwardComboBox.Header" xml:space="preserve">
     <value>was macht zurück</value>
@@ -345,13 +345,13 @@
     <value>TASTEN</value>
   </data>
   <data name="SettingsButtonsSub.Text" xml:space="preserve">
-    <value>wähle aus, welche tasten auf der fernbedienung erscheinen sollen</value>
+    <value>wähle aus, welche Tasten auf der Fernbedienung erscheinen sollen</value>
   </data>
   <data name="SettingsSkipJump.Text" xml:space="preserve">
     <value>ÜBER-/SPRINGEN</value>
   </data>
   <data name="CacheNote.Text" xml:space="preserve">
-    <value>Kodi Assist speichert einige Bilder auf Ihrem Telefon, um schneller auf Ihre Bibliothek zugreifen zu können. Wenn sich Dinge wie Album-Cover und Filmplakate geändert haben, können Sie aktualisieren, um sie sofort anzuzeigen.</value>
+    <value>Kodi Assistant speichert einige Bilder auf Ihrem Telefon, um schneller auf Ihre Bibliothek zugreifen zu können. Wenn sich Dinge wie Album-Cover und Filmplakate geändert haben, können Sie aktualisieren, um sie sofort anzuzeigen.</value>
   </data>
   <data name="JustAMoment.Text" xml:space="preserve">
     <value>Einen Moment, bitte...</value>
@@ -360,7 +360,7 @@
     <value>AUTOMATISCH VERBINDEN</value>
   </data>
   <data name="SettingsAutoconnectToggle.Header" xml:space="preserve">
-    <value>beim start automatisch verbinden</value>
+    <value>beim Start automatisch verbinden</value>
   </data>
   <data name="SettingsConnectionsPivotHeader.Text" xml:space="preserve">
     <value>VERBINDUNGEN</value>
@@ -369,7 +369,7 @@
     <value>EINSTELLUNGEN</value>
   </data>
   <data name="SettingsRefreshCacheButton.Content" xml:space="preserve">
-    <value>aktualisieren</value>
+    <value>Aktualisieren</value>
   </data>
   <data name="SettingsRemotePivotHeader.Text" xml:space="preserve">
     <value>FERNBEDIENUNG</value>
@@ -465,10 +465,10 @@
     <value>Etwas in der App gefunden, das nicht perfekt läuft? Einen Bug entdeckt? Könnte etwas verbessert werden? Erstelle eine Anfrage in der URI unten. Einer der Entwickler wird sich so schnell wie möglich melden.</value>
   </data>
   <data name="SendFeedbackButton.Content" xml:space="preserve">
-    <value>feedback senden</value>
+    <value>Feedback senden</value>
   </data>
   <data name="AboutRateApp.Content" xml:space="preserve">
-    <value>app bewerten</value>
+    <value>App bewerten</value>
   </data>
   <data name="DeleteConnectionMenu.Text" xml:space="preserve">
     <value>Verbindung löschen</value>
@@ -510,7 +510,7 @@ Diese App ist eine Open Source Entwicklung. Du kannst dich an der Entwicklung be
     <value>weiter versuchen</value>
   </data>
   <data name="StopCommand" xml:space="preserve">
-    <value>abbrechen</value>
+    <value>Abbrechen</value>
   </data>
   <data name="WakeUpFailed" xml:space="preserve">
     <value>Das Aufwecken schlug fehl</value>
@@ -538,14 +538,14 @@ Diese App ist eine Open Source Entwicklung. Du kannst dich an der Entwicklung be
     <value>Legen Sie die MAC-Adresse und die Subnetzmaske fest, um diese Funktion nutzen zu können.</value>
   </data>
   <data name="PartyModeMenuItem.Label" xml:space="preserve">
-    <value>party modus</value>
+    <value>Party modus</value>
     <comment>Start music in party mode.</comment>
   </data>
   <data name="ShowCodecInfo" xml:space="preserve">
-    <value>codec info anzeigen</value>
+    <value>Codec Info anzeigen</value>
   </data>
   <data name="PinToStartAppBarMenu.Label" xml:space="preserve">
-    <value>an Start anpinnen</value>
+    <value>Auf Startseite</value>
   </data>
   <data name="BigJumpBackward.Content" xml:space="preserve">
     <value>großer Sprung zurück</value>
@@ -587,7 +587,7 @@ Diese App ist eine Open Source Entwicklung. Du kannst dich an der Entwicklung be
     <value>Wake on LAN für diesen Server aktivieren</value>
   </data>
   <data name="SearchAppBarButton.Label" xml:space="preserve">
-    <value>suchen</value>
+    <value>Suchen</value>
   </data>
   <data name="SettingsAudioAutoSearchToggle.Header" xml:space="preserve">
     <value>direkt zur Musiksuche gehen</value>
@@ -605,12 +605,15 @@ Diese App ist eine Open Source Entwicklung. Du kannst dich an der Entwicklung be
     <value>Hier scheint ziemlich viel Musik zu sein. Sollen wir dir stattdessen bei der Suche nach Musik helfen?</value>
   </data>
   <data name="MessageOptionNo" xml:space="preserve">
-    <value>nein</value>
+    <value>Nein</value>
   </data>
   <data name="MessageOptionYes" xml:space="preserve">
-    <value>ja</value>
+    <value>Ja</value>
   </data>
-  <data name="EjectDisc" xml:space="preserve">
-    <value>Disk auswerfen</value>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Ausschalten</value>
+  </data>
+  <data name="Sleep" xml:space="preserve">
+    <value>Standby</value>
   </data>
 </root>
