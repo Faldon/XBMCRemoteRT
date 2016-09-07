@@ -48,7 +48,7 @@ namespace XBMCRemoteRT
             DataContext = GlobalVariables.CurrentPlayerState;
             PlayerHelper.RefreshPlayerState().Wait(200);
             PlayerHelper.StartAutoRefresh(1);
-            HandleSupportDialog();
+            //HandleSupportDialog();
         }   
        
         /// <summary>

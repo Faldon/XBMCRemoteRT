@@ -32,7 +32,7 @@
                     <TextBox x:Name="NameTextBox" x:Uid="ConnectionName" Header="Name"/>
                     <TextBox x:Name="IPTextBox" x:Uid="ServerAddress" Header="Server address" InputScope="Url" />
                     <TextBox x:Name="PortTextBox" x:Uid="Port" Text="80" Header="Port" InputScope="Number" />
-                    <TextBox x:Name="UsernameTextBox" x:Uid="Username" Header="Username" Text="xbmc" InputScope="NameOrPhoneNumber"/>
+                    <TextBox x:Name="UsernameTextBox" x:Uid="Username" Header="Username" Text="kodi" InputScope="NameOrPhoneNumber"/>
                     <TextBox x:Name="PasswordTextBox" x:Uid="Password" Header="Password" InputScope="NameOrPhoneNumber"/>
                     <TextBlock x:Uid="WarningNote" Style="{StaticResource ParagraphTextStyle}" />
                 </StackPanel>
