@@ -418,7 +418,7 @@
     <value>view on GitHub</value>
   </data>
   <data name="AboutProjectText.Text" xml:space="preserve">
-    <value>This project is an open source fork of the abandoned original XBMCRemoteRC. You can fork it, file issues or contribute to it.</value>
+    <value>This project is an open source fork of the abandoned original XBMCRemoteRT. You can fork it, file issues or contribute to it.</value>
   </data>
   <data name="AboutReddit.Text" xml:space="preserve">
     <value>Very useful feedback by reddit community at</value>
@@ -632,7 +632,7 @@ And to top it all, the app is fully open source. You can view, edit and modify e
     <value>The trial period has expired. Please consider buying the app, if you found it useful.</value>
     <comment>Message for when the trial period has expired</comment>
   </data>
-  <data name="AboutAkshay" xml:space="preserve">
+  <data name="AboutAkshay.Text" xml:space="preserve">
     <value>Original developer</value>
   </data>
   <data name="BuyAppBarMenu.Label" xml:space="preserve">

@@ -163,7 +163,7 @@
     <value>Alle Serien anzeigen</value>
   </data>
   <data name="AboutAppBarMenu.Label" xml:space="preserve">
-    <value>über</value>
+    <value>Über</value>
   </data>
   <data name="AddConnectionPageTitle.Text" xml:space="preserve">
     <value>VERBINDUNG HINZUFÜGEN</value>
@@ -381,13 +381,13 @@
     <value>ÜBER</value>
   </data>
   <data name="AboutAnagh.Text" xml:space="preserve">
-    <value>Herausragende Designs von</value>
+    <value>Designs von</value>
   </data>
   <data name="AboutAppHeader.Text" xml:space="preserve">
     <value>APP</value>
   </data>
   <data name="AboutAppText.Text" xml:space="preserve">
-    <value>Diese soll der ultimative Fernbedienungs-Client für Kodi sein. Die App ist open-source im Geiste von Kodi und sämtlicher Code ist auf GitHub verfügbar.</value>
+    <value>Dies soll der ultimative Fernbedienungs-Client für KODI sein.</value>
   </data>
   <data name="AboutCodeIn.Text" xml:space="preserve">
     <value>MITCODEN</value>
@@ -423,7 +423,7 @@
     <value>auf GitHub ansehen</value>
   </data>
   <data name="AboutProjectText.Text" xml:space="preserve">
-    <value>Diese App ist Teil eines Open-Source-Projekts. Wenn Sie dazu beitragen möchten, klicken Sie auf die URL unten. Werft einen Blick in die Wiki.</value>
+    <value>Dieses Projekt it ein Open-Source-Fork des verwaisten original XBMCRemoteRT. Sie können es forken, ein Problem melden oder dazu beitragen.</value>
   </data>
   <data name="AboutReddit.Text" xml:space="preserve">
     <value>Sehr Hilfreiches Feedback von der reddit-Community auf</value>
@@ -432,10 +432,10 @@
     <value>PROBLEME MELDEN</value>
   </data>
   <data name="AboutSendGreetings.Text" xml:space="preserve">
-    <value>GRÜSSE SENDEN</value>
+    <value>APP EMPFEHLEN</value>
   </data>
   <data name="AboutSendGreetingsNote.Text" xml:space="preserve">
-    <value>Eine einfache Geste der Dankbarkeit kann in der Open-Source-Community Wunder bewirken. Sie können dazu beitragen, indem Sie einfach ein Dankeschön via Twitter, E-Mail, mit einer Bewertung im Store, oder auf irgendeine andere Weise sagen. Es bedeutet den Entwicklern viel.</value>
+    <value>Sie mögen die App und finden sie nützlich? Kennen jemanden, dem sie auch nützen könnte? Schicken Sie eine Empfehlung.</value>
   </data>
   <data name="AboutTranslate.Text" xml:space="preserve">
     <value>ÜBERSETZEN</value>
@@ -625,5 +625,17 @@ Diese App ist eine Open Source Entwicklung. Du kannst dich an der Entwicklung be
   <data name="TrialExpired" xml:space="preserve">
     <value>Die Probezeit ist abgelaufen. Wenn Sie die App nützlich fanden, erwägen Sie bitte, sie zu kaufen.</value>
     <comment>Message for when the trial period has expired</comment>
+  </data>
+  <data name="FilesAppBarMenu.Label" xml:space="preserve">
+    <value>Dateien</value>
+  </data>
+  <data name="AboutAkshay.Text" xml:space="preserve">
+    <value>Original Entwickler</value>
+  </data>
+  <data name="AboutShareLink.Text" xml:space="preserve">
+    <value>Teile mich</value>
+  </data>
+  <data name="BuyAppBarButton" xml:space="preserve">
+    <value>Kaufen</value>
   </data>
 </root>
