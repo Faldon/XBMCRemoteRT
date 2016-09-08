@@ -53,7 +53,7 @@ namespace XBMCRemoteRT.RPCWrappers
         {
             JObject parameters = new JObject(
                                      new JProperty("properties",
-                                         new JArray("album", "albumartist", "albumartistid", "albumid", "comment", "disc", "duration", "file", "lastplayed", "lyrics", "musicbrainzartistid", "musicbrainztrackid", "playcount", "track"))
+                                         new JArray("album", "albumartist", "albumartistid", "albumid", "comment", "disc", "duration", "file", "genre", "lastplayed", "lyrics", "musicbrainzartistid", "musicbrainztrackid", "playcount", "track"))
                                              );
 
             if (limits != null)
