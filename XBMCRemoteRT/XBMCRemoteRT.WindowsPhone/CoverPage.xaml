@@ -180,7 +180,7 @@
         <Hub x:Name="CoverHub" Background="{Binding Fanart, Converter={StaticResource StringToImageBrushConverter}}">
             <Hub.Header>
                 <StackPanel>
-                    <TextBlock Text="kodi assist" FontWeight="Bold" FontSize="75" />
+                    <TextBlock Text="kodi assistant" FontWeight="Bold" FontSize="75" />
                     <TextBlock x:Name="ServerNameTextBlock" Text="KalEl Livingroom" FontSize="15" Margin="5,-10,0,0" FontWeight="Bold" Foreground="{StaticResource PhoneAccentBrush}"/>
                 </StackPanel>
             </Hub.Header>

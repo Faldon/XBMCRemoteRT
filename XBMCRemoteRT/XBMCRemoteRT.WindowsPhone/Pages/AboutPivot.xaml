@@ -45,7 +45,7 @@
                             <Paragraph>
                                 <Run x:Uid="AboutAkshay" Text="Original developer"/>
                                 <Run Text=" "/>
-                                <Hyperlink NavigateUri="http://indestructible.in" Foreground="{StaticResource PhoneAccentBrush}">Akshay Zade</Hyperlink> .
+                                <Hyperlink NavigateUri="http://indestructible.in" Foreground="{StaticResource PhoneAccentBrush}">Akshay Zade</Hyperlink>.
                             </Paragraph>
                         </RichTextBlock>
                         

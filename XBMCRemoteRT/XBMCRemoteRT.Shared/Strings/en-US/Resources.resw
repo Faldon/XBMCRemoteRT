@@ -638,4 +638,16 @@ And to top it all, the app is fully open source. You can view, edit and modify e
   <data name="BuyAppBarMenu.Label" xml:space="preserve">
     <value>buy</value>
   </data>
+  <data name="FilesAppBarMenu.Label" xml:space="preserve">
+    <value>files</value>
+  </data>
+  <data name="MusicTitle.Text" xml:space="preserve">
+    <value>MUSIC</value>
+  </data>
+  <data name="SourcesPageTitle.Text" xml:space="preserve">
+    <value>MEDIA SOURCES</value>
+  </data>
+  <data name="VideosTitle.Text" xml:space="preserve">
+    <value>VIDEOS</value>
+  </data>
 </root>

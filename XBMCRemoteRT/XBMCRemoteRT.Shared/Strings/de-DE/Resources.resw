@@ -124,14 +124,14 @@
     <value>FILME</value>
   </data>
   <data name="MoviesHubSectionSubHeader.Text" xml:space="preserve">
-    <value>Alle filme anzeigen</value>
+    <value>Alle Filme anzeigen</value>
   </data>
   <data name="MusicHubSectionHeader.Text" xml:space="preserve">
     <value>MUSIK</value>
     <comment>Header of music section on cover page</comment>
   </data>
   <data name="MusicHubSectionSubHeader.Text" xml:space="preserve">
-    <value>Gesamte musik anzeigen</value>
+    <value>Gesamte Musik anzeigen</value>
   </data>
   <data name="NotAvailable" xml:space="preserve">
     <value>Nicht vorhanden</value>
@@ -345,10 +345,10 @@
     <value>TASTEN</value>
   </data>
   <data name="SettingsButtonsSub.Text" xml:space="preserve">
-    <value>wähle aus, welche Tasten auf der Fernbedienung erscheinen sollen</value>
+    <value>Wähle aus, welche Tasten auf der Fernbedienung erscheinen sollen</value>
   </data>
   <data name="SettingsSkipJump.Text" xml:space="preserve">
-    <value>ÜBER-/SPRINGEN</value>
+    <value>ÜBERSPRINGEN</value>
   </data>
   <data name="CacheNote.Text" xml:space="preserve">
     <value>Kodi Assistant speichert einige Bilder auf Ihrem Telefon, um schneller auf Ihre Bibliothek zugreifen zu können. Wenn sich Dinge wie Album-Cover und Filmplakate geändert haben, können Sie aktualisieren, um sie sofort anzuzeigen.</value>
@@ -360,7 +360,7 @@
     <value>AUTOMATISCH VERBINDEN</value>
   </data>
   <data name="SettingsAutoconnectToggle.Header" xml:space="preserve">
-    <value>beim Start automatisch verbinden</value>
+    <value>beim Start verbinden</value>
   </data>
   <data name="SettingsConnectionsPivotHeader.Text" xml:space="preserve">
     <value>VERBINDUNGEN</value>
@@ -613,7 +613,7 @@ Diese App ist eine Open Source Entwicklung. Du kannst dich an der Entwicklung be
   <data name="ShutDown" xml:space="preserve">
     <value>Ausschalten</value>
   </data>
-  <data name="Sleep" xml:space="preserve">
+  <data name="Suspend" xml:space="preserve">
     <value>Standby</value>
   </data>
   <data name="Buy" xml:space="preserve">
@@ -635,7 +635,19 @@ Diese App ist eine Open Source Entwicklung. Du kannst dich an der Entwicklung be
   <data name="AboutShareLink.Text" xml:space="preserve">
     <value>Teile mich</value>
   </data>
-  <data name="BuyAppBarButton" xml:space="preserve">
+  <data name="BuyAppBarMenu.Label" xml:space="preserve">
     <value>Kaufen</value>
+  </data>
+  <data name="MusicTitle.Text" xml:space="preserve">
+    <value>MUSIK</value>
+  </data>
+  <data name="SettingsVibrationToggle.Header" xml:space="preserve">
+    <value>Auf Tastendruck vibrieren</value>
+  </data>
+  <data name="SourcesPageTitle.Text" xml:space="preserve">
+    <value>MEDIEN QUELLEN</value>
+  </data>
+  <data name="VideosTitle.Text" xml:space="preserve">
+    <value>VIDEOS</value>
   </data>
 </root>
