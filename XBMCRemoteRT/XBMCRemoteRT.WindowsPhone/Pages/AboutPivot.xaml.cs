@@ -138,9 +138,9 @@ namespace XBMCRemoteRT.Pages
         {
             DataRequest request = e.Request;
             // The Title is mandatory
-            request.Data.Properties.Title = "Kodi Assist for Windows Phone";
+            request.Data.Properties.Title = "Kodi Assistant for Windows Phone";
             request.Data.Properties.Description = "The unique Windows Phone Kodi remote.";
-            request.Data.SetText("I'm using #KodiAssit for Windows Phone. Get it for free: http://www.windowsphone.com/s?appid=3897b459-b11b-41eb-9cea-dd9e53c55b78");
+            request.Data.SetText("I'm using #KodiAssistant for Windows Phone. Get it here: " + new Uri("ms-windows-store:reviewapp?appid=" + CurrentApp.AppId).AbsoluteUri);
         }
     }
 }

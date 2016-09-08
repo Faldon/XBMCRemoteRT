@@ -376,13 +376,13 @@
     <value>ABOUT</value>
   </data>
   <data name="AboutAnagh.Text" xml:space="preserve">
-    <value>Excellent designs by</value>
+    <value>Designs by</value>
   </data>
   <data name="AboutAppHeader.Text" xml:space="preserve">
     <value>APP</value>
   </data>
   <data name="AboutAppText.Text" xml:space="preserve">
-    <value>The app aims to be the ultimate remote control client for Kodi. The app is made open source in spirit of Kodi and all the source code is available at GitHub.</value>
+    <value>The app aims to be a universal platform remote control client for KODI.</value>
   </data>
   <data name="AboutCodeIn.Text" xml:space="preserve">
     <value>CODE IN</value>
@@ -418,7 +418,7 @@
     <value>view on GitHub</value>
   </data>
   <data name="AboutProjectText.Text" xml:space="preserve">
-    <value>This app is a part of an open source project. If you wish to contribute, feel free to do so at the URL below. Be sure to check out the project wiki.</value>
+    <value>This project is an open source fork of the abandoned original XBMCRemoteRC. You can fork it, file issues or contribute to it.</value>
   </data>
   <data name="AboutReddit.Text" xml:space="preserve">
     <value>Very useful feedback by reddit community at</value>
@@ -427,10 +427,10 @@
     <value>REPORT ISSUES</value>
   </data>
   <data name="AboutSendGreetings.Text" xml:space="preserve">
-    <value>SEND GREETINGS</value>
+    <value>RECOMMEND APP</value>
   </data>
   <data name="AboutSendGreetingsNote.Text" xml:space="preserve">
-    <value>A simple gesture of gratitude can work wonders in open source community. You can contribute simply by sending a thank you note via a tweet, an email, a rating on Store or any other way you prefer. It means a lot to developers.</value>
+    <value>You like the app and find it useful? Know someone whou could also find it useful? Send them a recommendation.</value>
   </data>
   <data name="AboutTranslate.Text" xml:space="preserve">
     <value>TRANSLATE</value>
@@ -457,7 +457,7 @@
     <value>issues on GitHub</value>
   </data>
   <data name="ReportIssuesNote.Text" xml:space="preserve">
-    <value>Find something not working to perfection in app? Discovered a bug? Think something could be better? Just create issue at the URl below. One of the developers will get back to you as soon as possible.</value>
+    <value>Found something not working? Discovered a bug? Think something could be better? Just create an issue at the URl below and we will get back to you as soon as possible.</value>
   </data>
   <data name="SendFeedbackButton.Content" xml:space="preserve">
     <value>send feedback</value>
@@ -614,7 +614,7 @@ And to top it all, the app is fully open source. You can view, edit and modify e
     <value>vibrate while pressing buttons</value>
   </data>
   <data name="AboutShareLink.Text" xml:space="preserve">
-    <value>spread the love</value>
+    <value>share me</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
     <value>shutdown</value>
@@ -631,5 +631,8 @@ And to top it all, the app is fully open source. You can view, edit and modify e
   <data name="TrialExpired" xml:space="preserve">
     <value>The trial period has expired. Please consider buying the app, if you found it useful.</value>
     <comment>Message for when the trial period has expired</comment>
+  </data>
+  <data name="AboutAkshay" xml:space="preserve">
+    <value>Original developer</value>
   </data>
 </root>

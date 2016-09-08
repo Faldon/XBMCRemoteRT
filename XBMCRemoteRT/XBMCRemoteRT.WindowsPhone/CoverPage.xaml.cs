@@ -17,6 +17,7 @@ using XBMCRemoteRT.Models;
 using Windows.UI.Xaml.Media.Animation;
 using XBMCRemoteRT.Pages.Files;
 using Windows.UI.Popups;
+using Windows.System;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -29,9 +30,6 @@ namespace XBMCRemoteRT
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
-
-        //private DispatcherTimer timer;
-        
 
         public CoverPage()
         {
@@ -48,7 +46,6 @@ namespace XBMCRemoteRT
             DataContext = GlobalVariables.CurrentPlayerState;
             PlayerHelper.RefreshPlayerState().Wait(200);
             PlayerHelper.StartAutoRefresh(1);
-            //HandleSupportDialog();
         }   
        
         /// <summary>
@@ -275,31 +272,9 @@ namespace XBMCRemoteRT
             (sender as CommandBar).Opacity = 0.5;
         }
 
-        private void SupportAppBarButton_Click(object sender, RoutedEventArgs e)
+        private async void BuyAppBarButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(SupportPage));
-        }
-
-        private async void HandleSupportDialog()
-        {
-            String noOfLaunchesKey = "NoOfLaunches";
-            int noOfLaunches = Int16.Parse(SettingsHelper.GetValue(noOfLaunchesKey, 0).ToString());
-            noOfLaunches++;
-            SettingsHelper.SetValue(noOfLaunchesKey, noOfLaunches);
-
-            if (noOfLaunches < 30 && noOfLaunches % 5 == 0)
-            {
-                GlobalVariables.CurrentTracker.SendEvent("Donation", "MessageLaunched", "Message Launched", 1);
-                MessageDialog messageDialog = new MessageDialog("App development is discontinued. Click okay to learn more.", "Development has stopped!");
-                messageDialog.Commands.Add(new UICommand("okay"));
-                messageDialog.Commands.Add(new UICommand("later"));
-                var command = await messageDialog.ShowAsync();
-                if (command.Label == "okay")
-                {
-                    Frame.Navigate(typeof(SupportPage));
-                    GlobalVariables.CurrentTracker.SendEvent("Donation", "ClickedOkay", "Clicked Okay", 1);
-                }
-            }
+            await Launcher.LaunchUriAsync(Windows.ApplicationModel.Store.CurrentApp.LinkUri);
         }
     }
 }

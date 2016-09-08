@@ -5,8 +5,8 @@ namespace XBMCRemoteRT.Helpers
 {
     public static class FeedbackHelper
     {
-        private static string recepient = "akshay2000+kodiassist@hotmail.com";
-        private static string subject = "Kodi Assist for Windows";
+        private static string recepient = "info@pulzer.it";
+        private static string subject = "Kodi Assistant for Windows";
 
         public static async void SendFeedback(string feedbackMessage)
         {
