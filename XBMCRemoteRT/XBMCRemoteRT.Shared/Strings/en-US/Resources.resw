@@ -635,4 +635,7 @@ And to top it all, the app is fully open source. You can view, edit and modify e
   <data name="AboutAkshay" xml:space="preserve">
     <value>Original developer</value>
   </data>
+  <data name="BuyAppBarMenu.Label" xml:space="preserve">
+    <value>buy</value>
+  </data>
 </root>
