@@ -96,8 +96,8 @@ namespace XBMCRemoteRT
         /// <param name="e">Details about the launch request and process.</param>
         protected async override void OnLaunched(LaunchActivatedEventArgs e)
         {
-            Debug.WriteLine("Launched with tile id " + e.TileId);            
 #if DEBUG
+            Debug.WriteLine("Launched with tile id " + e.TileId);
             if (System.Diagnostics.Debugger.IsAttached)
             {
                 this.DebugSettings.EnableFrameRateCounter = true;
@@ -195,9 +195,16 @@ namespace XBMCRemoteRT
         private void OnSuspending(object sender, SuspendingEventArgs e)
         {
             var deferral = e.SuspendingOperation.GetDeferral();
-
-            // TODO: Save application state and stop any background activity
             deferral.Complete();
+        }
+
+        public static bool IsExpired() {
+#if DEBUG
+            var license = Windows.ApplicationModel.Store.CurrentAppSimulator.LicenseInformation;
+#else
+            var license = Windows.ApplicationModel.Store.CurrentApp.LicenseInformation;
+#endif
+            return (license.IsTrial && (license.ExpirationDate - new DateTimeOffset()) <= new TimeSpan(0));
         }
     }
 }

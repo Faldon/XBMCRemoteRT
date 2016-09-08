@@ -616,4 +616,14 @@ Diese App ist eine Open Source Entwicklung. Du kannst dich an der Entwicklung be
   <data name="Sleep" xml:space="preserve">
     <value>Standby</value>
   </data>
+  <data name="Buy" xml:space="preserve">
+    <value>Kaufen</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Beenden</value>
+  </data>
+  <data name="TrialExpired" xml:space="preserve">
+    <value>Die Probezeit ist abgelaufen. Wenn Sie die App nützlich fanden, erwägen Sie bitte, sie zu kaufen.</value>
+    <comment>Message for when the trial period has expired</comment>
+  </data>
 </root>

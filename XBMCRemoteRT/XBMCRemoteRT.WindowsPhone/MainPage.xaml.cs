@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Resources;
+using Windows.System;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -104,6 +105,15 @@ namespace XBMCRemoteRT
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
+
+            if(App.IsExpired()) {
+                var alert = new MessageDialog(loader.GetString("TrialExpired"));
+                alert.Commands.Add(new UICommand(loader.GetString("Buy"), async (cmd) => { await Launcher.LaunchUriAsync(Windows.ApplicationModel.Store.CurrentApp.LinkUri); }));
+                alert.Commands.Add(new UICommand(loader.GetString("Close"), (cmd) => { App.Current.Exit(); }));
+                alert.CancelCommandIndex = 1;
+                await alert.ShowAsync();
+                Frame.BackStack.Clear();
+            }
 
             GlobalVariables.CurrentTracker.SendView("MainPage");
 

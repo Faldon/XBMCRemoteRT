@@ -622,4 +622,14 @@ And to top it all, the app is fully open source. You can view, edit and modify e
   <data name="Suspend" xml:space="preserve">
     <value>sleep</value>
   </data>
+  <data name="Buy" xml:space="preserve">
+    <value>buy</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>close</value>
+  </data>
+  <data name="TrialExpired" xml:space="preserve">
+    <value>The trial period has expired. Please consider buying the app, if you found it useful.</value>
+    <comment>Message for when the trial period has expired</comment>
+  </data>
 </root>
