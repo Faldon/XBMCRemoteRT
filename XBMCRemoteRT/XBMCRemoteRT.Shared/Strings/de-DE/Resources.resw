@@ -481,18 +481,16 @@
     <comment>Context menu used to wake up sleeping computer using wake-on-lan</comment>
   </data>
   <data name="StoreDescription" xml:space="preserve">
-    <value>DIE Open-Source-Kodi (früher XBMC) Fernbedienung für Windows Phone.
+    <value>Open-Source Kodi (früher XBMC) Fernbedienung für Windows Phone.
 
-Gewinner des // Publish / für Windows auf globaler Ebene.
-
-Dies ist die perfekte Kodi Fernbedienung für Windows Phone. Die Funktionen umfassen unter anderem:
+Funktionen umfassen unter anderem:
 - Einen schönen Musik- und Film- Bibliothek-Browser
 - Darstellung von Informationen zu Interpreten und Alben.
 - Detaillierte und schöne Darstellung für Filme und Fernsehsendungen
 - Einfache Bedienung
 - Vieles mehr ...
 
-Diese App ist eine Open Source Entwicklung. Du kannst dich an der Entwicklung beteiligen und so Einfluss auf Zukünfige Funktionen nehmen. Besuche uns auf: https://github.com/akshay2000/XBMCRemoteRT und werde ein Teil des Teams.
+Und zudem ist diese App vollständig Open Source. Der Quellcode befindet sich auf: https://github.com/Faldon/XBMCRemoteRT
 </value>
     <comment>Description for Windows Store</comment>
   </data>
