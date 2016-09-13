@@ -12,6 +12,7 @@
         <CollectionViewSource x:Name="ArtistsCVS" IsSourceGrouped="True"/>
         <CollectionViewSource x:Name="AlbumsCVS" IsSourceGrouped="True"/>
         <CollectionViewSource x:Name="SongsCVS" IsSourceGrouped="True"/>
+        <CollectionViewSource x:Name="GenresCVS" IsSourceGrouped="True"/>
     </Page.Resources>
 
     <Page.Transitions>
@@ -136,7 +137,6 @@
                     </SemanticZoom.ZoomedOutView>
                 </SemanticZoom>
             </PivotItem>
-
         </Pivot>
 
     </Grid>

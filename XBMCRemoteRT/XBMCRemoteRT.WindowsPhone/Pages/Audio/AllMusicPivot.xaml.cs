@@ -1,6 +1,7 @@
 ﻿using XBMCRemoteRT.Common;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Windows.Graphics.Display;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;

@@ -12,6 +12,7 @@ namespace XBMCRemoteRT.Models.Audio
         public int Disc { get; set; }
         public int Duration { get; set; }
         public string File { get; set; }
+        public List<string> Genre { get; set; }
         public string Label { get; set; }
         public string LastPlayed { get; set; }
         public string Lyrics { get; set; }

@@ -335,7 +335,6 @@ namespace XBMCRemoteRT.Pages
         private string videoLibClean;
         private string showSubtitleSerach;
         private string showVideoInfo;
-        private string ejectDisc;
         private string shutDown;
         private string suspend;
 
