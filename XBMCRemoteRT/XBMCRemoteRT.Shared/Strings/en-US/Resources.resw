@@ -648,4 +648,13 @@ And to top it all, the app is fully open source. You can view, edit and modify e
   <data name="VideosTitle.Text" xml:space="preserve">
     <value>VIDEOS</value>
   </data>
+  <data name="AboutPrivacyPolicy.Text" xml:space="preserve">
+    <value>Read our privacy policy</value>
+  </data>
+  <data name="AboutPrivacyPolicyHeader.Text" xml:space="preserve">
+    <value>PRIVACY POLICY</value>
+  </data>
+  <data name="LinkPrivacyPolicy.Content" xml:space="preserve">
+    <value>here</value>
+  </data>
 </root>

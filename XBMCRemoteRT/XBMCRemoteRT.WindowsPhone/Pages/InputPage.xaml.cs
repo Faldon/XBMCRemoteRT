@@ -454,20 +454,6 @@ namespace XBMCRemoteRT.Pages
                 AudioStreamsFlyout.ItemsSource = audiostreams;
         }
 
-        private async void CycleRepeatButton_Click(object sender, RoutedEventArgs e) {
-            string nextRepeat = "off";
-            switch (GlobalVariables.CurrentPlayerState.Repeat) {
-                case "off":
-                    nextRepeat = "one";
-                    break;
-                case "one":
-                    nextRepeat = "all";
-                break;
-            }
-            await Player.SetRepeat(GlobalVariables.CurrentPlayerState.PlayerType, nextRepeat);
-            await PlayerHelper.RefreshPlayerState();
-        }
-
         private async void EjectOpticalDisk_Click(object sender, RoutedEventArgs e) {
             await Input.ExecuteAction(SystemCommands.EjectOpticalDrive);
         }

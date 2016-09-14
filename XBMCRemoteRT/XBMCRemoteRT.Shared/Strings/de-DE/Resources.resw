@@ -648,4 +648,13 @@ Und zudem ist diese App vollständig Open Source. Der Quellcode befindet sich au
   <data name="VideosTitle.Text" xml:space="preserve">
     <value>VIDEOS</value>
   </data>
+  <data name="AboutPrivacyPolicy.Text" xml:space="preserve">
+    <value>Lesen Sie unsere Datenschutzbestimmungen</value>
+  </data>
+  <data name="AboutPrivacyPolicyHeader.Text" xml:space="preserve">
+    <value>DATENSCHUTZ</value>
+  </data>
+  <data name="LinkPrivacyPolicy.Content" xml:space="preserve">
+    <value>hier</value>
+  </data>
 </root>

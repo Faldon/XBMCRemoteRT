@@ -222,6 +222,20 @@ namespace XBMCRemoteRT
             await PlayerHelper.RefreshPlayerState();
         }
 
+        private async void CycleRepeatButton_Tapped(object sender, TappedRoutedEventArgs e) {
+            string nextRepeat = "off";
+            switch (GlobalVariables.CurrentPlayerState.Repeat) {
+                case "off":
+                    nextRepeat = "all";
+                    break;
+                case "all":
+                    nextRepeat = "one";
+                    break;
+            }
+            await Player.SetRepeat(GlobalVariables.CurrentPlayerState.PlayerType, nextRepeat);
+            await PlayerHelper.RefreshPlayerState();
+        }
+
         private void CurrentPlaylistButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof (NowPlaying));

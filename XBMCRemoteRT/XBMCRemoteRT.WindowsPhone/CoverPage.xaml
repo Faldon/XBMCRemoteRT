@@ -5,10 +5,12 @@
     xmlns:local="using:XBMCRemoteRT"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:converters="using:XBMCRemoteRT.Converters"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Page.Resources>
+        <converters:RepeatToBrushConverter x:Key="RepeatToBrushConverter"/>
         <Style x:Key="HubSectionHeaderSubHeaderStyle" TargetType="TextBlock">
             <Setter Property="Opacity" Value="1"/>
             <Setter Property="FontSize" Value="15"/>
@@ -214,6 +216,11 @@
                             </Image.Source>
                         </Image>
                         <Image Width="253" Height="253" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="UniformToFill" Source="{Binding Thumbnail, Converter={StaticResource AuthBitmapConverter}, ConverterParameter=w253}"/>
+                        <SymbolIcon x:Name="CycleRepeatButton" Tapped="CycleRepeatButton_Tapped" Width="50" Height="48" Margin="12,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Foreground="{Binding Repeat, Converter={StaticResource RepeatToBrushConverter}}" Symbol="{Binding Repeat, Converter={StaticResource RepeatToSymbolIconConverter}}" RenderTransformOrigin="0.5,0.5">
+                            <SymbolIcon.RenderTransform>
+                                <CompositeTransform ScaleX="1.6" ScaleY="1.6" Rotation="0"/>
+                            </SymbolIcon.RenderTransform>
+                        </SymbolIcon>
 
                         <Grid Grid.Row="1" Margin="0,4">
                             <Grid.ColumnDefinitions>

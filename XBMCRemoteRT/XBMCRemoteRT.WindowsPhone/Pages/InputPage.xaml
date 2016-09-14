@@ -511,16 +511,7 @@
 
             <!--Dpad and big buttons-->
             <Grid Grid.Row="3">
-                <AppBarButton x:Name="CycleRepeatButton" Click="CycleRepeatButton_Click" Margin="24,0,0,10" Style="{StaticResource ExtraLargeRoundButton}" VerticalAlignment="Top" HorizontalAlignment="Left">
-                    <AppBarButton.Icon>
-                        <SymbolIcon Foreground="{Binding Repeat, Converter={StaticResource RepeatToBrushConverter}}" Symbol="{Binding Repeat, Converter={StaticResource RepeatToSymbolIconConverter}}" RenderTransformOrigin="0.5,0.5" >
-                            <SymbolIcon.RenderTransform>
-                                <CompositeTransform ScaleX="1.6" ScaleY="1.6" Rotation="0"/>
-                            </SymbolIcon.RenderTransform>
-                        </SymbolIcon>
-                    </AppBarButton.Icon>
-                </AppBarButton>
-                <AppBarButton x:Name="EjectOpticalDisk" Click="EjectOpticalDisk_Click" Margin="0,0,24,10" Style="{StaticResource ExtraLargeRoundButton}" VerticalAlignment="Top" HorizontalAlignment="Right">
+                <AppBarButton x:Name="EjectOpticalDisk" Click="EjectOpticalDisk_Click" Margin="24,0,0,10" Style="{StaticResource ExtraLargeRoundButton}" VerticalAlignment="Top" HorizontalAlignment="Left">
                     <AppBarButton.Icon>
                         <FontIcon FontFamily="ms-appx:///Assets/iconFont.ttf#iconFont" FontSize="30" Margin="0,0,0,0" Glyph="&#57689;"/>
                     </AppBarButton.Icon>
