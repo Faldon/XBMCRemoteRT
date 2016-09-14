@@ -19,18 +19,15 @@ This should be easy and fun!
 * Remember the details you chose while setting up the server? Enter those details here and save the connection.
 * Tap on the connection and you are good to use the remote.
 
-##For Translators##
-Want to use app in your own language? You're in luck. Translations are open source too. All you have to do is follow the link below and start translating. You can improve existing translations, complete incomplete languages and even add new languages. [Click here](https://poeditor.com/join/project?hash=3d2dd59f0d8ac3c1fe895a5651c8b0f2) to start translating.
-
 ##For Developers##
 Developers must follow the steps for users first. This section assumes that you have correctly set up the server and are able to control it using Windows Phone app.
 
 **Get the source code**  
-If you just want to browse through, code is available at [this GitHub repo](https://github.com/akshay2000/XBMCRemoteRT). If you plan on contributing, you should clone the repo and follow along for the environment setup.
+If you just want to browse through, code is available at [this GitHub repo](https://github.com/Faldon/XBMCRemoteRT). If you plan on contributing, you should clone the repo and follow along for the environment setup.
 
 **Set up the IDE**  
-The project was set up using Visual Studio 2013 (Ultimate Edition). However, Windows Phone SDK should work too. You can obtain the latest version of SDK from the [Windows Dev Center](http://dev.windows.com/en-us/develop/download-phone-sdk).  
-After you have installed the SDK, you should be able to open the project from source code you got in previous step.  
+The project was set up using Visual Studio 2015 Community.
+You should be able to open the project from source code you got in previous step.  
 Before building the solution for the first time, NuGet will need to download dependencies. If this doesn't happen automatically, you should explicitly tell NuGet to update all the packages the project depends on.
 
 **Build and run**  
