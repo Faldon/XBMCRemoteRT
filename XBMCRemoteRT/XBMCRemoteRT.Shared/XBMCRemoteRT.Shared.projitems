@@ -117,4 +117,23 @@
       <Generator>MSBuild:Compile</Generator>
     </DesignData>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-de_DE-albumDetails.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-de_DE-allMusic-AlbumsView.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-de_DE-artistDetails.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-de_DE-connections.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-de_DE-musicHub.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-de_DE-nowPlaying.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-de_DE-nowPlayingHub.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-de_DE-settings-remoteControl.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-enum-remoteControl.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-en_US-albumDetails.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-en_US-allMusic-AlbumsView.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-en_US-artistDetails.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-en_US-connections.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-en_US-musicHub.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-en_US-nowPlaying.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-en_US-nowPlayingHub.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-en_US-settings-remoteControl.png" />
+  </ItemGroup>
 </Project>
