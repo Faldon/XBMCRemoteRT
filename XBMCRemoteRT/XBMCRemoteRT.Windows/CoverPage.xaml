@@ -11,10 +11,12 @@
     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     xmlns:controls="using:Coding4Fun.Toolkit.Controls"
     xmlns:userControls="using:XBMCRemoteRT.UserControls"
-    d:DataContext="{d:DesignData Source=DesignData/SamplePlayerState.xaml}"
+    xmlns:converters="using:XBMCRemoteRT.Converters"
     mc:Ignorable="d">
 
     <Page.Resources>
+        <converters:RepeatToBrushConverter x:Key="RepeatToBrushConverter" />
+        <converters:BooleanToBrushConverter x:Key="BooleanToBrushConverter" />
         <x:String x:Key="ChevronGlyph">&#xE26B;</x:String>
     </Page.Resources>
 
@@ -33,13 +35,21 @@
         </Grid.ChildrenTransitions>
 
         <Hub Grid.RowSpan="2"
-             Background="{Binding CurrentPlayerItem.Fanart, Converter={StaticResource StringToImageBrushConverter}}">
+             Background="{Binding Fanart, Converter={StaticResource StringToImageBrushConverter}}">
             <Hub.Header>
+                <StackPanel>
                 <TextBlock x:Name="pageTitle" 
                            Text="{StaticResource AppName}" 
                            Style="{StaticResource HeaderTextBlockStyle}"
                            IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Top"/>
-                <!-- TODO: Server name -->
+                <TextBlock x:Name="ServerNameTextBlock" 
+                           Style="{StaticResource HeaderTextBlockStyle}" 
+                           Text="KalEl Livingroom" 
+                           FontSize="25" 
+                           Margin="0,-5,0,0" 
+                           FontWeight="Bold" 
+                           Foreground="{StaticResource PhoneAccentBrush}"/>
+                </StackPanel>
             </Hub.Header>
 
             <HubSection Margin="0,0,0,0">
@@ -61,47 +71,66 @@
                         </Grid.ColumnDefinitions>
 
                         <Border BorderThickness="0" BorderBrush="DimGray" Background="DimGray" Width="253" Height="253" HorizontalAlignment="Left" VerticalAlignment="Top">
-                            <Image Stretch="UniformToFill" Source="{Binding CurrentPlayerItem.Thumbnail, Converter={StaticResource AuthBitmapConverter}, ConverterParameter=w253}"/>
+                            <Image Stretch="UniformToFill" Source="{Binding Thumbnail, Converter={StaticResource AuthBitmapConverter}, ConverterParameter=w253}"/>
                         </Border>
 
-                        <!-- TODO: Shuffle Repeat-->
-                        <Image Width="50" Height="48" Margin="12,-12,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="UniformToFill" Grid.Column="1">
-                            <Image.Source>
-                                <BitmapImage DecodePixelType="Logical" DecodePixelWidth="50" UriSource="/Assets/Glyphs/shuffle.png"/>
-                            </Image.Source>
-                        </Image>
-                        <Image Width="50" Height="48" Margin="12,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="UniformToFill" Grid.Column="1">
-                            <Image.Source>
-                                <BitmapImage DecodePixelType="Logical" DecodePixelWidth="50" UriSource="/Assets/Glyphs/repeat.png"/>
-                            </Image.Source>
-                        </Image>
+                        <SymbolIcon x:Name="ToggleShuffleButton" 
+                                    Tapped="ToggleShuffleButton_Tapped" 
+                                    Width="50" 
+                                    Height="48" 
+                                    Margin="12,-12,0,0" 
+                                    HorizontalAlignment="Left" 
+                                    VerticalAlignment="Top" 
+                                    Grid.Column="1" 
+                                    Foreground="{Binding Shuffle, Converter={StaticResource BooleanToBrushConverter}}" 
+                                    Symbol="Shuffle" 
+                                    RenderTransformOrigin="0.5,0.5">
+                            <SymbolIcon.RenderTransform>
+                                <CompositeTransform ScaleX="1.6" ScaleY="1.6" Rotation="0"/>
+                            </SymbolIcon.RenderTransform>
+                        </SymbolIcon>
+                        <SymbolIcon x:Name="CycleRepeatButton"
+                                    Tapped="CycleRepeatButton_Tapped"
+                                    Width="50" 
+                                    Height="48" 
+                                    Margin="12,40,0,0" 
+                                    HorizontalAlignment="Left" 
+                                    VerticalAlignment="Top" 
+                                    Grid.Column="1" 
+                                    Foreground="{Binding Repeat, Converter={StaticResource RepeatToBrushConverter}}"
+                                    Symbol="{Binding Repeat, Converter={StaticResource RepeatToSymbolIconConverter}}" 
+                                    RenderTransformOrigin="0.5,0.5" >
+                            <SymbolIcon.RenderTransform>
+                                <CompositeTransform ScaleX="1.6" ScaleY="1.6" Rotation="0"/>
+                            </SymbolIcon.RenderTransform>
+                        </SymbolIcon>
 
                         <StackPanel Grid.Row="1" Margin="0,10">
-                            <TextBlock x:Name="NowPlayingItemNameTextBlock" FontSize="25" Text="{Binding CurrentPlayerItem.Title}"/>
+                            <TextBlock x:Name="NowPlayingItemNameTextBlock" FontSize="25" Text="{Binding Title}"/>
                             <Grid>
-                                <TextBlock x:Name="NowPlayingByNameTextBlock" FontSize="18" Opacity="0.7" Text="{Binding CurrentPlayerItem.Artist, Converter={StaticResource ListToStringConverter}, ConverterParameter=false}"/>
-                                <TextBlock Text="{Binding CurrentPlayerItem.Tagline}" FontSize="18" Opacity="0.7"/>
-                                <TextBlock Text="{Binding CurrentPlayerItem.ShowTitle}" FontSize="18" Opacity="0.7"/>
+                                <TextBlock x:Name="NowPlayingByNameTextBlock" FontSize="18" Opacity="0.7" Text="{Binding Artist, Converter={StaticResource ListToStringConverter}, ConverterParameter=false}"/>
+                                <TextBlock Text="{Binding Tagline}" FontSize="18" Opacity="0.7"/>
+                                <TextBlock Text="{Binding ShowTitle}" FontSize="18" Opacity="0.7"/>
                             </Grid>
                         </StackPanel>
 
-                        <Grid Grid.Row="2" Margin="-10,0">
+                        <Grid Grid.Row="2" Grid.ColumnSpan="2" Margin="-10,0">
                             <StackPanel Orientation="Horizontal">
                                 <controls:RoundButton x:Name="PlayPauseButton"
                                                       Click="PlayPauseButton_Click" >
                                     <controls:RoundButton.Content>
-                                        <SymbolIcon Symbol="{Binding CurrentPlayerProperties.Speed, Converter={StaticResource SpeedToSymbolIconConverter}}" RenderTransformOrigin="0.5,0.5" >
+                                        <SymbolIcon Symbol="{Binding Speed, Converter={StaticResource SpeedToSymbolIconConverter}}" RenderTransformOrigin="0.5,0.5" >
                                             <SymbolIcon.RenderTransform>
                                                 <CompositeTransform ScaleX="1.6" ScaleY="1.6"/>
                                             </SymbolIcon.RenderTransform>
                                         </SymbolIcon>
                                     </controls:RoundButton.Content>
                                 </controls:RoundButton>
-                                <!-- TODO: Size prev and next. Originally were 50x48 -->
+
                                 <controls:RoundButton x:Name="PreviousButton"
                                                       Click="PreviousButton_Click">
                                     <controls:RoundButton.Content>
-                                        <SymbolIcon Symbol="Previous"/>
+                                        <SymbolIcon Symbol="Previous" />
                                     </controls:RoundButton.Content>
                                 </controls:RoundButton>
                                 <controls:RoundButton x:Name="NextButton"
@@ -222,6 +251,9 @@
         <CommandBar>
             <AppBarButton x:Name="ConnectionsAppBarButton" Label="Connections" Icon="Globe" Click="ConnectionsAppBarButton_OnClick"/>
             <AppBarButton x:Name="RemoteAppBarButton" Label="Remote" Icon="Remote" Click="RemoteAppBarButton_OnClick"/>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:Name="AboutAppBarButton" Click="AboutAppBarButton_Click" Label="about" Icon="Help"/>
+            </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.BottomAppBar>
     

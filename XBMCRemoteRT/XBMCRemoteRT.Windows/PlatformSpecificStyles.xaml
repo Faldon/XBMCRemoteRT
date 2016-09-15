@@ -102,6 +102,35 @@
             </Border>
         </Grid>
     </DataTemplate>
+    
+    <Style x:Key="PageTitleTextStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontFamily" Value="Segoe WP"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+    </Style>
+    
+    <Style TargetType="TextBlock" x:Key="PageHeaderTextStyle">
+        <Setter Property="FontSize" Value="40"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontFamily" Value="Segoe WP"/>
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="ParagraphTextStyle" BasedOn="{StaticResource BodyTextBlockStyle}">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="FontFamily" Value="Segoe WP SemiLight"/>
+    </Style>
+    
+    <Style TargetType="TextBlock" x:Key="ParagraphHeaderTextStyle">
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontSize" Value="21"/>
+    </Style>
+    
+    <Style TargetType="RichTextBlock" x:Key="RichParagraphTextStyle" BasedOn="{StaticResource BodyRichTextBlockStyle}" >
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="FontFamily" Value="Segoe WP SemiLight"/>
+    </Style>
     <!-- Full height hubsection style -->
     <Style TargetType="HubSection">
         <Setter Property="HorizontalAlignment" Value="Left"/>

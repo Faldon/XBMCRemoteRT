@@ -15,7 +15,11 @@
     <FileAlignment>512</FileAlignment>
     <SynthesizeLinkMetadata>true</SynthesizeLinkMetadata>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>XBMCRemoteRT.Windows_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>XBMCRemoteRT.Windows_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxBundle>Never</AppxBundle>
+    <PackageCertificateThumbprint>29D9825ACCCC645679BAEFDC9DE43CC255706EA1</PackageCertificateThumbprint>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -103,11 +107,16 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Converters\BooleanToBrushConverter.cs" />
+    <Compile Include="Converters\RepeatToBrushConverter.cs" />
     <Compile Include="CoverPage.xaml.cs">
       <DependentUpon>CoverPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AboutPivot.xaml.cs">
+      <DependentUpon>AboutPivot.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\AddConnectionPage.xaml.cs">
       <DependentUpon>AddConnectionPage.xaml</DependentUpon>
@@ -160,7 +169,9 @@
     <None Include="analytics.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Assets\iconFont.ttf" />
     <None Include="packages.config" />
+    <None Include="XBMCRemoteRT.Windows_StoreKey.pfx" />
     <None Include="XBMCRemoteRT.Windows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -210,10 +221,24 @@
     <Content Include="Assets\Glyphs\stop.png" />
     <Content Include="Assets\Glyphs\transport.repeat.png" />
     <Content Include="Assets\Glyphs\transport.repeatone.png" />
+    <Content Include="Assets\Icons\nowplaying.png" />
     <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\Logo.scale-140.png" />
+    <Content Include="Assets\Logo.scale-180.png" />
+    <Content Include="Assets\Logo.scale-80.png" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SmallLogo.scale-140.png" />
+    <Content Include="Assets\SmallLogo.scale-180.png" />
+    <Content Include="Assets\SmallLogo.scale-80.png" />
+    <Content Include="Assets\SmallLogo.targetsize-16.png" />
+    <Content Include="Assets\SmallLogo.targetsize-256.png" />
+    <Content Include="Assets\SmallLogo.targetsize-32.png" />
+    <Content Include="Assets\SmallLogo.targetsize-48.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
-    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-140.png" />
+    <Content Include="Assets\SplashScreen.scale-180.png" />
+    <Content Include="Assets\StoreLogo.scale-180.png" />
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="ReadMe.Coding4Fun.Toolkit.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -224,6 +249,10 @@
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AboutPivot.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\AddConnectionPage.xaml">
       <SubType>Designer</SubType>
@@ -287,9 +316,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Converters\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Reference Include="Coding4Fun.Toolkit, Version=2.0.8.0, Culture=neutral, PublicKeyToken=c5fd7b72b1a17ce4, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Coding4Fun.Toolkit.Controls.2.1.8\lib\netcore451\Coding4Fun.Toolkit.dll</HintPath>

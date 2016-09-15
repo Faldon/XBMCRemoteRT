@@ -60,8 +60,9 @@ namespace XBMCRemoteRT
             this.navigationHelper.LoadState += navigationHelper_LoadState;
             NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Required;
 
-            if (GlobalVariables.CurrentPlayerState == null)
+            if (GlobalVariables.CurrentPlayerState == null) {
                 GlobalVariables.CurrentPlayerState = new PlayerState();
+            }
             DataContext = GlobalVariables.CurrentPlayerState;
 
             PlayerHelper.RefreshPlayerState().Wait(200);
@@ -108,6 +109,9 @@ namespace XBMCRemoteRT
         {
             navigationHelper.OnNavigatedTo(e);
             RefreshListsIfNull();
+            ServerNameTextBlock.Text = ConnectionManager.CurrentConnection.ConnectionName;
+            Frame.BackStack.Clear();
+            TileHelper.UpdateAllTiles();
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -163,6 +167,25 @@ namespace XBMCRemoteRT
             Frame.Navigate(typeof(AllMoviesPage));
         }
 
+        private async void CycleRepeatButton_Tapped(object sender, TappedRoutedEventArgs e) {
+            string nextRepeat = "off";
+            switch (GlobalVariables.CurrentPlayerState.Repeat) {
+                case "off":
+                    nextRepeat = "all";
+                    break;
+                case "all":
+                    nextRepeat = "one";
+                    break;
+            }
+            await Player.SetRepeat(GlobalVariables.CurrentPlayerState.PlayerType, nextRepeat);
+            await PlayerHelper.RefreshPlayerState();
+        }
+
+        private async void ToggleShuffleButton_Tapped(object sender, TappedRoutedEventArgs e) {
+            await Player.SetShuffle(GlobalVariables.CurrentPlayerState.PlayerType, !GlobalVariables.CurrentPlayerState.Shuffle);
+            await PlayerHelper.RefreshPlayerState();
+        }
+
         private async void PreviousButton_Click(object sender, RoutedEventArgs e)
         {
             await Player.GoTo(GlobalVariables.CurrentPlayerState.PlayerType, GoTo.Previous);
@@ -183,7 +206,11 @@ namespace XBMCRemoteRT
 
         private void ConnectionsAppBarButton_OnClick(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MainPage), true);
+            Frame.Navigate(typeof(MainPage), false);
+        }
+
+        private void AboutAppBarButton_Click(object sender, RoutedEventArgs e) {
+            Frame.Navigate(typeof(AboutPivot));
         }
 
         private void AlbumGridView_ItemClick(object sender, ItemClickEventArgs e)

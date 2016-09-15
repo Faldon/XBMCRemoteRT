@@ -64,8 +64,7 @@
                 <AppBarButton x:Name="AddConnectionAppBarButton" Click="AddConnectionAppBarButton_Click" Label="add server" Icon="Add" />
             </CommandBar.PrimaryCommands>
             <CommandBar.SecondaryCommands>
-                <AppBarButton x:Name="AboutAppBarButton" Click="AboutAppBarButton_Click" Label="about"/>
-                <AppBarButton x:Name="FeedbackAppBarButton" Click="FeedbackAppBarButton_Click" Label="feedback"/>
+                <AppBarButton x:Name="AboutAppBarButton" Click="AboutAppBarButton_Click" Label="about" Icon="Help"/>
             </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.BottomAppBar>

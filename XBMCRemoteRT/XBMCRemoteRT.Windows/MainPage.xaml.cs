@@ -2,24 +2,18 @@
 using Windows.UI.Popups;
 using XBMCRemoteRT.Common;
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using XBMCRemoteRT.Helpers;
-using XBMCRemoteRT.Models;
 using XBMCRemoteRT.Pages;
 using XBMCRemoteRT.RPCWrappers;
 using XBMCRemoteRT.Models.Network;
+using Windows.ApplicationModel.Resources;
+using Windows.System;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
 
@@ -35,6 +29,8 @@ namespace XBMCRemoteRT
 
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
+
+        ResourceLoader loader = new Windows.ApplicationModel.Resources.ResourceLoader();
 
         /// <summary>
         /// This can be changed to a strongly typed view model.
@@ -100,15 +96,39 @@ namespace XBMCRemoteRT
         /// The navigation parameter is available in the LoadState method 
         /// in addition to page state preserved during an earlier session.
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             navigationHelper.OnNavigatedTo(e);
 
-            bool showConnections = e.Parameter as bool? ?? false;
+            if (App.IsExpired()) {
+                var alert = new MessageDialog(loader.GetString("TrialExpired"));
+                alert.Commands.Add(new UICommand(loader.GetString("Buy"), async (cmd) => { await Launcher.LaunchUriAsync(Windows.ApplicationModel.Store.CurrentApp.LinkUri); }));
+                alert.Commands.Add(new UICommand(loader.GetString("Close"), (cmd) => { App.Current.Exit(); }));
+                alert.CancelCommandIndex = 1;
+                await alert.ShowAsync();
+                Frame.BackStack.Clear();
+            }
 
-            LoadConnections();
-            if (!showConnections)
+            await LoadConnections();
+
+            bool isAutoConnectEnabled = (bool)SettingsHelper.GetValue("AutoConnect", true);
+
+            SetPageState(PageStates.Ready);
+            Frame.BackStack.Clear();
+            bool tryAutoLoad = e.Parameter as bool? ?? true;
+            //if (e.Parameter.ToString() != string.Empty)
+            //    tryAutoLoad = (bool)e.Parameter;
+
+            if (e.NavigationMode != NavigationMode.Back && isAutoConnectEnabled && tryAutoLoad) {
                 ConnnectToRecentIp();
+            }
+
+            //bool showConnections = e.Parameter as bool? ?? false;
+
+            //LoadConnections();
+            //if (!showConnections) {
+            //    ConnnectToRecentIp();
+            //}
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -118,7 +138,7 @@ namespace XBMCRemoteRT
 
         #endregion
 
-        private async void LoadConnections()
+        private async Task LoadConnections()
         {
             await App.ConnectionsVM.ReloadConnections();
             DataContext = App.ConnectionsVM;
@@ -203,12 +223,7 @@ namespace XBMCRemoteRT
 
         private void AboutAppBarButton_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
-        }
-
-        private void FeedbackAppBarButton_Click(object sender, RoutedEventArgs e)
-        {
-            throw new NotImplementedException();
+            Frame.Navigate(typeof(AboutPivot));
         }
 
         private void ConnectionItemWrapper_OnRightTapped(object sender, RightTappedRoutedEventArgs e)
