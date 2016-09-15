@@ -582,7 +582,7 @@ Und zudem ist diese App vollständig Open Source. Der Quellcode befindet sich au
     <value>Subnetzmaske</value>
   </data>
   <data name="WOLToggle.Header" xml:space="preserve">
-    <value>Wake on LAN für diesen Server aktivieren</value>
+    <value>Wake on LAN aktivieren</value>
   </data>
   <data name="SearchAppBarButton.Label" xml:space="preserve">
     <value>Suchen</value>
@@ -654,7 +654,7 @@ Und zudem ist diese App vollständig Open Source. Der Quellcode befindet sich au
   <data name="AboutPrivacyPolicyHeader.Text" xml:space="preserve">
     <value>DATENSCHUTZ</value>
   </data>
-  <data name="LinkPrivacyPolicy.Content" xml:space="preserve">
+  <data name="LinkPrivacyPolicy.Text" xml:space="preserve">
     <value>hier</value>
   </data>
 </root>

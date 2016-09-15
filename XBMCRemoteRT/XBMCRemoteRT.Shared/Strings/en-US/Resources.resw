@@ -654,7 +654,7 @@ And to top it all, the app is fully open source. You can view, edit and modify e
   <data name="AboutPrivacyPolicyHeader.Text" xml:space="preserve">
     <value>PRIVACY POLICY</value>
   </data>
-  <data name="LinkPrivacyPolicy.Content" xml:space="preserve">
+  <data name="LinkPrivacyPolicy.Text" xml:space="preserve">
     <value>here</value>
   </data>
 </root>

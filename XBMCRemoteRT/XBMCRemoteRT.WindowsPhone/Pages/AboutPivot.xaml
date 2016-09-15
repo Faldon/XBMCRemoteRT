@@ -66,14 +66,20 @@
                         </RichTextBlock>
 
                         <TextBlock x:Uid="AboutPrivacyPolicyHeader" Text="PRIVACY POLICY" Margin="0,15,0,0" Style="{StaticResource ParagraphHeaderTextStyle}" Pivot.SlideInAnimationGroup="GroupOne"/>
-                        
-                        <RichTextBlock Style="{StaticResource RichParagraphTextStyle}" Margin="0,5,0,0"  Pivot.SlideInAnimationGroup="GroupTwo">
-                            <Paragraph>
-                                <Run x:Uid="AboutPrivacyPolicy" Text="Read our privacy policy"/>
-                                <Run Text=" "/>
-                                <Hyperlink x:Uid="LinkPrivacyPolicy" NavigateUri="https://github.com/Faldon/XBMCRemoteRT/blob/master/PRIVACY%20POLICY.md" Foreground="{StaticResource PhoneAccentBrush}">here</Hyperlink> .
-                            </Paragraph>
-                        </RichTextBlock>
+
+                        <StackPanel Orientation="Horizontal">
+                            <RichTextBlock Style="{StaticResource RichParagraphTextStyle}" Margin="0,5,5,0"  Pivot.SlideInAnimationGroup="GroupThree">
+                                <Paragraph>
+                                    <Run x:Uid="AboutPrivacyPolicy" Text="Read our privacy policy"/>
+                                    <Run Text=" "/>
+                                </Paragraph>
+                            </RichTextBlock>
+                            <HyperlinkButton Foreground="{StaticResource PhoneAccentBrush}" FontSize="20" Pivot.SlideInAnimationGroup="GroupThree" NavigateUri="https://github.com/Faldon/XBMCRemoteRT/blob/master/PRIVACY%20POLICY.md">
+                                <HyperlinkButton.Content>
+                                    <TextBlock x:Uid="LinkPrivacyPolicy" Text="here"/>
+                                </HyperlinkButton.Content>
+                            </HyperlinkButton>
+                        </StackPanel>
 
                         <Button x:Uid="AboutRateApp" Margin="0,20,0,0" BorderThickness="1.5" Height="70" Content="rate app" HorizontalAlignment="Stretch" x:Name="RateApp" Click="RateApp_Click" />
                         
