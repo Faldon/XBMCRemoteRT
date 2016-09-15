@@ -236,6 +236,11 @@ namespace XBMCRemoteRT
             await PlayerHelper.RefreshPlayerState();
         }
 
+        private async void ToggleShuffleButton_Tapped(object sender, TappedRoutedEventArgs e) {
+            await Player.SetShuffle(GlobalVariables.CurrentPlayerState.PlayerType, !GlobalVariables.CurrentPlayerState.Shuffle);
+            await PlayerHelper.RefreshPlayerState();
+        }
+
         private void CurrentPlaylistButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof (NowPlaying));

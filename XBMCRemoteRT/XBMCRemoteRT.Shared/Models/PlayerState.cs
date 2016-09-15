@@ -170,6 +170,19 @@ namespace XBMCRemoteRT.Models
             }
         }
 
+        private bool shuffle;
+        public bool Shuffle
+        {
+            get { return shuffle; }
+            set
+            {
+                if (shuffle != value) {
+                    shuffle = value;
+                    NotifyPropertyChanged("Shuffle");
+                }
+            }
+        }
+
         #endregion
 
         private Players playerType;

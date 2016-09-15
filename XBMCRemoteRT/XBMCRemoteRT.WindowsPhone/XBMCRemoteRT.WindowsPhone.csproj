@@ -183,6 +183,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\BooleanToBrushConverter.cs" />
     <Compile Include="Converters\RepeatToBrushConverter.cs" />
     <Compile Include="CoverPage.xaml.cs">
       <DependentUpon>CoverPage.xaml</DependentUpon>

@@ -55,7 +55,7 @@ namespace XBMCRemoteRT.Helpers
 
         private static async Task RefreshPlayerProperties(Players player)
         {
-            JArray properties = new JArray("time", "totaltime", "speed", "repeat");
+            JArray properties = new JArray("time", "totaltime", "speed", "repeat", "shuffled");
             JObject result = await Player.GetProperties(GlobalVariables.CurrentPlayerState.PlayerType, properties);
 
             if (result != null)
@@ -69,6 +69,8 @@ namespace XBMCRemoteRT.Helpers
                 GlobalVariables.CurrentPlayerState.Speed = (int)result["speed"];
 
                 GlobalVariables.CurrentPlayerState.Repeat = (string)result["repeat"];
+
+                GlobalVariables.CurrentPlayerState.Shuffle = (bool)result["shuffled"];
             }
         }
 
