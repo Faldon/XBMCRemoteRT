@@ -222,7 +222,7 @@ namespace XBMCRemoteRT.Pages
 
         private async void QuitButton_Click(object sender, RoutedEventArgs e)
         {
-            await Applikation.Quit();
+            await Input.ExecuteAction(SystemCommands.Shutdown);
         }
 
         private DispatcherTimer timer;
@@ -308,5 +308,8 @@ namespace XBMCRemoteRT.Pages
             ((this.Resources["HideSendTextBox"]) as Storyboard).Begin();
         }
 
+        private async void EjectButton_Click(object sender, RoutedEventArgs e) {
+            await Input.ExecuteAction(SystemCommands.EjectOpticalDrive);
+        }
     }
 }

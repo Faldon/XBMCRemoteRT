@@ -135,8 +135,25 @@
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0" VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
                 <!--<c4d:RoundButton x:Name="QuitButton" ImageSource="/Assets/Glyphs/power.png" Click="QuitButton_Click" />-->
-                <TextBox x:Name="SendTextBox" KeyUp="SendTextBox_KeyUp" Height="50"/>
+                <TextBox x:Name="SendTextBox" KeyUp="SendTextBox_KeyUp" Grid.Column="1"/>
+                <StackPanel Orientation="Horizontal" Grid.Column="2" HorizontalAlignment="Right">
+                    <controls:RoundButton x:Name="EjectButton" Click="EjectButton_Click" ButtonHeight="50" ButtonWidth="50" Margin="0,0,10,0">
+                        <controls:RoundButton.Content>
+                            <FontIcon FontFamily="ms-appx:///Assets/iconFont.ttf#iconFont" FontSize="15" Glyph="&#57689;"/>
+                        </controls:RoundButton.Content>
+                    </controls:RoundButton>
+                    <controls:RoundButton x:Name="QuitButton" Click="QuitButton_Click" ButtonHeight="50" ButtonWidth="50">
+                        <controls:RoundButton.Content>
+                            <FontIcon FontFamily="ms-appx:///Assets/iconFont.ttf#iconFont" FontSize="15" Glyph="&#57659;"/>
+                        </controls:RoundButton.Content>
+                    </controls:RoundButton>
+                </StackPanel>
             </Grid>
 
             <!--Navigation-->
@@ -161,26 +178,38 @@
                         <CompositeTransform Rotation="270"/>
                     </Button.RenderTransform>
                 </Button>
-                <Button x:Name="EnterButton" Style="{StaticResource EnterButtonStyle}" Width="180" Height="180" Content="X" VerticalAlignment="Center" HorizontalAlignment="Center" Click="EnterButton_Click" />
+                <Button x:Name="EnterButton" Style="{StaticResource EnterButtonStyle}" Width="180" Height="180" Content="X" FontSize="35" VerticalAlignment="Center" HorizontalAlignment="Center" Click="EnterButton_Click" />
 
-                <controls:RoundButton x:Name="GoBackButton" Click="GoBackButton_Click" VerticalAlignment="Bottom" HorizontalAlignment="Left" >
+                <controls:RoundButton x:Name="GoBackButton" Click="GoBackButton_Click" VerticalAlignment="Bottom" HorizontalAlignment="Left">
                     <controls:RoundButton.Content>
-                        <Image Source="/Assets/Glyphs/goback.png"/>
+                        <SymbolIcon Symbol="Undo"  RenderTransformOrigin="0.5,0.5" Margin="-7,0,0,-1">
+                            <SymbolIcon.RenderTransform>
+                                <CompositeTransform ScaleX="1.6" ScaleY="1.6" Rotation="45"/>
+                            </SymbolIcon.RenderTransform>
+                        </SymbolIcon>
                     </controls:RoundButton.Content>
                 </controls:RoundButton>
-                <controls:RoundButton x:Name="OSDButton" Click="OSDButton_Click" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,0,0">
+                <controls:RoundButton x:Name="OSDButton" Click="OSDButton_Click" VerticalAlignment="Top" HorizontalAlignment="Right">
                     <controls:RoundButton.Content>
-                        <Image Source="/Assets/Glyphs/page.png"/>
+                        <SymbolIcon Symbol="Page2" Margin="0,-10,15,10">
+                            <SymbolIcon.RenderTransform>
+                                <CompositeTransform ScaleX="1.6" ScaleY="1.6"/>
+                            </SymbolIcon.RenderTransform>
+                        </SymbolIcon>
                     </controls:RoundButton.Content>
                 </controls:RoundButton>
                 <controls:RoundButton x:Name="MenuButton" Click="MenuButton_Click" VerticalAlignment="Bottom" HorizontalAlignment="Right">
                     <controls:RoundButton.Content>
-                        <Image Source="/Assets/Glyphs/menulines.png"/>
+                        <FontIcon FontFamily="ms-appx:///Assets/iconFont.ttf#iconFont" FontSize="35" Glyph="&#57605;" Margin="0,0,0,-1" />
                     </controls:RoundButton.Content>
                 </controls:RoundButton>
-                <controls:RoundButton x:Name="HomeButton" Click="HomeButton_Click" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,10,0,0">
+                <controls:RoundButton x:Name="HomeButton" Click="HomeButton_Click" VerticalAlignment="Top" HorizontalAlignment="Left">
                     <controls:RoundButton.Content>
-                        <Image Source="/Assets/Glyphs/home.png"/>
+                        <SymbolIcon Symbol="Home" RenderTransformOrigin="0.5,0.5">
+                            <SymbolIcon.RenderTransform>
+                                <CompositeTransform ScaleX="1.6" ScaleY="1.6"/>
+                            </SymbolIcon.RenderTransform>
+                        </SymbolIcon>
                     </controls:RoundButton.Content>
                 </controls:RoundButton>
             </Grid>
@@ -196,17 +225,21 @@
                 </Grid.ColumnDefinitions>
                 <controls:RoundButton x:Name="PreviousButton" Click="PreviousButton_Click" Grid.Column="0" HorizontalAlignment="Center">
                     <controls:RoundButton.Content>
-                        <Image Source="/Assets/Glyphs/appbar.transport.rew.rest.png"/>
+                        <SymbolIcon Symbol="Previous" RenderTransformOrigin="0.5,0.5">
+                            <SymbolIcon.RenderTransform>
+                                <CompositeTransform ScaleX="1.6" ScaleY="1.6"/>
+                            </SymbolIcon.RenderTransform>
+                        </SymbolIcon> 
                     </controls:RoundButton.Content>
                 </controls:RoundButton>
                 <controls:RoundButton x:Name="SpeedDownButton" Click="SpeedDownButton_Click" Grid.Column="1" HorizontalAlignment="Center">
                     <controls:RoundButton.Content>
-                        <Image Source="/Assets/Glyphs/speeddown.png"/>
+                        <FontIcon FontFamily="ms-appx:///Assets/iconFont.ttf#iconFont" FontSize="30" Glyph="&#57769;" Margin="-5,0,0,0"/>
                     </controls:RoundButton.Content>
                 </controls:RoundButton>
                 <controls:RoundButton x:Name="PlayPauseButton" Click="PlayPauseButton_Click" Grid.Column="2" HorizontalAlignment="Center">
                     <controls:RoundButton.Content>
-                        <SymbolIcon Symbol="{Binding CurrentPlayerProperties.Speed, Converter={StaticResource SpeedToSymbolIconConverter}}" RenderTransformOrigin="0.5,0.5" >
+                        <SymbolIcon Symbol="{Binding Speed, Converter={StaticResource SpeedToSymbolIconConverter}}" RenderTransformOrigin="0.5,0.5" >
                             <SymbolIcon.RenderTransform>
                                 <CompositeTransform ScaleX="1.6" ScaleY="1.6"/>
                             </SymbolIcon.RenderTransform>
@@ -215,23 +248,37 @@
                 </controls:RoundButton>
                 <controls:RoundButton x:Name="StopButton" Click="StopButton_Click" Grid.Column="3" HorizontalAlignment="Center">
                     <controls:RoundButton.Content>
-                        <Image Source="/Assets/Glyphs/stop.png"/>
+                        <SymbolIcon Symbol="Stop" RenderTransformOrigin="0.5,0.5">
+                            <SymbolIcon.RenderTransform>
+                                <CompositeTransform ScaleX="1.6" ScaleY="1.6"/>
+                            </SymbolIcon.RenderTransform>
+                        </SymbolIcon>
                     </controls:RoundButton.Content>
                 </controls:RoundButton>
                 <controls:RoundButton x:Name="SpeedUpButton" Click="SpeedUpButton_Click" Grid.Column="4" HorizontalAlignment="Center">
                     <controls:RoundButton.Content>
-                        <Image Source="/Assets/Glyphs/speedup.png"/>
+                        <FontIcon FontFamily="ms-appx:///Assets/iconFont.ttf#iconFont" FontSize="30" Glyph="&#57768;" Margin="5,0,0,0" />
                     </controls:RoundButton.Content>
                 </controls:RoundButton>
                 <controls:RoundButton x:Name="NextButton" Click="NextButton_Click" Grid.Column="5" HorizontalAlignment="Center">
                     <controls:RoundButton.Content>
-                        <Image Source="/Assets/Glyphs/appbar.transport.ff.rest.png"/>
+                        <SymbolIcon Symbol="Next" RenderTransformOrigin="0.5,0.5">
+                            <SymbolIcon.RenderTransform>
+                                <CompositeTransform ScaleX="1.6" ScaleY="1.6"/>
+                            </SymbolIcon.RenderTransform>
+                        </SymbolIcon>
                     </controls:RoundButton.Content>
                 </controls:RoundButton>
             </Grid>
 
             <Grid Grid.Row="3" VerticalAlignment="Center">
                 <Slider x:Name="VolumeSlider" Loaded="VolumeSlider_Loaded" Maximum="100" ValueChanged="VolumeSlider_ValueChanged" />
+                <Grid x:Name="VolumeDownWrapper" Height="60" Width="34" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <SymbolIcon Symbol="Mute" VerticalAlignment="Bottom"/>
+                </Grid>
+                <Grid x:Name="VolumeUpWrapper" Height="60" Width="34" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Right">
+                    <SymbolIcon Symbol="Volume" Margin="0,16,0,0" VerticalAlignment="Bottom"/>
+                </Grid>
             </Grid>
         </Grid>
     </Grid>
