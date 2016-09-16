@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="XBMCRemoteRT.Windows.App">
-      <m2:VisualElements DisplayName="Kodi Assistant" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Advanced remote control for Kodi (formerly known as XBMC)" ForegroundText="light" BackgroundColor="#464646">
+      <m2:VisualElements DisplayName="Kodi Assistant" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Advanced remote control for Kodi (formerly known as XBMC)" ForegroundText="light" BackgroundColor="#d200ff">
         <m2:SplashScreen Image="Assets\SplashScreen.png" />
       </m2:VisualElements>
     </Application>

@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:XBMCRemoteRT">
 
-    <SolidColorBrush x:Key="PhoneAccentBrush">#FF00FF20</SolidColorBrush>
+    <SolidColorBrush x:Key="PhoneAccentBrush">#D200FF</SolidColorBrush>
 
     <DataTemplate x:Name="SemanticZoomHeaderTemplate">
         <Grid Background="LightGray" Margin="0"

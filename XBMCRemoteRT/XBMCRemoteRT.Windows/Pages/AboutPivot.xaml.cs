@@ -22,13 +22,13 @@ namespace XBMCRemoteRT.Pages
 
         public string FeedbackText { get; set; }
 
-        public AboutPivot()
+        /// <summary>
+        /// Gets the view model for this <see cref="Page"/>.
+        /// This can be changed to a strongly typed view model.
+        /// </summary>
+        public ObservableDictionary DefaultViewModel
         {
-            this.InitializeComponent();
-
-            this.navigationHelper = new NavigationHelper(this);
-            this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
-            this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
+            get { return this.defaultViewModel; }
         }
 
         /// <summary>
@@ -39,13 +39,13 @@ namespace XBMCRemoteRT.Pages
             get { return this.navigationHelper; }
         }
 
-        /// <summary>
-        /// Gets the view model for this <see cref="Page"/>.
-        /// This can be changed to a strongly typed view model.
-        /// </summary>
-        public ObservableDictionary DefaultViewModel
+        public AboutPivot()
         {
-            get { return this.defaultViewModel; }
+            this.InitializeComponent();
+
+            this.navigationHelper = new NavigationHelper(this);
+            this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
+            this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
         }
 
         /// <summary>
@@ -92,7 +92,6 @@ namespace XBMCRemoteRT.Pages
         /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            //GlobalVariables.CurrentTracker.SendView("AboutPage");
             this.navigationHelper.OnNavigatedTo(e);
             RegisterForShare();
         }
