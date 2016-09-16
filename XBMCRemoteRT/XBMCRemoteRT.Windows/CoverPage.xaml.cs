@@ -237,5 +237,16 @@ namespace XBMCRemoteRT
         {
             Frame.Navigate(typeof (NowPlaying));
         }
+
+        Slider slider;
+        private void ProgressSlider_Loaded(object sender, RoutedEventArgs e) {
+            slider = sender as Slider;
+            slider.AddHandler(UIElement.PointerReleasedEvent, new PointerEventHandler(slider_PointerReleased), true);
+        }
+
+        void slider_PointerReleased(object sender, PointerRoutedEventArgs e) {
+            var percentage = (slider.Value * 100) / slider.Maximum;
+            Player.Seek(GlobalVariables.CurrentPlayerState.PlayerType, percentage);
+        }
     }
 }
