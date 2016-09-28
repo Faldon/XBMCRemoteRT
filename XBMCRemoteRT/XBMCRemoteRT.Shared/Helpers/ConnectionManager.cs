@@ -97,12 +97,22 @@ namespace XBMCRemoteRT.Helpers
         private static async Task<HttpResponseMessage> ExecuteRequest(string requestData)
         {
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "/jsonrpc?request=");
+            HttpResponseMessage response;
             
             request.Content = new StringContent(requestData, Encoding.UTF8, "application/json");
 
-            if (CurrentConnection.HasCredentials())
+            if (CurrentConnection.HasCredentials()) {
                 request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Convert.ToBase64String(Encoding.UTF8.GetBytes(String.Format("{0}:{1}", CurrentConnection.Username, CurrentConnection.Password))));
-            HttpResponseMessage response = await CurrentConnection.HttpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
+            }
+            try {
+                response = await CurrentConnection.HttpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
+            }
+            catch (WebException e) {
+                response = null;
+            }
+            catch (HttpRequestException reqEx) {
+                response = null;
+            }
             return response;
         }
 
