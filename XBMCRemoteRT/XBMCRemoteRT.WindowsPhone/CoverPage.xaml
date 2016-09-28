@@ -240,7 +240,11 @@
                         </Grid>
 
                         <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Margin="0,6,24,6">
-                            <TextBlock x:Name="NowPlayingItemNameTextBlock" FontSize="25" Text="{Binding Title}" TextTrimming="WordEllipsis"/>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock x:Name="NowPlayingItemTrackTextBlock" FontSize="25" Text="{Binding Track}" Margin="0,0,10,0" />
+                                <TextBlock FontSize="25" Text="-" Margin="0,0,10,0" />
+                                <TextBlock x:Name="NowPlayingItemNameTextBlock" FontSize="25" Text="{Binding Title}" TextTrimming="WordEllipsis"/>
+                            </StackPanel>
                             <Grid>
                                 <TextBlock x:Name="NowPlayingByNameTextBlock" FontSize="18" Opacity="0.7" Text="{Binding Artist, Converter={StaticResource ListToStringConverter}, ConverterParameter=false}" TextTrimming="WordEllipsis"/>
                                 <TextBlock Text="{Binding Tagline}" FontSize="18" Opacity="0.7" TextTrimming="WordEllipsis"/>

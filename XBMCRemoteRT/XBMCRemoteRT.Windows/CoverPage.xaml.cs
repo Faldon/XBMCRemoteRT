@@ -68,7 +68,7 @@ namespace XBMCRemoteRT
             PlayerHelper.RefreshPlayerState().Wait(200);
 
             timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromSeconds(10);
+            timer.Interval = TimeSpan.FromSeconds(1);
             timer.Start();
             timer.Tick += timer_Tick;
         }

@@ -116,19 +116,10 @@ namespace XBMCRemoteRT
             SetPageState(PageStates.Ready);
             Frame.BackStack.Clear();
             bool tryAutoLoad = e.Parameter as bool? ?? true;
-            //if (e.Parameter.ToString() != string.Empty)
-            //    tryAutoLoad = (bool)e.Parameter;
 
             if (e.NavigationMode != NavigationMode.Back && isAutoConnectEnabled && tryAutoLoad) {
                 ConnnectToRecentIp();
             }
-
-            //bool showConnections = e.Parameter as bool? ?? false;
-
-            //LoadConnections();
-            //if (!showConnections) {
-            //    ConnnectToRecentIp();
-            //}
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -175,7 +166,7 @@ namespace XBMCRemoteRT
             }
             else
             {
-                MessageDialog message = new MessageDialog("Could not reach the server.", "Connection Unsuccessful");
+                MessageDialog message = new MessageDialog(loader.GetString("ConnectionUnsuccessful_Content"), loader.GetString("ConnectionUnsuccessful_Title"));
                 await message.ShowAsync();
                 SetPageState(PageStates.Ready);
             }

@@ -657,4 +657,10 @@ Und zudem ist diese App vollständig Open Source. Der Quellcode befindet sich au
   <data name="LinkPrivacyPolicy.Text" xml:space="preserve">
     <value>hier</value>
   </data>
+  <data name="ConnectionUnsuccessful_Content" xml:space="preserve">
+    <value>Server konnte nicht erreicht werden.</value>
+  </data>
+  <data name="ConnectionUnsuccessful_Title" xml:space="preserve">
+    <value>Verbindungsaufbau erfolglos</value>
+  </data>
 </root>

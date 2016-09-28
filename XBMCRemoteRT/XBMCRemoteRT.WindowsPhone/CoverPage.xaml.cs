@@ -41,8 +41,9 @@ namespace XBMCRemoteRT
 
             NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Required;
 
-            if (GlobalVariables.CurrentPlayerState == null)
+            if (GlobalVariables.CurrentPlayerState == null) {
                 GlobalVariables.CurrentPlayerState = new PlayerState();
+            }
             DataContext = GlobalVariables.CurrentPlayerState;
             PlayerHelper.RefreshPlayerState().Wait(200);
             PlayerHelper.StartAutoRefresh(1);

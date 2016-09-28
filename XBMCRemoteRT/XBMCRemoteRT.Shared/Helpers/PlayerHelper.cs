@@ -30,19 +30,16 @@ namespace XBMCRemoteRT.Helpers
 
         private static async Task RefreshPlayerItem(Players player)
         {
-            JArray properties = new JArray("title", "artist", "fanart", "thumbnail", "showtitle", "tagline");
+            JArray properties = new JArray("title", "artist", "fanart", "thumbnail", "showtitle", "tagline", "track");
             JObject result = await Player.GetItem(player, properties);
             JObject item = (JObject)result["item"];
 
             JToken id = null;
 
-            if (item.TryGetValue("id", out id))
-            {
+            if (item.TryGetValue("id", out id)) {
                 GlobalVariables.CurrentPlayerState.ItemId = (int)item["id"];
                 GlobalVariables.CurrentPlayerState.Title = (string)item["title"];
-            }
-            else
-            {
+            } else {
                 GlobalVariables.CurrentPlayerState.ItemId = -1;
                 GlobalVariables.CurrentPlayerState.Title = (string)item["label"];
             }
@@ -51,6 +48,7 @@ namespace XBMCRemoteRT.Helpers
             GlobalVariables.CurrentPlayerState.Thumbnail = (string)item["thumbnail"];
             GlobalVariables.CurrentPlayerState.ShowTitle = (string)item["showtitle"];
             GlobalVariables.CurrentPlayerState.Tagline = (string)item["tagline"];
+            GlobalVariables.CurrentPlayerState.Track = (int)item["track"];
         }
 
         private static async Task RefreshPlayerProperties(Players player)
@@ -58,8 +56,7 @@ namespace XBMCRemoteRT.Helpers
             JArray properties = new JArray("time", "totaltime", "speed", "repeat", "shuffled");
             JObject result = await Player.GetProperties(GlobalVariables.CurrentPlayerState.PlayerType, properties);
 
-            if (result != null)
-            {
+            if (result != null) {
                 JObject totalTime = (JObject)result["totaltime"];
                 GlobalVariables.CurrentPlayerState.TotalTimeSeconds = ((int)totalTime["hours"] * 3600) + ((int)totalTime["minutes"] * 60) + (int)totalTime["seconds"];
 

@@ -116,7 +116,11 @@
                                 <Slider x:Name="ProgressSlider" Minimum="0" Maximum="{Binding TotalTimeSeconds}" Value="{Binding TimeSeconds, Mode=TwoWay}" Loaded="ProgressSlider_Loaded" IsEnabled="{Binding PlayerType, Converter={StaticResource PlayerTypeToBoolConverter}}" Grid.Column="1" VerticalAlignment="Center" Margin="6,0"/>
                                 <TextBlock Text="{Binding Path=Maximum, ElementName=ProgressSlider, Converter={StaticResource SecondsToStringConverter}}" VerticalAlignment="Center" Grid.Column="2" />
                             </Grid>
-                            <TextBlock x:Name="NowPlayingItemNameTextBlock" FontSize="25" Text="{Binding Title}" />
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock x:Name="NowPlayingItemTrackTextBlock" FontSize="25" Text="{Binding Track}" Margin="0,0,10,0" />
+                                <TextBlock FontSize="25" Text="-" Margin="0,0,10,0" />
+                                <TextBlock x:Name="NowPlayingItemNameTextBlock" FontSize="25" Text="{Binding Title}" />
+                            </StackPanel>
                             <Grid>
                                 <TextBlock x:Name="NowPlayingByNameTextBlock" FontSize="18" Opacity="0.7" Text="{Binding Artist, Converter={StaticResource ListToStringConverter}, ConverterParameter=false}"/>
                                 <TextBlock Text="{Binding Tagline}" FontSize="18" Opacity="0.7"/>

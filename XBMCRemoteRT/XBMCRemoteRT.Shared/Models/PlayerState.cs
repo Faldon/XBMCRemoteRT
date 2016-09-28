@@ -96,6 +96,19 @@ namespace XBMCRemoteRT.Models
             }
         }
 
+        private int track;
+        public int Track
+        {
+            get { return track; }
+            set
+            {
+                if (track != value) {
+                    track = value;
+                    NotifyPropertyChanged("Track");
+                }
+            }
+        }
+
         private List<string> artist;
         public List<string> Artist
         {
