@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutMenu.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>à propos de</value>
+  </data>
+  <data name="MoviesHubSectionHeader.Text" xml:space="preserve">
+    <value>FILMS</value>
+  </data>
+  <data name="MoviesHubSectionSubHeader.Text" xml:space="preserve">
+    <value>Voir tous les films</value>
+  </data>
+  <data name="MusicHubSectionHeader.Text" xml:space="preserve">
+    <value>MUSIQUE</value>
+    <comment>Header of music section on cover page</comment>
+  </data>
+  <data name="MusicHubSectionSubHeader.Text" xml:space="preserve">
+    <value>Voir toutes les musiques</value>
+  </data>
+  <data name="NotAvailable" xml:space="preserve">
+    <value>non disponible</value>
+    <comment>When artists aren't available</comment>
+  </data>
+  <data name="NothingIsPlaying" xml:space="preserve">
+    <value>Rien n’est joué</value>
+  </data>
+  <data name="NowPlayingHeader.Text" xml:space="preserve">
+    <value>LECTURE EN COURS</value>
+    <comment>Header of now playing on cover page</comment>
+  </data>
+  <data name="NowPlayingSubHeader.Text" xml:space="preserve">
+    <value>ouvrir la télécommande </value>
+    <comment>Subheader of now playing on cover page</comment>
+  </data>
+  <data name="RemoteMenu.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>télécommande</value>
+    <comment>Appbar menu item</comment>
+  </data>
+  <data name="SettingsMenu.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>paramètres</value>
+  </data>
+  <data name="TVShowsHubSectionHeader.Text" xml:space="preserve">
+    <value>PROGRAMMES TV</value>
+  </data>
+  <data name="TVShowsHubSectionSubHeader.Text" xml:space="preserve">
+    <value>Voir tous les feuilleton</value>
+  </data>
+  <data name="AboutAppBarMenu.Label" xml:space="preserve">
+    <value>à propos de</value>
+  </data>
+  <data name="AddConnectionPageTitle.Text" xml:space="preserve">
+    <value>AJOUTER UNE CONNEXION</value>
+  </data>
+  <data name="AddServer.Label" xml:space="preserve">
+    <value>Ajouter serveur</value>
+  </data>
+  <data name="AlbumPageTitle.Text" xml:space="preserve">
+    <value>CHANSONS</value>
+  </data>
+  <data name="Albums.Header" xml:space="preserve">
+    <value>ALBUMS</value>
+  </data>
+  <data name="AlbumsTitle.Text" xml:space="preserve">
+    <value>ALBUMS</value>
+  </data>
+  <data name="AllMoviesTitle.Text" xml:space="preserve">
+    <value>TOUS</value>
+  </data>
+  <data name="AllMusicPivotTitle.Text" xml:space="preserve">
+    <value>TOUTES LES MUSIQUES</value>
+  </data>
+  <data name="ArtistsTitle.Text" xml:space="preserve">
+    <value>ARTISTES</value>
+  </data>
+  <data name="Bio.Text" xml:space="preserve">
+    <value>BIO</value>
+  </data>
+  <data name="CancelAppBarMenu.Label" xml:space="preserve">
+    <value>annuler</value>
+  </data>
+</root>

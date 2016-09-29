@@ -100,6 +100,7 @@
     <PRIResource Include="$(MSBuildThisFileDirectory)Strings\de-DE\Resources.resw" />
     <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en-US\Resources.resw" />
     <PRIResource Include="$(MSBuildThisFileDirectory)Strings\es\Resources.resw" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\fr\Resources.resw" />
     <PRIResource Include="$(MSBuildThisFileDirectory)Strings\he-IL\Resources.resw" />
     <PRIResource Include="$(MSBuildThisFileDirectory)Strings\hu-HU\Resources.resw" />
     <PRIResource Include="$(MSBuildThisFileDirectory)Strings\pt\Resources.resw" />
@@ -135,5 +136,8 @@
     <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-en_US-nowPlaying.png" />
     <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-en_US-nowPlayingHub.png" />
     <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-en_US-settings-remoteControl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="$(MSBuildThisFileDirectory)MultilingualResources\XBMCRemoteRT.Shared.fr.xlf" />
   </ItemGroup>
 </Project>

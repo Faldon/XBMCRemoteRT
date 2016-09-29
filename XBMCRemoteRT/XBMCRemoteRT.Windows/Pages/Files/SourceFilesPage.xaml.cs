@@ -35,22 +35,10 @@ namespace XBMCRemoteRT.Pages.Files
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
-            //HardwareButtons.BackPressed += OnBackPressed;
 
             DataContext = GlobalVariables.CurrentSource;
             previousDirectories = new ObservableCollection<File>();
         }
-
-        //private void OnBackPressed(object sender, BackPressedEventArgs e)
-        //{
-        //    if (previousDirectories.Count > 1)
-        //    {
-        //        LoadDirectory(new File { Label = "..." });
-        //        e.Handled = true;
-        //    }
-        //    else
-        //        GlobalVariables.CurrentFile = null;
-        //}
 
         /// <summary>
         /// Gets the <see cref="NavigationHelper"/> associated with this <see cref="Page"/>.

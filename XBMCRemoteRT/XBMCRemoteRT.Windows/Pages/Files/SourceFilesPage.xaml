@@ -11,16 +11,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" 
     >
 
-    <!--<Page.Transitions>
-        <TransitionCollection>
-            <NavigationThemeTransition>
-                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
-                    <CommonNavigationTransitionInfo/>
-                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
-            </NavigationThemeTransition>
-        </TransitionCollection>
-    </Page.Transitions>-->
-
     <Page.Resources>
         <DataTemplate x:Key="dtFile">
             <Grid x:Name="ItemWrapper" Margin="0,8" Tapped="FileItemWrapper_Tapped">
