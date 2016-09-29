@@ -46,16 +46,18 @@ namespace XBMCRemoteRT.RPCWrappers
             int playlistId = GetPlaylistId(playlistType);
             JObject parameters = new JObject(new JProperty("playlistid", playlistId));
 
-            if (playlistType == PlayelistType.Audio)
-                parameters.Add(new JProperty("properties", new JArray("album", "artist", "duration")));
-            else if (playlistType == PlayelistType.Video)
+            if (playlistType == PlayelistType.Audio) {
+                parameters.Add(new JProperty("properties", new JArray("album", "artist", "duration", "track")));
+            } else if (playlistType == PlayelistType.Video) {
                 parameters.Add(new JProperty("properties", new JArray("runtime", "showtitle", "season", "title", "artist")));
+            }
 
             JObject res = await ConnectionManager.ExecuteRPCRequest("Playlist.GetItems", parameters);
             JArray itemsListObject = (JArray)res["result"]["items"];
 
-            if (itemsListObject == null)
+            if (itemsListObject == null) {
                 return new List<Object>();
+            }
 
             if (playlistType == PlayelistType.Audio)
             {
@@ -65,6 +67,7 @@ namespace XBMCRemoteRT.RPCWrappers
                     Album = i["album"].ToString(),
                     AlbumArtist = i["artist"].ToObject<List<String>>(),
                     Label = i["label"].ToString(),
+                    Track = i["track"].ToObject<int>(),
                     Duration = i["duration"].ToObject<int>()
                 }).ToList();
 

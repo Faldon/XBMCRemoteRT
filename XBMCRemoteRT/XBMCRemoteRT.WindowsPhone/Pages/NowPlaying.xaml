@@ -87,8 +87,11 @@
                                     </Border>
                                     <StackPanel Orientation="Vertical">
                                         <TextBlock Text="{Binding Path=AlbumArtist[0]}" FontSize="17" Margin="10,-2,0,0" FontWeight="Thin" Opacity="0.5" VerticalAlignment="Center" FontFamily="Global User Interface"/>
-                                        <TextBlock Text="{Binding Label}" FontSize="25" Margin="10,-2,0,0" FontWeight="SemiBold" VerticalAlignment="Center" FontFamily="Global User Interface"/>
-                                        <TextBlock Text="{Binding Album}" FontSize="19" Margin="10,-2,0,0" FontWeight="Normal" Opacity="0.5" VerticalAlignment="Center" FontFamily="Global User Interface"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="{Binding Track}" FontSize="25" Margin="10,-2,10,0" FontWeight="SemiBold" VerticalAlignment="Center" FontFamily="Global User Interface" />
+                                            <TextBlock Text="-" FontSize="25" Margin="0,-2,0,0" FontWeight="SemiBold" VerticalAlignment="Center" FontFamily="Global User Interface"/>
+                                            <TextBlock Text="{Binding Label}" FontSize="25" Margin="10,-2,0,0" FontWeight="SemiBold" VerticalAlignment="Center" FontFamily="Global User Interface"/>
+                                        </StackPanel>
                                     </StackPanel>
                                 </StackPanel>
                             </DataTemplate>
