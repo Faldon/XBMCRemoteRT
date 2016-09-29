@@ -264,6 +264,7 @@
     <Page.BottomAppBar>
         <CommandBar>
             <AppBarButton x:Name="ConnectionsAppBarButton" Label="Connections" Icon="Globe" Click="ConnectionsAppBarButton_OnClick"/>
+            <AppBarButton x:Name="FilesAppBarButton" Label="Files" Icon="Library" Click="FilesAppBarButton_OnClick" />
             <AppBarButton x:Name="RemoteAppBarButton" Label="Remote" Icon="Remote" Click="RemoteAppBarButton_OnClick"/>
             <CommandBar.SecondaryCommands>
                 <AppBarButton x:Name="AboutAppBarButton" Click="AboutAppBarButton_Click" Label="about" Icon="Help"/>

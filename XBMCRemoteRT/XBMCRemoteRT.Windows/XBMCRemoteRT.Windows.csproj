@@ -139,6 +139,12 @@
     <Compile Include="Pages\EditConnectionPage.xaml.cs">
       <DependentUpon>EditConnectionPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Files\AllSourcesPage.xaml.cs">
+      <DependentUpon>AllSourcesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Files\SourceFilesPage.xaml.cs">
+      <DependentUpon>SourceFilesPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\InputPage.xaml.cs">
       <DependentUpon>InputPage.xaml</DependentUpon>
     </Compile>
@@ -279,6 +285,14 @@
     <Page Include="Pages\EditConnectionPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Files\AllSourcesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Files\SourceFilesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\InputPage.xaml">
       <SubType>Designer</SubType>

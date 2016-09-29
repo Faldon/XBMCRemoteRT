@@ -1,16 +1,9 @@
 ﻿using XBMCRemoteRT.Common;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Hub Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=321224
@@ -21,6 +14,7 @@ using XBMCRemoteRT.Models.Common;
 using XBMCRemoteRT.Models.Video;
 using XBMCRemoteRT.Pages;
 using XBMCRemoteRT.Pages.Audio;
+using XBMCRemoteRT.Pages.Files;
 using XBMCRemoteRT.Pages.Video;
 using XBMCRemoteRT.RPCWrappers;
 
@@ -150,6 +144,10 @@ namespace XBMCRemoteRT
         private void RemoteAppBarButton_OnClick(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(InputPage));
+        }
+
+        private void FilesAppBarButton_OnClick(object sender, RoutedEventArgs e) {
+            Frame.Navigate(typeof(AllSourcesPage));
         }
 
         private void MusicHeaderWrapper_Tapped(object sender, TappedRoutedEventArgs e)
