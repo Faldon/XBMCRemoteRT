@@ -20,6 +20,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Common\RelayCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Common\SuspensionManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\AuthBitmapConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\IntegerToVisibilityConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\BooleanToVisibilityConverter2.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\BoolToOpacityConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\CountToOpacityConverter.cs" />

@@ -12,6 +12,7 @@
     <Page.Resources>
         <converters:RepeatToBrushConverter x:Key="RepeatToBrushConverter"/>
         <converters:BooleanToBrushConverter x:Key="BooleanToBrushConverter" />
+        <converters:IntegerToVisibilityConverter x:Key="IntegerToVisibilityConverter" />
         <Style x:Key="HubSectionHeaderSubHeaderStyle" TargetType="TextBlock">
             <Setter Property="Opacity" Value="1"/>
             <Setter Property="FontSize" Value="15"/>
@@ -241,8 +242,8 @@
 
                         <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Margin="0,6,24,6">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock x:Name="NowPlayingItemTrackTextBlock" FontSize="25" Text="{Binding Track}" Margin="0,0,10,0" />
-                                <TextBlock FontSize="25" Text="-" Margin="0,0,10,0" />
+                                <TextBlock x:Name="NowPlayingItemTrackTextBlock" FontSize="25" Text="{Binding Track}" Visibility="{Binding Track, Converter={StaticResource IntegerToVisibilityConverter}}" Margin="0,0,10,0" />
+                                <TextBlock FontSize="25" Text="-" Visibility="{Binding Track, Converter={StaticResource IntegerToVisibilityConverter}}" Margin="0,0,10,0" />
                                 <TextBlock x:Name="NowPlayingItemNameTextBlock" FontSize="25" Text="{Binding Title}" TextTrimming="WordEllipsis"/>
                             </StackPanel>
                             <Grid>

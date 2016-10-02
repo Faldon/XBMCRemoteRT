@@ -8,7 +8,6 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c4f="clr-namespace:Coding4Fun.Toolkit.Controls;assembly=Coding4Fun.Toolkit.Controls"
-    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     xmlns:controls="using:Coding4Fun.Toolkit.Controls"
     xmlns:userControls="using:XBMCRemoteRT.UserControls"
     xmlns:converters="using:XBMCRemoteRT.Converters"
@@ -17,6 +16,7 @@
     <Page.Resources>
         <converters:RepeatToBrushConverter x:Key="RepeatToBrushConverter" />
         <converters:BooleanToBrushConverter x:Key="BooleanToBrushConverter" />
+        <converters:IntegerToVisibilityConverter x:Key="IntegerToVisibilityConverter" />
         <x:String x:Key="ChevronGlyph">&#xE26B;</x:String>
     </Page.Resources>
 
@@ -117,8 +117,8 @@
                                 <TextBlock Text="{Binding Path=Maximum, ElementName=ProgressSlider, Converter={StaticResource SecondsToStringConverter}}" VerticalAlignment="Center" Grid.Column="2" />
                             </Grid>
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock x:Name="NowPlayingItemTrackTextBlock" FontSize="25" Text="{Binding Track}" Margin="0,0,10,0" />
-                                <TextBlock FontSize="25" Text="-" Margin="0,0,10,0" />
+                                <TextBlock x:Name="NowPlayingItemTrackTextBlock" FontSize="25" Text="{Binding Track}" Visibility="{Binding Track, Converter={StaticResource IntegerToVisibilityConverter}}" Margin="0,0,10,0" />
+                                <TextBlock FontSize="25" Text="-" Visibility="{Binding Track, Converter={StaticResource IntegerToVisibilityConverter}}" Margin="0,0,10,0" />
                                 <TextBlock x:Name="NowPlayingItemNameTextBlock" FontSize="25" Text="{Binding Title}" />
                             </StackPanel>
                             <Grid>

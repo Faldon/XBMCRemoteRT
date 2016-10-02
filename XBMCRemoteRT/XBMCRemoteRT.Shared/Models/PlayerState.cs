@@ -223,6 +223,7 @@ namespace XBMCRemoteRT.Models
             TimeSeconds = 0;
             TotalTimeSeconds = 0;
             ItemId = -1;
+            Track = 0;
 
             PlayerType = Players.None;
         }
