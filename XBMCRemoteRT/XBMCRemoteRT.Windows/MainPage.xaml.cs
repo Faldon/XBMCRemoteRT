@@ -30,7 +30,7 @@ namespace XBMCRemoteRT
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
-        ResourceLoader loader = new Windows.ApplicationModel.Resources.ResourceLoader();
+        ResourceLoader loader = new ResourceLoader();
 
         /// <summary>
         /// This can be changed to a strongly typed view model.

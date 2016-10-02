@@ -266,11 +266,11 @@
     </Grid>
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton x:Name="ConnectionsAppBarButton" Label="Connections" Icon="Globe" Click="ConnectionsAppBarButton_OnClick"/>
-            <AppBarButton x:Name="FilesAppBarButton" Label="Files" Icon="Library" Click="FilesAppBarButton_OnClick" />
-            <AppBarButton x:Name="RemoteAppBarButton" Label="Remote" Icon="Remote" Click="RemoteAppBarButton_OnClick"/>
+            <AppBarButton x:Uid="ConnectionsAppBarMenu" x:Name="ConnectionsAppBarButton" Label="Connections" Icon="Globe" Click="ConnectionsAppBarButton_OnClick"/>
+            <AppBarButton x:Uid="FilesAppBarMenu" x:Name="FilesAppBarButton" Label="Files" Icon="Library" Click="FilesAppBarButton_OnClick" />
+            <AppBarButton x:Uid="RemoteAppBarMenu" x:Name="RemoteAppBarButton" Label="Remote" Icon="Remote" Click="RemoteAppBarButton_OnClick"/>
             <CommandBar.SecondaryCommands>
-                <AppBarButton x:Name="AboutAppBarButton" Click="AboutAppBarButton_Click" Label="about" Icon="Help"/>
+                <AppBarButton x:Uid="AboutAppBarMenu" x:Name="AboutAppBarButton" Click="AboutAppBarButton_Click" Label="about" Icon="Help"/>
             </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.BottomAppBar>

@@ -121,8 +121,8 @@
                         AutomationProperties.ItemType="Navigation Button"/>
             <TextBlock Text="{StaticResource AppName}" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,90"/>
-            <TextBlock x:Name="pageTitle" Text="remote" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
+            <TextBlock x:Uid="SettingsRemotePivotHeader" x:Name="pageTitle" Text="REMOTE" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40" FontSize="40"/>
         </Grid>
 
         <!--ContentPanel - place additional content here-->

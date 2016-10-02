@@ -20,6 +20,7 @@ using XBMCRemoteRT.Helpers;
 using XBMCRemoteRT.Models.Audio;
 using XBMCRemoteRT.RPCWrappers;
 using XBMCRemoteRT.Models.Common;
+using Windows.ApplicationModel.Resources;
 
 namespace XBMCRemoteRT.Pages.Audio
 {
@@ -31,6 +32,8 @@ namespace XBMCRemoteRT.Pages.Audio
 
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
+
+        ResourceLoader loader = new ResourceLoader();
 
         private List<Artist> allArtists;
         private List<Album> allAlbums;
@@ -61,6 +64,9 @@ namespace XBMCRemoteRT.Pages.Audio
             this.navigationHelper.LoadState += navigationHelper_LoadState;
             this.navigationHelper.SaveState += navigationHelper_SaveState;
 
+            FilterComboBox.Items.Add(loader.GetString("AllMusicPage_Artists"));
+            FilterComboBox.Items.Add(loader.GetString("AllMusicPage_Albums"));
+            FilterComboBox.Items.Add(loader.GetString("AllMusicPage_Songs"));
             FilterComboBox.SelectedIndex = 0;
         }
 
@@ -140,24 +146,20 @@ namespace XBMCRemoteRT.Pages.Audio
         private void FilterComboBox_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var choice = (sender as ComboBox).SelectedValue.ToString();
-
-            switch (choice.ToLower())
-            {
-                case "artists" :
-                    ArtistsCVSGrid.Visibility = Visibility.Visible;
-                    AlbumsCVSGrid.Visibility = Visibility.Collapsed;
-                    SongsCVSGrid.Visibility = Visibility.Collapsed;
-                    break;
-                case "albums":
-                    AlbumsCVSGrid.Visibility = Visibility.Visible;
-                    ArtistsCVSGrid.Visibility = Visibility.Collapsed;
-                    SongsCVSGrid.Visibility = Visibility.Collapsed;
-                    break;
-                case "songs":
-                    SongsCVSGrid.Visibility = Visibility.Visible;
-                    ArtistsCVSGrid.Visibility = Visibility.Collapsed;
-                    AlbumsCVSGrid.Visibility = Visibility.Collapsed;
-                    break;
+            if(choice == loader.GetString("AllMusicPage_Artists")) {
+                ArtistsCVSGrid.Visibility = Visibility.Visible;
+                AlbumsCVSGrid.Visibility = Visibility.Collapsed;
+                SongsCVSGrid.Visibility = Visibility.Collapsed;
+            }
+            if(choice == loader.GetString("AllMusicPage_Albums")) {
+                AlbumsCVSGrid.Visibility = Visibility.Visible;
+                ArtistsCVSGrid.Visibility = Visibility.Collapsed;
+                SongsCVSGrid.Visibility = Visibility.Collapsed;
+            }
+            if (choice == loader.GetString("AllMusicPage_Songs")) {
+                SongsCVSGrid.Visibility = Visibility.Visible;
+                ArtistsCVSGrid.Visibility = Visibility.Collapsed;
+                AlbumsCVSGrid.Visibility = Visibility.Collapsed;
             }
         }
 

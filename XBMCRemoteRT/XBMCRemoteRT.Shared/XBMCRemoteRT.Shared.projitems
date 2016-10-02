@@ -41,6 +41,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Converters\SpeedToSymbolIconConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\StringToImageBrushConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\StringToWrappableStringConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\ToLowerConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\ToUpperConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\DownloadHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\JsonRequest.cs" />

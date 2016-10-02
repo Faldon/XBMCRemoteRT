@@ -49,8 +49,8 @@
                         AutomationProperties.ItemType="Navigation Button"/>
             <TextBlock Text="{StaticResource AppName}" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,90"/>
-            <TextBlock x:Name="pageTitle" Text="songs" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
+            <TextBlock x:Uid="AlbumPageTitle" x:Name="pageTitle" Text="SONGS" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40" FontSize="40" />
         </Grid>
         <StackPanel x:Name="AlbumInfoStackPanel"
                     Grid.Row="1" Grid.Column="0"

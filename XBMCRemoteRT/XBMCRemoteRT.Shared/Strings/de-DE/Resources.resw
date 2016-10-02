@@ -663,4 +663,16 @@ Und zudem ist diese App vollständig Open Source. Der Quellcode befindet sich au
   <data name="ConnectionUnsuccessful_Title" xml:space="preserve">
     <value>Verbindungsaufbau erfolglos</value>
   </data>
+  <data name="ConnectionsAppBarMenu.Label" xml:space="preserve">
+    <value>Verbindungen</value>
+  </data>
+  <data name="AllMusicPage_Albums" xml:space="preserve">
+    <value>alben</value>
+  </data>
+  <data name="AllMusicPage_Artists" xml:space="preserve">
+    <value>künstler</value>
+  </data>
+  <data name="AllMusicPage_Songs" xml:space="preserve">
+    <value>lieder</value>
+  </data>
 </root>

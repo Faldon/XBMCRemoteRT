@@ -76,7 +76,7 @@
         <Grid Grid.Row="0" Grid.Column="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120"/>
-                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Button x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
                         Style="{StaticResource NavigationBackButtonNormalStyle}"
@@ -92,9 +92,9 @@
                       Margin="0,0,0,34"
                       VerticalAlignment="Bottom"
                       HorizontalAlignment="Left" Style="{StaticResource PlaintextComboBoxStyle}">
-                <x:String>artists</x:String>
+                <!--<x:String>artists</x:String>
                 <x:String>albums</x:String>
-                <x:String>songs</x:String>
+                <x:String>songs</x:String>-->
             </ComboBox>
         </Grid>
         <Grid Grid.RowSpan="2" Grid.Column="1"

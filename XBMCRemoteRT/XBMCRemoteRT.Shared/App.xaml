@@ -23,6 +23,7 @@
                     <converters:RatingConverter x:Key="RatingConverter"/>
                     <converters:StringToImageBrushConverter x:Key="StringToImageBrushConverter"/>
                     <converters:ToUpperConverter x:Key="ToUpperConverter"/>
+                    <converters:ToLowerConverter x:Key="ToLowerConverter"/>
                     <converters:CountToOpacityConverter x:Key="CountToOpacityConverter"/>
                     <converters:AuthBitmapConverter x:Key="AuthBitmapConverter"/>
                     <converters:MacAddressConverter x:Key="MACAddressConverter"/>

@@ -663,4 +663,16 @@ And to top it all, the app is fully open source. You can view, edit and modify e
   <data name="ConnectionUnsuccessful_Title" xml:space="preserve">
     <value>Connection unsuccessful</value>
   </data>
+  <data name="AllMusicPage_Albums" xml:space="preserve">
+    <value>albums</value>
+  </data>
+  <data name="AllMusicPage_Artists" xml:space="preserve">
+    <value>artists</value>
+  </data>
+  <data name="AllMusicPage_Songs" xml:space="preserve">
+    <value>songs</value>
+  </data>
+  <data name="ConnectionsAppBarMenu.Label" xml:space="preserve">
+    <value>connections</value>
+  </data>
 </root>

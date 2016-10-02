@@ -35,8 +35,8 @@
                         AutomationProperties.ItemType="Navigation Button"/>
             <TextBlock Text="{StaticResource AppName}" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,90"/>
-            <TextBlock x:Name="pageTitle" Text="edit connection" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
+            <TextBlock x:Uid="EditConnectionHeader" x:Name="pageTitle" Text="EDIT CONNECTION" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40" FontSize="40"/>
         </Grid>
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="12,15,12,0">
@@ -47,7 +47,7 @@
                     <TextBox x:Name="PortTextBox" InputScope="Number" Header="Port" Text="{Binding Port}"/>
                     <TextBox x:Name="UsernameTextBox" Header="Username" Text="{Binding Username}"/>
                     <TextBox x:Name="PasswordTextBox" Header="Password" Text="{Binding Password}"/>
-                    <TextBlock Text="Note: Usernames and passwords are stored and transmitted in plain text. Make sure you are not using the same password anywhere else" TextWrapping="Wrap" />
+                    <TextBlock x:Uid="WarningNote" Text="Note: Usernames and passwords are stored and transmitted in plain text. Make sure you are not using the same password anywhere else" TextWrapping="Wrap" />
                 </StackPanel>
             </ScrollViewer>
         </Grid>
