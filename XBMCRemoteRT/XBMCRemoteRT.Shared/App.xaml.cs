@@ -37,11 +37,6 @@ namespace XBMCRemoteRT
             this.Suspending += this.OnSuspending;
 
             connectionsVM = new ConnectionsViewModel();
-
-            var culture = new System.Globalization.CultureInfo("de-DE");
-            Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = culture.Name;
-            System.Globalization.CultureInfo.DefaultThreadCurrentCulture = culture;
-            System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = culture;
         }
 
         private static ConnectionsViewModel connectionsVM;
