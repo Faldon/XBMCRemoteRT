@@ -109,376 +109,376 @@
         </trans-unit>
         <trans-unit id="Cast.Header" translate="yes" xml:space="preserve">
           <source>CAST</source>
-          <target state="new">CAST</target>
+          <target state="translated">ACTEURS</target>
         </trans-unit>
         <trans-unit id="CleanAudioLibrary" translate="yes" xml:space="preserve">
           <source>clean audio library</source>
-          <target state="new">clean audio library</target>
+          <target state="translated">nettoyer la audiothèque</target>
         </trans-unit>
         <trans-unit id="CleanVideoLibrary" translate="yes" xml:space="preserve">
           <source>clean video library</source>
-          <target state="new">clean video library</target>
+          <target state="translated">nettoyer la vidéothèque</target>
         </trans-unit>
         <trans-unit id="ConnectionName.Header" translate="yes" xml:space="preserve">
           <source>Name</source>
-          <target state="new">Name</target>
+          <target state="translated">Nom</target>
         </trans-unit>
         <trans-unit id="ConnectionsPageTitle.Text" translate="yes" xml:space="preserve">
           <source>CONNECTIONS</source>
-          <target state="new">CONNECTIONS</target>
+          <target state="translated">CONNEXIONS</target>
         </trans-unit>
         <trans-unit id="Director.Text" translate="yes" xml:space="preserve">
           <source>DIRECTOR</source>
-          <target state="new">DIRECTOR</target>
+          <target state="translated">RÉALISATEUR</target>
         </trans-unit>
         <trans-unit id="DownloadSubtitles" translate="yes" xml:space="preserve">
           <source>download subtitles</source>
-          <target state="new">download subtitles</target>
+          <target state="translated">Télécharger sous-titres</target>
         </trans-unit>
         <trans-unit id="Genre.Text" translate="yes" xml:space="preserve">
           <source>GENRE</source>
-          <target state="new">GENRE</target>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">GENRE</target>
         </trans-unit>
         <trans-unit id="Info.Header" translate="yes" xml:space="preserve">
           <source>INFO</source>
-          <target state="new">INFO</target>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">INFO</target>
         </trans-unit>
         <trans-unit id="Mood.Text" translate="yes" xml:space="preserve">
           <source>MOOD</source>
-          <target state="new">MOOD</target>
+          <target state="translated">HUMEUR</target>
         </trans-unit>
         <trans-unit id="Passowrd.Header" translate="yes" xml:space="preserve">
           <source>Password</source>
-          <target state="new">Password</target>
+          <target state="translated">Mot de passe</target>
         </trans-unit>
         <trans-unit id="PlayAlbumAppBarMenu.Label" translate="yes" xml:space="preserve">
           <source>play album</source>
-          <target state="new">play album</target>
+          <target state="translated">jouer l’album</target>
         </trans-unit>
         <trans-unit id="PlayArtistAppBarMenu.Label" translate="yes" xml:space="preserve">
           <source>play artist</source>
-          <target state="new">play artist</target>
+          <target state="translated">jouer l’artiste</target>
         </trans-unit>
         <trans-unit id="PlayMovieAppBarMenu.Label" translate="yes" xml:space="preserve">
           <source>play movie</source>
-          <target state="new">play movie</target>
+          <target state="translated">jouer le film</target>
         </trans-unit>
         <trans-unit id="Plot.Header" translate="yes" xml:space="preserve">
           <source>PLOT</source>
-          <target state="new">PLOT</target>
+          <target state="translated">ACTE</target>
         </trans-unit>
         <trans-unit id="PlotText.Text" translate="yes" xml:space="preserve">
           <source>PLOT</source>
-          <target state="new">PLOT</target>
+          <target state="translated">ACTE</target>
         </trans-unit>
         <trans-unit id="Port.Header" translate="yes" xml:space="preserve">
           <source>Port</source>
-          <target state="new">Port</target>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">orifices</target>
         </trans-unit>
         <trans-unit id="Rating.Text" translate="yes" xml:space="preserve">
           <source>RATING</source>
-          <target state="new">RATING</target>
+          <target state="translated">COTE</target>
         </trans-unit>
         <trans-unit id="RefreshAppBarMenu.Label" translate="yes" xml:space="preserve">
           <source>refresh</source>
-          <target state="new">refresh</target>
+          <target state="translated">actualiser</target>
         </trans-unit>
         <trans-unit id="RemoteAppBarMenu.Label" translate="yes" xml:space="preserve">
           <source>remote</source>
-          <target state="new">remote</target>
+          <target state="translated">télécommande</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Appbar menu item</note>
         </trans-unit>
         <trans-unit id="Runtime.Text" translate="yes" xml:space="preserve">
           <source>RUNTIME</source>
-          <target state="new">RUNTIME</target>
+          <target state="translated">DURÉE</target>
         </trans-unit>
         <trans-unit id="SaveAppBarMenu.Label" translate="yes" xml:space="preserve">
           <source>save</source>
-          <target state="new">save</target>
+          <target state="translated">enregistrer</target>
         </trans-unit>
         <trans-unit id="SearchAppBarMenu.Lable" translate="yes" xml:space="preserve">
           <source>search</source>
-          <target state="new">search</target>
+          <target state="translated">rechercher</target>
         </trans-unit>
         <trans-unit id="SearchMoviesTitle.Text" translate="yes" xml:space="preserve">
           <source>SEARCH MOVIES</source>
-          <target state="new">SEARCH MOVIES</target>
+          <target state="translated">RECHERCHE FILMS</target>
         </trans-unit>
         <trans-unit id="SearchTVShowsTitle.Text" translate="yes" xml:space="preserve">
           <source>SEARCH TV SHOWS</source>
-          <target state="new">SEARCH TV SHOWS</target>
+          <target state="translated">RECHERCHE FEUILLETON</target>
         </trans-unit>
         <trans-unit id="Seasons.Header" translate="yes" xml:space="preserve">
           <source>SEASONS</source>
-          <target state="new">SEASONS</target>
+          <target state="translated">SAISONS</target>
         </trans-unit>
         <trans-unit id="ServerAddress.Header" translate="yes" xml:space="preserve">
           <source>Server Address</source>
-          <target state="new">Server Address</target>
+          <target state="translated">Adresse du serveur</target>
         </trans-unit>
         <trans-unit id="SettingsAppBarMenu.Label" translate="yes" xml:space="preserve">
           <source>settings</source>
-          <target state="new">settings</target>
+          <target state="translated">paramètres</target>
         </trans-unit>
         <trans-unit id="Songs.Header" translate="yes" xml:space="preserve">
           <source>SONGS</source>
-          <target state="new">SONGS</target>
+          <target state="translated">CHANSONS</target>
         </trans-unit>
         <trans-unit id="SongsTitle.Text" translate="yes" xml:space="preserve">
           <source>SONGS</source>
-          <target state="new">SONGS</target>
+          <target state="translated">CHANSONS</target>
         </trans-unit>
         <trans-unit id="Studio.Text" translate="yes" xml:space="preserve">
           <source>STUDIO</source>
-          <target state="new">STUDIO</target>
+          <target state="translated">STUDIO</target>
         </trans-unit>
         <trans-unit id="SwitchServerAppBarMenu.Label" translate="yes" xml:space="preserve">
           <source>switch server</source>
-          <target state="new">switch server</target>
+          <target state="translated">changer de serveur</target>
         </trans-unit>
         <trans-unit id="Tagline.Text" translate="yes" xml:space="preserve">
           <source>TAGLINE</source>
-          <target state="new">TAGLINE</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">SLOGAN</target>
         </trans-unit>
         <trans-unit id="Track" translate="yes" xml:space="preserve">
           <source>track</source>
-          <target state="new">track</target>
+          <target state="translated">silon</target>
         </trans-unit>
         <trans-unit id="Tracks" translate="yes" xml:space="preserve">
           <source>tracks</source>
-          <target state="new">tracks</target>
+          <target state="translated">silons</target>
         </trans-unit>
         <trans-unit id="TVShowsPageTitle.Text" translate="yes" xml:space="preserve">
           <source>TV SHOWS</source>
-          <target state="new">TV SHOWS</target>
+          <target state="translated">FEULLEITONS</target>
         </trans-unit>
         <trans-unit id="UnwatchedMoviesTitle.Text" translate="yes" xml:space="preserve">
           <source>NEW</source>
-          <target state="new">NEW</target>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Nouveau</target>
         </trans-unit>
         <trans-unit id="UpdateAudioLibrary" translate="yes" xml:space="preserve">
           <source>update audio library</source>
-          <target state="new">update audio library</target>
+          <target state="translated">actualiser l'audiothèque</target>
         </trans-unit>
         <trans-unit id="UpdateVideoLibrary" translate="yes" xml:space="preserve">
           <source>update video library</source>
-          <target state="new">update video library</target>
+          <target state="translated">actualiser la vidéothèque</target>
         </trans-unit>
         <trans-unit id="Username.Header" translate="yes" xml:space="preserve">
           <source>Username</source>
-          <target state="new">Username</target>
+          <target state="translated">Nom d'utilisateur</target>
         </trans-unit>
         <trans-unit id="WarningNote.Text" translate="yes" xml:space="preserve">
           <source>Note: Usernames and passwords are stored and transmitted in plain text. Make sure you are not using the same password anywhere else.</source>
-          <target state="new">Note: Usernames and passwords are stored and transmitted in plain text. Make sure you are not using the same password anywhere else.</target>
+          <target state="translated">Remarque : Noms d’utilisateur et mots de passe sont stockés et transmis en clair. Assurez-vous que vous n’utilisez pas le même mot de passe nulle part ailleurs.</target>
         </trans-unit>
         <trans-unit id="WatchedMovies.Text" translate="yes" xml:space="preserve">
           <source>WATCHED</source>
-          <target state="new">WATCHED</target>
+          <target state="translated">REGARDÉ</target>
         </trans-unit>
         <trans-unit id="Writer.Text" translate="yes" xml:space="preserve">
           <source>WRITER</source>
-          <target state="new">WRITER</target>
+          <target state="translated">AUTEUR</target>
         </trans-unit>
         <trans-unit id="QueueAlbumMenu.Label" translate="yes" xml:space="preserve">
           <source>queue album</source>
-          <target state="new">queue album</target>
+          <target state="translated">embrigader album</target>
         </trans-unit>
         <trans-unit id="QueueArtistMenu.Label" translate="yes" xml:space="preserve">
           <source>queue artist</source>
-          <target state="new">queue artist</target>
+          <target state="translated">embrigader artiste</target>
         </trans-unit>
         <trans-unit id="BackwardComboBox.Header" translate="yes" xml:space="preserve">
           <source>what does backward do</source>
-          <target state="new">what does backward do</target>
+          <target state="translated">que fait-il reculer</target>
         </trans-unit>
         <trans-unit id="ForwardComboBox.Header" translate="yes" xml:space="preserve">
           <source>what does forward do</source>
-          <target state="new">what does forward do</target>
+          <target state="translated">que fait-il avancer</target>
         </trans-unit>
         <trans-unit id="SettingsButtons.Text" translate="yes" xml:space="preserve">
           <source>BUTTONS</source>
-          <target state="new">BUTTONS</target>
+          <target state="translated">BOUTONS</target>
         </trans-unit>
         <trans-unit id="SettingsButtonsSub.Text" translate="yes" xml:space="preserve">
           <source>choose what buttons appear on remote</source>
-          <target state="new">choose what buttons appear on remote</target>
+          <target state="translated">Choisissez ce que les boutons s’affichent sur la télécommande</target>
         </trans-unit>
         <trans-unit id="SettingsSkipJump.Text" translate="yes" xml:space="preserve">
           <source>SKIP + JUMP</source>
-          <target state="new">SKIP + JUMP</target>
+          <target state="translated">SAUTER</target>
         </trans-unit>
         <trans-unit id="CacheNote.Text" translate="yes" xml:space="preserve">
           <source>Kodi Assist saves some images on your phone so you can access your library more quickly. If things like album art and movie posters have changed, you can refresh to see them right away.</source>
-          <target state="new">Kodi Assist saves some images on your phone so you can access your library more quickly. If things like album art and movie posters have changed, you can refresh to see them right away.</target>
+          <target state="translated">Kodi Assist enregistre des images sur votre téléphone pour vous pouvez accéder plus rapidement à votre bibliothèque. Si des choses comme les pochettes et affiches de films ont changé, vous pouvez actualiser les voir tout de suite.</target>
         </trans-unit>
         <trans-unit id="JustAMoment.Text" translate="yes" xml:space="preserve">
           <source>Just a moment...</source>
-          <target state="new">Just a moment...</target>
+          <target state="translated">Un petit instant...</target>
         </trans-unit>
         <trans-unit id="SettingsAutoconnect.Text" translate="yes" xml:space="preserve">
           <source>AUTOCONNECT</source>
-          <target state="new">AUTOCONNECT</target>
+          <target state="translated">CONNEXION AUTOMATIQUE</target>
         </trans-unit>
         <trans-unit id="SettingsAutoconnectToggle.Header" translate="yes" xml:space="preserve">
           <source>connect automatically on startup</source>
-          <target state="new">connect automatically on startup</target>
+          <target state="translated">se connecter automatiquement au démarrage</target>
         </trans-unit>
         <trans-unit id="SettingsConnectionsPivotHeader.Text" translate="yes" xml:space="preserve">
           <source>CONNECTIONS</source>
-          <target state="new">CONNECTIONS</target>
+          <target state="translated">CONNEXIONS</target>
         </trans-unit>
         <trans-unit id="SettingsPageHeader.Text" translate="yes" xml:space="preserve">
           <source>SETTINGS</source>
-          <target state="new">SETTINGS</target>
+          <target state="translated">PARAMÈTRES</target>
         </trans-unit>
         <trans-unit id="SettingsRefreshCacheButton.Content" translate="yes" xml:space="preserve">
           <source>refresh</source>
-          <target state="new">refresh</target>
+          <target state="translated">actualiser</target>
         </trans-unit>
         <trans-unit id="SettingsRemotePivotHeader.Text" translate="yes" xml:space="preserve">
           <source>REMOTE</source>
-          <target state="new">REMOTE</target>
+          <target state="translated">TÉLÉCOMMANDE</target>
         </trans-unit>
         <trans-unit id="SettingsTempFiles.Text" translate="yes" xml:space="preserve">
           <source>TEMPORARY FILES</source>
-          <target state="new">TEMPORARY FILES</target>
+          <target state="translated">FICHIERS TEMPORAIRES</target>
         </trans-unit>
         <trans-unit id="AboutAboutPivotHeader.Text" translate="yes" xml:space="preserve">
           <source>ABOUT</source>
-          <target state="new">ABOUT</target>
+          <target state="translated">À PROPOS DE</target>
         </trans-unit>
         <trans-unit id="AboutAnagh.Text" translate="yes" xml:space="preserve">
           <source>Designs by</source>
-          <target state="new">Designs by</target>
+          <target state="translated">Illustrations de</target>
         </trans-unit>
         <trans-unit id="AboutAppHeader.Text" translate="yes" xml:space="preserve">
           <source>APP</source>
-          <target state="new">APP</target>
+          <target state="translated">APP</target>
         </trans-unit>
         <trans-unit id="AboutAppText.Text" translate="yes" xml:space="preserve">
           <source>The app aims to be a universal platform remote control client for KODI.</source>
-          <target state="new">The app aims to be a universal platform remote control client for KODI.</target>
+          <target state="translated">L’application vise à être un client de contrôle à distance de plate-forme universelle pour KODI.</target>
         </trans-unit>
         <trans-unit id="AboutCodeIn.Text" translate="yes" xml:space="preserve">
           <source>CODE IN</source>
-          <target state="new">CODE IN</target>
+          <target state="translated">CODE IN</target>
         </trans-unit>
         <trans-unit id="AboutCodeInNote.Text" translate="yes" xml:space="preserve">
           <source>Found something that you can fix or make better? Awesome. Create a fork of repository here and start coding. If we like your code, we will definitely accept it. You also get a thank you note!</source>
-          <target state="new">Found something that you can fix or make better? Awesome. Create a fork of repository here and start coding. If we like your code, we will definitely accept it. You also get a thank you note!</target>
+          <target state="translated">Trouvé quelque chose que vous pouvez Difficulté ou faire mieux ? Génial. Créez un fork du référentiel ici et commencer à coder. Si nous aimons votre code, nous l’accepterons certainement. Vous obtenez également une note de remerciement !</target>
         </trans-unit>
         <trans-unit id="AboutContributeNote.Text" translate="yes" xml:space="preserve">
           <source>This app is part of open source project on GitHub. There are a number of ways you can contribute to it.</source>
-          <target state="new">This app is part of open source project on GitHub. There are a number of ways you can contribute to it.</target>
+          <target state="translated">Cette application fait partie du projet open source sur GitHub. Il existe plusieurs façons que vous pouvez contribuer à lui.</target>
         </trans-unit>
         <trans-unit id="AboutContributePivotHeader.Text" translate="yes" xml:space="preserve">
           <source>CONTRIBUTE</source>
-          <target state="new">CONTRIBUTE</target>
+          <target state="translated">CONTRIBUER</target>
         </trans-unit>
         <trans-unit id="AboutCreditsHeader.Text" translate="yes" xml:space="preserve">
           <source>CREDITS</source>
-          <target state="new">CREDITS</target>
+          <target state="translated">CRÉDITS</target>
         </trans-unit>
         <trans-unit id="AboutDeveloperHeader.Text" translate="yes" xml:space="preserve">
           <source>DEVELOPER</source>
-          <target state="new">DEVELOPER</target>
+          <target state="translated">DÉVELOPPEUR</target>
         </trans-unit>
         <trans-unit id="AboutFeedbackPivotHeader.Text" translate="yes" xml:space="preserve">
           <source>FEEDBACK</source>
-          <target state="new">FEEDBACK</target>
+          <target state="translated">COMMENTAIRES</target>
         </trans-unit>
         <trans-unit id="AboutFeedbackTextBox.PlaceholderText" translate="yes" xml:space="preserve">
           <source>Enter your message here.</source>
-          <target state="new">Enter your message here.</target>
+          <target state="translated">Entrez votre message ici.</target>
         </trans-unit>
         <trans-unit id="AboutIconsAndFonts.Text" translate="yes" xml:space="preserve">
           <source>Icons and font symbols from</source>
-          <target state="new">Icons and font symbols from</target>
+          <target state="translated">Icônes et symboles de la police de</target>
         </trans-unit>
         <trans-unit id="AboutProjectHeader.Text" translate="yes" xml:space="preserve">
           <source>PROJECT</source>
-          <target state="new">PROJECT</target>
+          <target state="translated">PROJET</target>
         </trans-unit>
         <trans-unit id="AboutProjectLink.Text" translate="yes" xml:space="preserve">
           <source>view on GitHub</source>
-          <target state="new">view on GitHub</target>
+          <target state="translated">Découvre sur GitHub</target>
         </trans-unit>
         <trans-unit id="AboutProjectText.Text" translate="yes" xml:space="preserve">
           <source>This project is an open source fork of the abandoned original XBMCRemoteRT. You can fork it, file issues or contribute to it.</source>
-          <target state="new">This project is an open source fork of the abandoned original XBMCRemoteRT. You can fork it, file issues or contribute to it.</target>
+          <target state="translated">Ce projet est un fork d’OpenSource de la XBMCRemoteRT original abandonné. Vous pouvez il fourche, déposer des questions ou y contribuer.</target>
         </trans-unit>
         <trans-unit id="AboutReddit.Text" translate="yes" xml:space="preserve">
           <source>Very useful feedback by reddit community at</source>
-          <target state="new">Very useful feedback by reddit community at</target>
+          <target state="translated">Commentaires très utiles par communauté reddit au</target>
         </trans-unit>
         <trans-unit id="AboutReportIssues.Text" translate="yes" xml:space="preserve">
           <source>REPORT ISSUES</source>
-          <target state="new">REPORT ISSUES</target>
+          <target state="translated">RAPPORT DE PROBLÈMES</target>
         </trans-unit>
         <trans-unit id="AboutSendGreetings.Text" translate="yes" xml:space="preserve">
           <source>RECOMMEND APP</source>
-          <target state="new">RECOMMEND APP</target>
+          <target state="translated">RECOMMANDER APPLI</target>
         </trans-unit>
         <trans-unit id="AboutSendGreetingsNote.Text" translate="yes" xml:space="preserve">
           <source>You like the app and find it useful? Know someone whou could also find it useful? Send them a recommendation.</source>
-          <target state="new">You like the app and find it useful? Know someone whou could also find it useful? Send them a recommendation.</target>
+          <target state="translated">Vous aimez l’appli et il utile ? Vous connaissez quelqu'un qui pourrait également trouver utile ? Envoyez-leur une recommandation.</target>
         </trans-unit>
         <trans-unit id="AboutTranslate.Text" translate="yes" xml:space="preserve">
           <source>TRANSLATE</source>
-          <target state="new">TRANSLATE</target>
+          <target state="translated">Traduire</target>
         </trans-unit>
         <trans-unit id="AboutTranslateLink.Text" translate="yes" xml:space="preserve">
           <source>translations on POEditor</source>
-          <target state="new">translations on POEditor</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">traductions sur POEditor</target>
         </trans-unit>
         <trans-unit id="AboutTranslateNote.Text" translate="yes" xml:space="preserve">
           <source>Know multiple languages? Want app in your own language? See something that could be worded better? Translations are open source too.</source>
-          <target state="new">Know multiple languages? Want app in your own language? See something that could be worded better? Translations are open source too.</target>
+          <target state="translated">Connaître plusieurs langues ? Vous voulez app dans votre propre langue ? Voir quelque chose qui pourrait être libellé mieux ? Traductions sont open source aussi.</target>
         </trans-unit>
         <trans-unit id="AboutTranslators.Text" translate="yes" xml:space="preserve">
           <source>All the translators working constantly to make this app possible.</source>
-          <target state="new">All the translators working constantly to make this app possible.</target>
+          <target state="translated">Tous les traducteurs travaillent constamment pour rendre cette application possible.</target>
         </trans-unit>
         <trans-unit id="AboutViewApp.Text" translate="yes" xml:space="preserve">
           <source>Yup, that's the same guy behind our beloved</source>
-          <target state="new">Yup, that's the same guy behind our beloved</target>
+          <target state="translated">Eh oui, c’est le même gars derrière notre bien-aimé</target>
         </trans-unit>
         <trans-unit id="AppsFromDev.Content" translate="yes" xml:space="preserve">
           <source>apps from the developer</source>
-          <target state="new">apps from the developer</target>
+          <target state="translated">Applis par le développeur</target>
         </trans-unit>
         <trans-unit id="AppSupport.Content" translate="yes" xml:space="preserve">
           <source>app support</source>
-          <target state="new">app support</target>
+          <target state="translated">support de l’appli</target>
         </trans-unit>
         <trans-unit id="ReportIssuesLink.Text" translate="yes" xml:space="preserve">
           <source>issues on GitHub</source>
-          <target state="new">issues on GitHub</target>
+          <target state="translated">problèmes sur GitHub</target>
         </trans-unit>
         <trans-unit id="ReportIssuesNote.Text" translate="yes" xml:space="preserve">
           <source>Found something not working? Discovered a bug? Think something could be better? Just create an issue at the URl below and we will get back to you as soon as possible.</source>
-          <target state="new">Found something not working? Discovered a bug? Think something could be better? Just create an issue at the URl below and we will get back to you as soon as possible.</target>
+          <target state="translated">Trouvé quelque chose ne fonctionne ne pas ? A découvert un bug ? Pense que quelque chose pourrait être mieux ? Il suffit de créer un problème à l’adresse ci-dessous et nous vous répondrons dès que possible.</target>
         </trans-unit>
         <trans-unit id="SendFeedbackButton.Content" translate="yes" xml:space="preserve">
           <source>send feedback</source>
-          <target state="new">send feedback</target>
+          <target state="translated">envoyer des commentaires</target>
         </trans-unit>
         <trans-unit id="AboutRateApp.Content" translate="yes" xml:space="preserve">
           <source>rate app</source>
-          <target state="new">rate app</target>
+          <target state="translated">appreciér l'appli</target>
         </trans-unit>
         <trans-unit id="DeleteConnectionMenu.Text" translate="yes" xml:space="preserve">
           <source>delete connection</source>
-          <target state="new">delete connection</target>
+          <target state="translated">supprimer la connexion</target>
         </trans-unit>
         <trans-unit id="EditConnectionMenu.Text" translate="yes" xml:space="preserve">
           <source>edit connection</source>
-          <target state="new">edit connection</target>
+          <target state="translated">modifier la connexion</target>
         </trans-unit>
         <trans-unit id="WakeUpMenu.Text" translate="yes" xml:space="preserve">
           <source>wake up</source>
-          <target state="new">wake up</target>
+          <target state="translated">Réveil</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Context menu used to wake up sleeping computer using wake-on-lan</note>
         </trans-unit>
         <trans-unit id="StoreDescription" translate="yes" xml:space="preserve">
@@ -492,249 +492,248 @@ Features including
 - Much more
 
 And to top it all, the app is fully open source. You can view, edit and modify everything about app right here: https://github.com/Faldon/XBMCRemoteRT</source>
-          <target state="new">Open source Kodi (formerly XBMC) Remote for Windows Phone.
+          <target state="translated">Open source Kodi (anciennement XBMC) télécommande pour Windows Phone.
 
-Features including
-- A beautiful library browser
-- Provides information about artists, albums
-- Detailed and pleasant views for movies and TV shows
-- An easy to use remote control
-- Much more
+ Caractéristiques dont
+- d’un navigateur de bibliothèque belle - fournit des informations sur les artistes, albums
+- détaillé et une vue agréable pour les films et la TV montre
+- une télécommande facile à utiliser
+- beaucoup plus
 
-And to top it all, the app is fully open source. You can view, edit and modify everything about app right here: https://github.com/Faldon/XBMCRemoteRT</target>
+Et pour couronner le tout, l'appli est entièrement open source. Vous pouvez visualiser, éditer et modifier tout ce qui concerne l’application ici : https://github.com/Faldon/XBMCRemoteRT</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Description for Windows Store</note>
         </trans-unit>
         <trans-unit id="BePatient" translate="yes" xml:space="preserve">
           <source>It seems to be taking a while...</source>
-          <target state="new">It seems to be taking a while...</target>
+          <target state="translated">Il semble prendre un certain temps...</target>
         </trans-unit>
         <trans-unit id="ConnectingTo" translate="yes" xml:space="preserve">
           <source>Connecting to {0}...</source>
-          <target state="new">Connecting to {0}...</target>
+          <target state="translated">Connexion à {0}...</target>
           <note from="MultilingualBuild" annotates="source" priority="2">{0} is a placeholder for server name. It will be replaced AUTOMATICALLY. (For example, "Connecting to mediaserver" Please use it in your translations.</note>
         </trans-unit>
         <trans-unit id="IPErrorMessage" translate="yes" xml:space="preserve">
           <source>Please specify an IP address rather than a hostname to use the wake feature.</source>
-          <target state="new">Please specify an IP address rather than a hostname to use the wake feature.</target>
+          <target state="translated">S’il vous plaît spécifier une adresse IP plutôt qu’un nom d’hôte à utiliser la fonction de réveil.</target>
         </trans-unit>
         <trans-unit id="KeepTryingCommand" translate="yes" xml:space="preserve">
           <source>keep trying</source>
-          <target state="new">keep trying</target>
+          <target state="translated">continuer à essayer</target>
         </trans-unit>
         <trans-unit id="StopCommand" translate="yes" xml:space="preserve">
           <source>stop</source>
-          <target state="new">stop</target>
+          <target state="translated">arrêter</target>
         </trans-unit>
         <trans-unit id="WakeUpFailed" translate="yes" xml:space="preserve">
           <source>Wake up failed</source>
-          <target state="new">Wake up failed</target>
+          <target state="translated">Réveiller les ayant échoué</target>
         </trans-unit>
         <trans-unit id="WakeupPatientMessage" translate="yes" xml:space="preserve">
           <source>Wake up usually takes {0} to {1} seconds. We're still trying...</source>
-          <target state="new">Wake up usually takes {0} to {1} seconds. We're still trying...</target>
+          <target state="translated">Se réveillent habituellement prend {0} sur {1} secondes. Nous essayons toujours...</target>
           <note from="MultilingualBuild" annotates="source" priority="2">{0} and {1} are placeholders for lower and upper limit respectively. Sentence automatically becomes "takes 5 to 10" seconds". Use the same placeholders in translations.</note>
         </trans-unit>
         <trans-unit id="WakingUp" translate="yes" xml:space="preserve">
           <source>Waking up...</source>
-          <target state="new">Waking up...</target>
+          <target state="translated">Se réveiller...</target>
         </trans-unit>
         <trans-unit id="WOLConnectionErrorHeader" translate="yes" xml:space="preserve">
           <source>Server still not up</source>
-          <target state="new">Server still not up</target>
+          <target state="translated">Serveur toujours pas jusqu'à</target>
         </trans-unit>
         <trans-unit id="WOLConnectionErrorMessage" translate="yes" xml:space="preserve">
           <source>Seems like Kodi is not ready to respond yet. What would you like to do?</source>
-          <target state="new">Seems like Kodi is not ready to respond yet. What would you like to do?</target>
+          <target state="translated">On dirait Kodi n’est pas prête à répondre encore. Que voulez-vous faire ?</target>
         </trans-unit>
         <trans-unit id="WOLErrorMessage" translate="yes" xml:space="preserve">
           <source>Could not send wake request: broadcast IP not available. Errorcode</source>
-          <target state="new">Could not send wake request: broadcast IP not available. Errorcode</target>
+          <target state="translated">Pas pu envoyer demande de sillage : broadcast IP n’est pas disponible. Code d’erreur</target>
         </trans-unit>
         <trans-unit id="WOLMacNotFoundHeader" translate="yes" xml:space="preserve">
           <source>More information needed</source>
-          <target state="new">More information needed</target>
+          <target state="translated">Plus d’informations nécessaires</target>
         </trans-unit>
         <trans-unit id="WOLMacNotFoundMessage" translate="yes" xml:space="preserve">
           <source>Please specify MAC address and subnet mask to use this feature.</source>
-          <target state="new">Please specify MAC address and subnet mask to use this feature.</target>
+          <target state="translated">S’il vous plaît spécifier MAC adresse et masque de sous-réseau pour utiliser cette fonctionnalité.</target>
         </trans-unit>
         <trans-unit id="PartyModeMenuItem.Label" translate="yes" xml:space="preserve">
           <source>party mode</source>
-          <target state="new">party mode</target>
+          <target state="translated">mode de fête</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Start music in party mode.</note>
         </trans-unit>
         <trans-unit id="ShowCodecInfo" translate="yes" xml:space="preserve">
           <source>show codec info</source>
-          <target state="new">show codec info</target>
+          <target state="translated">afficher les infos de codec</target>
         </trans-unit>
         <trans-unit id="PinToStartAppBarMenu.Label" translate="yes" xml:space="preserve">
           <source>pin to start</source>
-          <target state="new">pin to start</target>
+          <target state="translated">épingler à l’écran d’accueil</target>
         </trans-unit>
         <trans-unit id="BigJumpBackward.Content" translate="yes" xml:space="preserve">
           <source>big jump backward</source>
-          <target state="new">big jump backward</target>
+          <target state="translated">grand saut vers l’arrière</target>
         </trans-unit>
         <trans-unit id="BigJumpForward.Content" translate="yes" xml:space="preserve">
           <source>big jump forward</source>
-          <target state="new">big jump forward</target>
+          <target state="translated">grand saut vers l’avant</target>
         </trans-unit>
         <trans-unit id="DecreaseSpeed.Content" translate="yes" xml:space="preserve">
           <source>decrease speed</source>
-          <target state="new">decrease speed</target>
+          <target state="translated">diminuer la vitesse</target>
         </trans-unit>
         <trans-unit id="EditConnectionHeader.Text" translate="yes" xml:space="preserve">
           <source>EDIT CONNECTION</source>
-          <target state="new">EDIT CONNECTION</target>
+          <target state="translated">MODIFIER LA CONNEXION</target>
         </trans-unit>
         <trans-unit id="IncreaseSpeed.Content" translate="yes" xml:space="preserve">
           <source>increase speed</source>
-          <target state="new">increase speed</target>
+          <target state="translated">augmenter la vitesse</target>
         </trans-unit>
         <trans-unit id="SmallJumpBackward.Content" translate="yes" xml:space="preserve">
           <source>small jump backward</source>
-          <target state="new">small jump backward</target>
+          <target state="translated">petit saut vers l’arrière</target>
         </trans-unit>
         <trans-unit id="SmallJumpForward.Content" translate="yes" xml:space="preserve">
           <source>small jump forward</source>
-          <target state="new">small jump forward</target>
+          <target state="translated">petit saut vers l’avant</target>
         </trans-unit>
         <trans-unit id="WakeOnLan.Text" translate="yes" xml:space="preserve">
           <source>WAKE ON LAN</source>
-          <target state="new">WAKE ON LAN</target>
+          <target state="translated">WAKE ON LAN</target>
         </trans-unit>
         <trans-unit id="AboutAnagh2.Text" translate="yes" xml:space="preserve">
           <source>Yup, that's the same guy behind our beloved</source>
-          <target state="new">Yup, that's the same guy behind our beloved</target>
+          <target state="translated">Eh oui, c’est le même gars derrière notre bien-aimé</target>
         </trans-unit>
         <trans-unit id="AutoWakeToggle.Header" translate="yes" xml:space="preserve">
           <source>Try automatic wakeup</source>
-          <target state="new">Try automatic wakeup</target>
+          <target state="translated">Essayez la réactivation automatique</target>
         </trans-unit>
         <trans-unit id="MAC.Header" translate="yes" xml:space="preserve">
           <source>MAC address</source>
-          <target state="new">MAC address</target>
+          <target state="translated">adresse MAC</target>
         </trans-unit>
         <trans-unit id="SubnetMask.Header" translate="yes" xml:space="preserve">
           <source>Subnet mask</source>
-          <target state="new">Subnet mask</target>
+          <target state="translated">Masque de sous-réseau</target>
         </trans-unit>
         <trans-unit id="WOLToggle.Header" translate="yes" xml:space="preserve">
           <source>Enable wake on LAN for this server</source>
-          <target state="new">Enable wake on LAN for this server</target>
+          <target state="translated">Activer wake on LAN pour ce serveur</target>
         </trans-unit>
         <trans-unit id="SearchAppBarButton.Label" translate="yes" xml:space="preserve">
           <source>search</source>
-          <target state="new">search</target>
+          <target state="translated">rechercher</target>
         </trans-unit>
         <trans-unit id="SettingsAudioAutoSearchToggle.Header" translate="yes" xml:space="preserve">
           <source>go directly to music search</source>
-          <target state="new">go directly to music search</target>
+          <target state="translated">aller directement à la recherche de musique</target>
         </trans-unit>
         <trans-unit id="SettingsAutoSearch.Text" translate="yes" xml:space="preserve">
           <source>SEARCH</source>
-          <target state="new">SEARCH</target>
+          <target state="translated">RECHERCHER</target>
         </trans-unit>
         <trans-unit id="SettingsMiscellaneousPivotHeader.Text" translate="yes" xml:space="preserve">
           <source>MISCELLANEOUS</source>
-          <target state="new">MISCELLANEOUS</target>
+          <target state="translated">DIVERS</target>
         </trans-unit>
         <trans-unit id="LargeLibrary" translate="yes" xml:space="preserve">
           <source>Large library</source>
-          <target state="new">Large library</target>
+          <target state="translated">Grande bibliothèque</target>
         </trans-unit>
         <trans-unit id="LargeMusicMessage" translate="yes" xml:space="preserve">
           <source>There seems to be a lot of music here. Would you like us to help you search for the music instead?</source>
-          <target state="new">There seems to be a lot of music here. Would you like us to help you search for the music instead?</target>
+          <target state="translated">Il semble y avoir beaucoup de musique ici. Vous souhaitez nous pour vous aider à chercher de la musique à la place ?</target>
         </trans-unit>
         <trans-unit id="MessageOptionNo" translate="yes" xml:space="preserve">
           <source>no</source>
-          <target state="new">no</target>
+          <target state="translated">non</target>
         </trans-unit>
         <trans-unit id="MessageOptionYes" translate="yes" xml:space="preserve">
           <source>yes</source>
-          <target state="new">yes</target>
+          <target state="translated">oui</target>
         </trans-unit>
         <trans-unit id="QueueMovieMenu.Label" translate="yes" xml:space="preserve">
           <source>queue movie</source>
-          <target state="new">queue movie</target>
+          <target state="translated">embrigader film</target>
         </trans-unit>
         <trans-unit id="SettingsVibration.Text" translate="yes" xml:space="preserve">
           <source>VIBRATION</source>
-          <target state="new">VIBRATION</target>
+          <target state="translated">VIBRATION</target>
         </trans-unit>
         <trans-unit id="SettingsVibrationToggle.Header" translate="yes" xml:space="preserve">
           <source>vibrate while pressing buttons</source>
-          <target state="new">vibrate while pressing buttons</target>
+          <target state="translated">vibrer tout en appuyant sur les boutons</target>
         </trans-unit>
         <trans-unit id="AboutShareLink.Text" translate="yes" xml:space="preserve">
           <source>share me</source>
-          <target state="new">share me</target>
+          <target state="translated">partage moi</target>
         </trans-unit>
         <trans-unit id="ShutDown" translate="yes" xml:space="preserve">
           <source>shutdown</source>
-          <target state="new">shutdown</target>
+          <target state="translated">arrêt</target>
         </trans-unit>
         <trans-unit id="Suspend" translate="yes" xml:space="preserve">
           <source>sleep</source>
-          <target state="new">sleep</target>
+          <target state="translated">veille</target>
         </trans-unit>
         <trans-unit id="Buy" translate="yes" xml:space="preserve">
           <source>buy</source>
-          <target state="new">buy</target>
+          <target state="translated">acheter</target>
         </trans-unit>
         <trans-unit id="Close" translate="yes" xml:space="preserve">
           <source>close</source>
-          <target state="new">close</target>
+          <target state="translated">fermer</target>
         </trans-unit>
         <trans-unit id="TrialExpired" translate="yes" xml:space="preserve">
           <source>The trial period has expired. Please consider buying the app, if you found it useful.</source>
-          <target state="new">The trial period has expired. Please consider buying the app, if you found it useful.</target>
+          <target state="translated">La période d’essai a expiré. S’il vous plaît envisager d’acheter l’application, si vous l’avez trouvé utile.</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Message for when the trial period has expired</note>
         </trans-unit>
         <trans-unit id="AboutAkshay.Text" translate="yes" xml:space="preserve">
           <source>Original developer</source>
-          <target state="new">Original developer</target>
+          <target state="translated">Développeur initial</target>
         </trans-unit>
         <trans-unit id="BuyAppBarMenu.Label" translate="yes" xml:space="preserve">
           <source>buy</source>
-          <target state="new">buy</target>
+          <target state="translated">acheter</target>
         </trans-unit>
         <trans-unit id="FilesAppBarMenu.Label" translate="yes" xml:space="preserve">
           <source>files</source>
-          <target state="new">files</target>
+          <target state="translated">fichiers</target>
         </trans-unit>
         <trans-unit id="MusicTitle.Text" translate="yes" xml:space="preserve">
           <source>MUSIC</source>
-          <target state="new">MUSIC</target>
+          <target state="translated">MUSIQUE</target>
         </trans-unit>
         <trans-unit id="SourcesPageTitle.Text" translate="yes" xml:space="preserve">
           <source>MEDIA SOURCES</source>
-          <target state="new">MEDIA SOURCES</target>
+          <target state="translated">SOURCES DE MÉDIAS</target>
         </trans-unit>
         <trans-unit id="VideosTitle.Text" translate="yes" xml:space="preserve">
           <source>VIDEOS</source>
-          <target state="new">VIDEOS</target>
+          <target state="translated">VIDÉOS</target>
         </trans-unit>
         <trans-unit id="AboutPrivacyPolicy.Text" translate="yes" xml:space="preserve">
           <source>Read our privacy policy</source>
-          <target state="new">Read our privacy policy</target>
+          <target state="translated">Lire notre déclaration de confidentialité</target>
         </trans-unit>
         <trans-unit id="AboutPrivacyPolicyHeader.Text" translate="yes" xml:space="preserve">
           <source>PRIVACY POLICY</source>
-          <target state="new">PRIVACY POLICY</target>
+          <target state="translated">POLITIQUE DE CONFIDENTIALITÉ</target>
         </trans-unit>
         <trans-unit id="LinkPrivacyPolicy.Text" translate="yes" xml:space="preserve">
           <source>here</source>
-          <target state="new">here</target>
+          <target state="translated">ici</target>
         </trans-unit>
         <trans-unit id="ConnectionUnsuccessful_Content" translate="yes" xml:space="preserve">
           <source>Could not reach server.</source>
-          <target state="new">Could not reach server.</target>
+          <target state="translated">Pouvait pas atteindre le serveur.</target>
         </trans-unit>
         <trans-unit id="ConnectionUnsuccessful_Title" translate="yes" xml:space="preserve">
           <source>Connection unsuccessful</source>
-          <target state="new">Connection unsuccessful</target>
+          <target state="translated">Échec de connexion</target>
         </trans-unit>
       </group>
     </body>

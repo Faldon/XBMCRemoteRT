@@ -89,4 +89,733 @@
   <data name="CancelAppBarMenu.Label" xml:space="preserve">
     <value>annuler</value>
   </data>
+  <data name="AboutMenu.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+          
+          <value>à propos de</value>
+        </data>
+        <data name="MoviesHubSectionHeader.Text" xml:space="preserve">
+          
+          <value>FILMS</value>
+        </data>
+        <data name="MoviesHubSectionSubHeader.Text" xml:space="preserve">
+          
+          <value>Voir tous les films</value>
+        </data>
+        <data name="MusicHubSectionHeader.Text" xml:space="preserve">
+          
+          <value>MUSIQUE</value>
+          <comment>Header of music section on cover page</comment>
+        </data>
+        <data name="MusicHubSectionSubHeader.Text" xml:space="preserve">
+          
+          <value>Voir toutes les musiques</value>
+        </data>
+        <data name="NotAvailable" xml:space="preserve">
+          
+          <value>non disponible</value>
+          <comment>When artists aren't available</comment>
+        </data>
+        <data name="NothingIsPlaying" xml:space="preserve">
+          
+          <value>Rien n’est joué</value>
+        </data>
+        <data name="NowPlayingHeader.Text" xml:space="preserve">
+          
+          <value>LECTURE EN COURS</value>
+          <comment>Header of now playing on cover page</comment>
+        </data>
+        <data name="NowPlayingSubHeader.Text" xml:space="preserve">
+          
+          <value>ouvrir la télécommande </value>
+          <comment>Subheader of now playing on cover page</comment>
+        </data>
+        <data name="RemoteMenu.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+          
+          <value>télécommande</value>
+          <comment>Appbar menu item</comment>
+        </data>
+        <data name="SettingsMenu.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+          
+          <value>paramètres</value>
+        </data>
+        <data name="TVShowsHubSectionHeader.Text" xml:space="preserve">
+          
+          <value>PROGRAMMES TV</value>
+        </data>
+        <data name="TVShowsHubSectionSubHeader.Text" xml:space="preserve">
+          
+          <value>Voir tous les feuilleton</value>
+        </data>
+        <data name="AboutAppBarMenu.Label" xml:space="preserve">
+          
+          <value>à propos de</value>
+        </data>
+        <data name="AddConnectionPageTitle.Text" xml:space="preserve">
+          
+          <value>AJOUTER UNE CONNEXION</value>
+        </data>
+        <data name="AddServer.Label" xml:space="preserve">
+          
+          <value>Ajouter serveur</value>
+        </data>
+        <data name="AlbumPageTitle.Text" xml:space="preserve">
+          
+          <value>CHANSONS</value>
+        </data>
+        <data name="Albums.Header" xml:space="preserve">
+          
+          <value>ALBUMS</value>
+        </data>
+        <data name="AlbumsTitle.Text" xml:space="preserve">
+          
+          <value>ALBUMS</value>
+        </data>
+        <data name="AllMoviesTitle.Text" xml:space="preserve">
+          
+          <value>TOUS</value>
+        </data>
+        <data name="AllMusicPivotTitle.Text" xml:space="preserve">
+          
+          <value>TOUTES LES MUSIQUES</value>
+        </data>
+        <data name="ArtistsTitle.Text" xml:space="preserve">
+          
+          <value>ARTISTES</value>
+        </data>
+        <data name="Bio.Text" xml:space="preserve">
+          
+          <value>BIO</value>
+        </data>
+        <data name="CancelAppBarMenu.Label" xml:space="preserve">
+          
+          <value>annuler</value>
+        </data>
+        <data name="Cast.Header" xml:space="preserve">
+          
+          <value>ACTEURS</value>
+        </data>
+        <data name="CleanAudioLibrary" xml:space="preserve">
+          
+          <value>nettoyer la audiothèque</value>
+        </data>
+        <data name="CleanVideoLibrary" xml:space="preserve">
+          
+          <value>nettoyer la vidéothèque</value>
+        </data>
+        <data name="ConnectionName.Header" xml:space="preserve">
+          
+          <value>Nom</value>
+        </data>
+        <data name="ConnectionsPageTitle.Text" xml:space="preserve">
+          
+          <value>CONNEXIONS</value>
+        </data>
+        <data name="Director.Text" xml:space="preserve">
+          
+          <value>RÉALISATEUR</value>
+        </data>
+        <data name="DownloadSubtitles" xml:space="preserve">
+          
+          <value>Télécharger sous-titres</value>
+        </data>
+        <data name="Genre.Text" xml:space="preserve">
+          
+          <value>GENRE</value>
+        </data>
+        <data name="Info.Header" xml:space="preserve">
+          
+          <value>INFO</value>
+        </data>
+        <data name="Mood.Text" xml:space="preserve">
+          
+          <value>HUMEUR</value>
+        </data>
+        <data name="Passowrd.Header" xml:space="preserve">
+          
+          <value>Mot de passe</value>
+        </data>
+        <data name="PlayAlbumAppBarMenu.Label" xml:space="preserve">
+          
+          <value>jouer l’album</value>
+        </data>
+        <data name="PlayArtistAppBarMenu.Label" xml:space="preserve">
+          
+          <value>jouer l’artiste</value>
+        </data>
+        <data name="PlayMovieAppBarMenu.Label" xml:space="preserve">
+          
+          <value>jouer le film</value>
+        </data>
+        <data name="Plot.Header" xml:space="preserve">
+          
+          <value>ACTE</value>
+        </data>
+        <data name="PlotText.Text" xml:space="preserve">
+          
+          <value>ACTE</value>
+        </data>
+        <data name="Port.Header" xml:space="preserve">
+          
+          <value>orifices</value>
+        </data>
+        <data name="Rating.Text" xml:space="preserve">
+          
+          <value>COTE</value>
+        </data>
+        <data name="RefreshAppBarMenu.Label" xml:space="preserve">
+          
+          <value>actualiser</value>
+        </data>
+        <data name="RemoteAppBarMenu.Label" xml:space="preserve">
+          
+          <value>télécommande</value>
+          <comment>Appbar menu item</comment>
+        </data>
+        <data name="Runtime.Text" xml:space="preserve">
+          
+          <value>DURÉE</value>
+        </data>
+        <data name="SaveAppBarMenu.Label" xml:space="preserve">
+          
+          <value>enregistrer</value>
+        </data>
+        <data name="SearchAppBarMenu.Lable" xml:space="preserve">
+          
+          <value>rechercher</value>
+        </data>
+        <data name="SearchMoviesTitle.Text" xml:space="preserve">
+          
+          <value>RECHERCHE FILMS</value>
+        </data>
+        <data name="SearchTVShowsTitle.Text" xml:space="preserve">
+          
+          <value>RECHERCHE FEUILLETON</value>
+        </data>
+        <data name="Seasons.Header" xml:space="preserve">
+          
+          <value>SAISONS</value>
+        </data>
+        <data name="ServerAddress.Header" xml:space="preserve">
+          
+          <value>Adresse du serveur</value>
+        </data>
+        <data name="SettingsAppBarMenu.Label" xml:space="preserve">
+          
+          <value>paramètres</value>
+        </data>
+        <data name="Songs.Header" xml:space="preserve">
+          
+          <value>CHANSONS</value>
+        </data>
+        <data name="SongsTitle.Text" xml:space="preserve">
+          
+          <value>CHANSONS</value>
+        </data>
+        <data name="Studio.Text" xml:space="preserve">
+          
+          <value>STUDIO</value>
+        </data>
+        <data name="SwitchServerAppBarMenu.Label" xml:space="preserve">
+          
+          <value>changer de serveur</value>
+        </data>
+        <data name="Tagline.Text" xml:space="preserve">
+          
+          <value>SLOGAN</value>
+        </data>
+        <data name="Track" xml:space="preserve">
+          
+          <value>silon</value>
+        </data>
+        <data name="Tracks" xml:space="preserve">
+          
+          <value>silons</value>
+        </data>
+        <data name="TVShowsPageTitle.Text" xml:space="preserve">
+          
+          <value>FEULLEITONS</value>
+        </data>
+        <data name="UnwatchedMoviesTitle.Text" xml:space="preserve">
+          
+          <value>Nouveau</value>
+        </data>
+        <data name="UpdateAudioLibrary" xml:space="preserve">
+          
+          <value>actualiser l'audiothèque</value>
+        </data>
+        <data name="UpdateVideoLibrary" xml:space="preserve">
+          
+          <value>actualiser la vidéothèque</value>
+        </data>
+        <data name="Username.Header" xml:space="preserve">
+          
+          <value>Nom d'utilisateur</value>
+        </data>
+        <data name="WarningNote.Text" xml:space="preserve">
+          
+          <value>Remarque : Noms d’utilisateur et mots de passe sont stockés et transmis en clair. Assurez-vous que vous n’utilisez pas le même mot de passe nulle part ailleurs.</value>
+        </data>
+        <data name="WatchedMovies.Text" xml:space="preserve">
+          
+          <value>REGARDÉ</value>
+        </data>
+        <data name="Writer.Text" xml:space="preserve">
+          
+          <value>AUTEUR</value>
+        </data>
+        <data name="QueueAlbumMenu.Label" xml:space="preserve">
+          
+          <value>embrigader album</value>
+        </data>
+        <data name="QueueArtistMenu.Label" xml:space="preserve">
+          
+          <value>embrigader artiste</value>
+        </data>
+        <data name="BackwardComboBox.Header" xml:space="preserve">
+          
+          <value>que fait-il reculer</value>
+        </data>
+        <data name="ForwardComboBox.Header" xml:space="preserve">
+          
+          <value>que fait-il avancer</value>
+        </data>
+        <data name="SettingsButtons.Text" xml:space="preserve">
+          
+          <value>BOUTONS</value>
+        </data>
+        <data name="SettingsButtonsSub.Text" xml:space="preserve">
+          
+          <value>Choisissez ce que les boutons s’affichent sur la télécommande</value>
+        </data>
+        <data name="SettingsSkipJump.Text" xml:space="preserve">
+          
+          <value>SAUTER</value>
+        </data>
+        <data name="CacheNote.Text" xml:space="preserve">
+          
+          <value>Kodi Assist enregistre des images sur votre téléphone pour vous pouvez accéder plus rapidement à votre bibliothèque. Si des choses comme les pochettes et affiches de films ont changé, vous pouvez actualiser les voir tout de suite.</value>
+        </data>
+        <data name="JustAMoment.Text" xml:space="preserve">
+          
+          <value>Un petit instant...</value>
+        </data>
+        <data name="SettingsAutoconnect.Text" xml:space="preserve">
+          
+          <value>CONNEXION AUTOMATIQUE</value>
+        </data>
+        <data name="SettingsAutoconnectToggle.Header" xml:space="preserve">
+          
+          <value>se connecter automatiquement au démarrage</value>
+        </data>
+        <data name="SettingsConnectionsPivotHeader.Text" xml:space="preserve">
+          
+          <value>CONNEXIONS</value>
+        </data>
+        <data name="SettingsPageHeader.Text" xml:space="preserve">
+          
+          <value>PARAMÈTRES</value>
+        </data>
+        <data name="SettingsRefreshCacheButton.Content" xml:space="preserve">
+          
+          <value>actualiser</value>
+        </data>
+        <data name="SettingsRemotePivotHeader.Text" xml:space="preserve">
+          
+          <value>TÉLÉCOMMANDE</value>
+        </data>
+        <data name="SettingsTempFiles.Text" xml:space="preserve">
+          
+          <value>FICHIERS TEMPORAIRES</value>
+        </data>
+        <data name="AboutAboutPivotHeader.Text" xml:space="preserve">
+          
+          <value>À PROPOS DE</value>
+        </data>
+        <data name="AboutAnagh.Text" xml:space="preserve">
+          
+          <value>Illustrations de</value>
+        </data>
+        <data name="AboutAppHeader.Text" xml:space="preserve">
+          
+          <value>APP</value>
+        </data>
+        <data name="AboutAppText.Text" xml:space="preserve">
+          
+          <value>L’application vise à être un client de contrôle à distance de plate-forme universelle pour KODI.</value>
+        </data>
+        <data name="AboutCodeIn.Text" xml:space="preserve">
+          
+          <value>CODE IN</value>
+        </data>
+        <data name="AboutCodeInNote.Text" xml:space="preserve">
+          
+          <value>Trouvé quelque chose que vous pouvez Difficulté ou faire mieux ? Génial. Créez un fork du référentiel ici et commencer à coder. Si nous aimons votre code, nous l’accepterons certainement. Vous obtenez également une note de remerciement !</value>
+        </data>
+        <data name="AboutContributeNote.Text" xml:space="preserve">
+          
+          <value>Cette application fait partie du projet open source sur GitHub. Il existe plusieurs façons que vous pouvez contribuer à lui.</value>
+        </data>
+        <data name="AboutContributePivotHeader.Text" xml:space="preserve">
+          
+          <value>CONTRIBUER</value>
+        </data>
+        <data name="AboutCreditsHeader.Text" xml:space="preserve">
+          
+          <value>CRÉDITS</value>
+        </data>
+        <data name="AboutDeveloperHeader.Text" xml:space="preserve">
+          
+          <value>DÉVELOPPEUR</value>
+        </data>
+        <data name="AboutFeedbackPivotHeader.Text" xml:space="preserve">
+          
+          <value>COMMENTAIRES</value>
+        </data>
+        <data name="AboutFeedbackTextBox.PlaceholderText" xml:space="preserve">
+          
+          <value>Entrez votre message ici.</value>
+        </data>
+        <data name="AboutIconsAndFonts.Text" xml:space="preserve">
+          
+          <value>Icônes et symboles de la police de</value>
+        </data>
+        <data name="AboutProjectHeader.Text" xml:space="preserve">
+          
+          <value>PROJET</value>
+        </data>
+        <data name="AboutProjectLink.Text" xml:space="preserve">
+          
+          <value>Découvre sur GitHub</value>
+        </data>
+        <data name="AboutProjectText.Text" xml:space="preserve">
+          
+          <value>Ce projet est un fork d’OpenSource de la XBMCRemoteRT original abandonné. Vous pouvez il fourche, déposer des questions ou y contribuer.</value>
+        </data>
+        <data name="AboutReddit.Text" xml:space="preserve">
+          
+          <value>Commentaires très utiles par communauté reddit au</value>
+        </data>
+        <data name="AboutReportIssues.Text" xml:space="preserve">
+          
+          <value>RAPPORT DE PROBLÈMES</value>
+        </data>
+        <data name="AboutSendGreetings.Text" xml:space="preserve">
+          
+          <value>RECOMMANDER APPLI</value>
+        </data>
+        <data name="AboutSendGreetingsNote.Text" xml:space="preserve">
+          
+          <value>Vous aimez l’appli et il utile ? Vous connaissez quelqu'un qui pourrait également trouver utile ? Envoyez-leur une recommandation.</value>
+        </data>
+        <data name="AboutTranslate.Text" xml:space="preserve">
+          
+          <value>Traduire</value>
+        </data>
+        <data name="AboutTranslateLink.Text" xml:space="preserve">
+          
+          <value>traductions sur POEditor</value>
+        </data>
+        <data name="AboutTranslateNote.Text" xml:space="preserve">
+          
+          <value>Connaître plusieurs langues ? Vous voulez app dans votre propre langue ? Voir quelque chose qui pourrait être libellé mieux ? Traductions sont open source aussi.</value>
+        </data>
+        <data name="AboutTranslators.Text" xml:space="preserve">
+          
+          <value>Tous les traducteurs travaillent constamment pour rendre cette application possible.</value>
+        </data>
+        <data name="AboutViewApp.Text" xml:space="preserve">
+          
+          <value>Eh oui, c’est le même gars derrière notre bien-aimé</value>
+        </data>
+        <data name="AppsFromDev.Content" xml:space="preserve">
+          
+          <value>Applis par le développeur</value>
+        </data>
+        <data name="AppSupport.Content" xml:space="preserve">
+          
+          <value>support de l’appli</value>
+        </data>
+        <data name="ReportIssuesLink.Text" xml:space="preserve">
+          
+          <value>problèmes sur GitHub</value>
+        </data>
+        <data name="ReportIssuesNote.Text" xml:space="preserve">
+          
+          <value>Trouvé quelque chose ne fonctionne ne pas ? A découvert un bug ? Pense que quelque chose pourrait être mieux ? Il suffit de créer un problème à l’adresse ci-dessous et nous vous répondrons dès que possible.</value>
+        </data>
+        <data name="SendFeedbackButton.Content" xml:space="preserve">
+          
+          <value>envoyer des commentaires</value>
+        </data>
+        <data name="AboutRateApp.Content" xml:space="preserve">
+          
+          <value>appreciér l'appli</value>
+        </data>
+        <data name="DeleteConnectionMenu.Text" xml:space="preserve">
+          
+          <value>supprimer la connexion</value>
+        </data>
+        <data name="EditConnectionMenu.Text" xml:space="preserve">
+          
+          <value>modifier la connexion</value>
+        </data>
+        <data name="WakeUpMenu.Text" xml:space="preserve">
+          
+          <value>Réveil</value>
+          <comment>Context menu used to wake up sleeping computer using wake-on-lan</comment>
+        </data>
+        <data name="StoreDescription" xml:space="preserve">
+          <source>Open source Kodi (formerly XBMC) Remote for Windows Phone.
+
+Features including
+- A beautiful library browser
+- Provides information about artists, albums
+- Detailed and pleasant views for movies and TV shows
+- An easy to use remote control
+- Much more
+
+And to top it all, the app is fully open source. You can view, edit and modify everything about app right here: https://github.com/Faldon/XBMCRemoteRT</source>
+          <value>Open source Kodi (anciennement XBMC) télécommande pour Windows Phone.
+
+ Caractéristiques dont
+- d’un navigateur de bibliothèque belle - fournit des informations sur les artistes, albums
+- détaillé et une vue agréable pour les films et la TV montre
+- une télécommande facile à utiliser
+- beaucoup plus
+
+Et pour couronner le tout, l'appli est entièrement open source. Vous pouvez visualiser, éditer et modifier tout ce qui concerne l’application ici : https://github.com/Faldon/XBMCRemoteRT</value>
+          <comment>Description for Windows Store</comment>
+        </data>
+        <data name="BePatient" xml:space="preserve">
+          
+          <value>Il semble prendre un certain temps...</value>
+        </data>
+        <data name="ConnectingTo" xml:space="preserve">
+          
+          <value>Connexion à {0}...</value>
+          <comment>{0} is a placeholder for server name. It will be replaced AUTOMATICALLY. (For example, "Connecting to mediaserver" Please use it in your translations.</comment>
+        </data>
+        <data name="IPErrorMessage" xml:space="preserve">
+          
+          <value>S’il vous plaît spécifier une adresse IP plutôt qu’un nom d’hôte à utiliser la fonction de réveil.</value>
+        </data>
+        <data name="KeepTryingCommand" xml:space="preserve">
+          
+          <value>continuer à essayer</value>
+        </data>
+        <data name="StopCommand" xml:space="preserve">
+          
+          <value>arrêter</value>
+        </data>
+        <data name="WakeUpFailed" xml:space="preserve">
+          
+          <value>Réveiller les ayant échoué</value>
+        </data>
+        <data name="WakeupPatientMessage" xml:space="preserve">
+          
+          <value>Se réveillent habituellement prend {0} sur {1} secondes. Nous essayons toujours...</value>
+          <comment>{0} and {1} are placeholders for lower and upper limit respectively. Sentence automatically becomes "takes 5 to 10" seconds". Use the same placeholders in translations.</comment>
+        </data>
+        <data name="WakingUp" xml:space="preserve">
+          
+          <value>Se réveiller...</value>
+        </data>
+        <data name="WOLConnectionErrorHeader" xml:space="preserve">
+          
+          <value>Serveur toujours pas jusqu'à</value>
+        </data>
+        <data name="WOLConnectionErrorMessage" xml:space="preserve">
+          
+          <value>On dirait Kodi n’est pas prête à répondre encore. Que voulez-vous faire ?</value>
+        </data>
+        <data name="WOLErrorMessage" xml:space="preserve">
+          
+          <value>Pas pu envoyer demande de sillage : broadcast IP n’est pas disponible. Code d’erreur</value>
+        </data>
+        <data name="WOLMacNotFoundHeader" xml:space="preserve">
+          
+          <value>Plus d’informations nécessaires</value>
+        </data>
+        <data name="WOLMacNotFoundMessage" xml:space="preserve">
+          
+          <value>S’il vous plaît spécifier MAC adresse et masque de sous-réseau pour utiliser cette fonctionnalité.</value>
+        </data>
+        <data name="PartyModeMenuItem.Label" xml:space="preserve">
+          
+          <value>mode de fête</value>
+          <comment>Start music in party mode.</comment>
+        </data>
+        <data name="ShowCodecInfo" xml:space="preserve">
+          
+          <value>afficher les infos de codec</value>
+        </data>
+        <data name="PinToStartAppBarMenu.Label" xml:space="preserve">
+          
+          <value>épingler à l’écran d’accueil</value>
+        </data>
+        <data name="BigJumpBackward.Content" xml:space="preserve">
+          
+          <value>grand saut vers l’arrière</value>
+        </data>
+        <data name="BigJumpForward.Content" xml:space="preserve">
+          
+          <value>grand saut vers l’avant</value>
+        </data>
+        <data name="DecreaseSpeed.Content" xml:space="preserve">
+          
+          <value>diminuer la vitesse</value>
+        </data>
+        <data name="EditConnectionHeader.Text" xml:space="preserve">
+          
+          <value>MODIFIER LA CONNEXION</value>
+        </data>
+        <data name="IncreaseSpeed.Content" xml:space="preserve">
+          
+          <value>augmenter la vitesse</value>
+        </data>
+        <data name="SmallJumpBackward.Content" xml:space="preserve">
+          
+          <value>petit saut vers l’arrière</value>
+        </data>
+        <data name="SmallJumpForward.Content" xml:space="preserve">
+          
+          <value>petit saut vers l’avant</value>
+        </data>
+        <data name="WakeOnLan.Text" xml:space="preserve">
+          
+          <value>WAKE ON LAN</value>
+        </data>
+        <data name="AboutAnagh2.Text" xml:space="preserve">
+          
+          <value>Eh oui, c’est le même gars derrière notre bien-aimé</value>
+        </data>
+        <data name="AutoWakeToggle.Header" xml:space="preserve">
+          
+          <value>Essayez la réactivation automatique</value>
+        </data>
+        <data name="MAC.Header" xml:space="preserve">
+          
+          <value>adresse MAC</value>
+        </data>
+        <data name="SubnetMask.Header" xml:space="preserve">
+          
+          <value>Masque de sous-réseau</value>
+        </data>
+        <data name="WOLToggle.Header" xml:space="preserve">
+          
+          <value>Activer wake on LAN pour ce serveur</value>
+        </data>
+        <data name="SearchAppBarButton.Label" xml:space="preserve">
+          
+          <value>rechercher</value>
+        </data>
+        <data name="SettingsAudioAutoSearchToggle.Header" xml:space="preserve">
+          
+          <value>aller directement à la recherche de musique</value>
+        </data>
+        <data name="SettingsAutoSearch.Text" xml:space="preserve">
+          
+          <value>RECHERCHER</value>
+        </data>
+        <data name="SettingsMiscellaneousPivotHeader.Text" xml:space="preserve">
+          
+          <value>DIVERS</value>
+        </data>
+        <data name="LargeLibrary" xml:space="preserve">
+          
+          <value>Grande bibliothèque</value>
+        </data>
+        <data name="LargeMusicMessage" xml:space="preserve">
+          
+          <value>Il semble y avoir beaucoup de musique ici. Vous souhaitez nous pour vous aider à chercher de la musique à la place ?</value>
+        </data>
+        <data name="MessageOptionNo" xml:space="preserve">
+          
+          <value>non</value>
+        </data>
+        <data name="MessageOptionYes" xml:space="preserve">
+          
+          <value>oui</value>
+        </data>
+        <data name="QueueMovieMenu.Label" xml:space="preserve">
+          
+          <value>embrigader film</value>
+        </data>
+        <data name="SettingsVibration.Text" xml:space="preserve">
+          
+          <value>VIBRATION</value>
+        </data>
+        <data name="SettingsVibrationToggle.Header" xml:space="preserve">
+          
+          <value>vibrer tout en appuyant sur les boutons</value>
+        </data>
+        <data name="AboutShareLink.Text" xml:space="preserve">
+          
+          <value>partage moi</value>
+        </data>
+        <data name="ShutDown" xml:space="preserve">
+          
+          <value>arrêt</value>
+        </data>
+        <data name="Suspend" xml:space="preserve">
+          
+          <value>veille</value>
+        </data>
+        <data name="Buy" xml:space="preserve">
+          
+          <value>acheter</value>
+        </data>
+        <data name="Close" xml:space="preserve">
+          
+          <value>fermer</value>
+        </data>
+        <data name="TrialExpired" xml:space="preserve">
+          
+          <value>La période d’essai a expiré. S’il vous plaît envisager d’acheter l’application, si vous l’avez trouvé utile.</value>
+          <comment>Message for when the trial period has expired</comment>
+        </data>
+        <data name="AboutAkshay.Text" xml:space="preserve">
+          
+          <value>Développeur initial</value>
+        </data>
+        <data name="BuyAppBarMenu.Label" xml:space="preserve">
+          
+          <value>acheter</value>
+        </data>
+        <data name="FilesAppBarMenu.Label" xml:space="preserve">
+          
+          <value>fichiers</value>
+        </data>
+        <data name="MusicTitle.Text" xml:space="preserve">
+          
+          <value>MUSIQUE</value>
+        </data>
+        <data name="SourcesPageTitle.Text" xml:space="preserve">
+          
+          <value>SOURCES DE MÉDIAS</value>
+        </data>
+        <data name="VideosTitle.Text" xml:space="preserve">
+          
+          <value>VIDÉOS</value>
+        </data>
+        <data name="AboutPrivacyPolicy.Text" xml:space="preserve">
+          
+          <value>Lire notre déclaration de confidentialité</value>
+        </data>
+        <data name="AboutPrivacyPolicyHeader.Text" xml:space="preserve">
+          
+          <value>POLITIQUE DE CONFIDENTIALITÉ</value>
+        </data>
+        <data name="LinkPrivacyPolicy.Text" xml:space="preserve">
+          
+          <value>ici</value>
+        </data>
+        <data name="ConnectionUnsuccessful_Content" xml:space="preserve">
+          
+          <value>Pouvait pas atteindre le serveur.</value>
+        </data>
+        <data name="ConnectionUnsuccessful_Title" xml:space="preserve">
+          
+          <value>Échec de connexion</value>
+        </data>
 </root>
