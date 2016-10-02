@@ -141,12 +141,12 @@
     <XliffResource Include="$(MSBuildThisFileDirectory)MultilingualResources\XBMCRemoteRT.Shared.fr.xlf" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-fr_FR-albumDetails.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-fr_FR-allMusic-AlbumsView.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-fr_FR-artistDetails.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-fr_FR-musicHub.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-fr_FR-nowPlaying.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-fr_FR-nowPlayingHub.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-fr_FR-settings-remoteControl.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-fr_FR-albumDetails.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-fr_FR-allMusic-AlbumsView.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-fr_FR-artistDetails.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-fr_FR-musicHub.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-fr_FR-nowPlaying.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-fr_FR-nowPlayingHub.png" />
+    <None Include="$(MSBuildThisFileDirectory)Store Pictures\kodi_assistant-fr_FR-settings-remoteControl.png" />
   </ItemGroup>
 </Project>
