@@ -109,6 +109,19 @@ namespace XBMCRemoteRT.Models
             }
         }
 
+        private string album;
+        public string Album
+        {
+            get { return album; }
+            set
+            {
+                if (album != value) {
+                    album = value;
+                    NotifyPropertyChanged("Album");
+                }
+            }
+        }
+
         private List<string> artist;
         public List<string> Artist
         {
@@ -218,6 +231,7 @@ namespace XBMCRemoteRT.Models
             Title = nothingIsPlaying;
 
             Thumbnail = Fanart = ShowTitle = Tagline = "";
+            Album = "";
             Artist = new List<string>();
             Speed = -1;
             TimeSeconds = 0;

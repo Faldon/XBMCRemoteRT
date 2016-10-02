@@ -247,7 +247,10 @@
                                 <TextBlock x:Name="NowPlayingItemNameTextBlock" FontSize="25" Text="{Binding Title}" TextTrimming="WordEllipsis"/>
                             </StackPanel>
                             <Grid>
-                                <TextBlock x:Name="NowPlayingByNameTextBlock" FontSize="18" Opacity="0.7" Text="{Binding Artist, Converter={StaticResource ListToStringConverter}, ConverterParameter=false}" TextTrimming="WordEllipsis"/>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="{Binding Album}" FontSize="18" Opacity="0.7" TextTrimming="WordEllipsis"/>
+                                    <TextBlock x:Name="NowPlayingByNameTextBlock" FontSize="18" Opacity="0.7" Text="{Binding Artist, Converter={StaticResource ListToStringConverter}, ConverterParameter=false}" TextTrimming="WordEllipsis"/>
+                                </StackPanel>
                                 <TextBlock Text="{Binding Tagline}" FontSize="18" Opacity="0.7" TextTrimming="WordEllipsis"/>
                                 <TextBlock Text="{Binding ShowTitle}" FontSize="18" Opacity="0.7" TextTrimming="WordEllipsis"/>
                             </Grid>

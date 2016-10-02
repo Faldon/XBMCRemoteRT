@@ -30,7 +30,7 @@ namespace XBMCRemoteRT.Helpers
 
         private static async Task RefreshPlayerItem(Players player)
         {
-            JArray properties = new JArray("title", "artist", "fanart", "thumbnail", "showtitle", "tagline", "track");
+            JArray properties = new JArray("title", "album", "artist", "fanart", "thumbnail", "showtitle", "tagline", "track");
             JObject result = await Player.GetItem(player, properties);
             JObject item = (JObject)result["item"];
 
@@ -44,6 +44,7 @@ namespace XBMCRemoteRT.Helpers
                 GlobalVariables.CurrentPlayerState.Title = (string)item["label"];
             }
             GlobalVariables.CurrentPlayerState.Artist = ((JArray)item["artist"]).ToObject<List<string>>();
+            GlobalVariables.CurrentPlayerState.Album = (string)item["album"];
             GlobalVariables.CurrentPlayerState.Fanart = (string)item["fanart"];
             GlobalVariables.CurrentPlayerState.Thumbnail = (string)item["thumbnail"];
             GlobalVariables.CurrentPlayerState.ShowTitle = (string)item["showtitle"];
