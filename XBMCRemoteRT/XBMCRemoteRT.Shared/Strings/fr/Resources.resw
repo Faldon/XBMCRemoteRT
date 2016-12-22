@@ -674,4 +674,7 @@ Et pour couronner le tout, l'appli est entièrement open source. Vous pouvez vis
   <data name="AllMusicPage_Songs" xml:space="preserve">
     <value>chansons</value>
   </data>
+  <data name="MusicHubPlayOpticalDisc.Text" xml:space="preserve">
+    <value>jouer le cd</value>
+  </data>
 </root>

@@ -227,6 +227,8 @@
     <Content Include="Assets\Glyphs\stop.png" />
     <Content Include="Assets\Glyphs\transport.repeat.png" />
     <Content Include="Assets\Glyphs\transport.repeatone.png" />
+    <Content Include="Assets\Icons\cdlogo.png" />
+    <Content Include="Assets\Icons\dvdlogo.png" />
     <Content Include="Assets\Icons\nowplaying.png" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\Logo.scale-140.png" />

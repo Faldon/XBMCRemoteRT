@@ -675,4 +675,7 @@ And to top it all, the app is fully open source. You can view, edit and modify e
   <data name="ConnectionsAppBarMenu.Label" xml:space="preserve">
     <value>connections</value>
   </data>
+  <data name="MusicHubPlayOpticalDisc.Text" xml:space="preserve">
+    <value>play audio cd</value>
+  </data>
 </root>

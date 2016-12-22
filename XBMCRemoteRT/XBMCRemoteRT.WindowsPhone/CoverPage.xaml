@@ -290,10 +290,10 @@
                                 <TextBlock x:Uid="MusicHubSectionSubHeader" Text="see all music" Style="{StaticResource HubSectionHeaderSubHeaderStyle}" FontFamily="Global User Interface" />
                             </StackPanel>
                         </StackPanel>
-                        <StackPanel x:Name="MusicOpticalDiscWrapper" Orientation="Horizontal" Margin="50,0,0,0" Tapped="MusicOpticalDiscWrapper_Tapped">
-                            <BitmapIcon UriSource="/Assets/Icons/cdlogo.png" Height="40" Foreground="{StaticResource PhoneForegroundBrush}" />
+                        <StackPanel x:Name="MusicOpticalDiscWrapper" Orientation="Horizontal" Margin="100,0,0,0" Tapped="MusicOpticalDiscWrapper_Tapped">
+                            <BitmapIcon UriSource="/Assets/Icons/cdlogo.png" Height="40" Margin="0,-5,0,0" Foreground="{StaticResource PhoneForegroundBrush}" />
                             <StackPanel>
-                                <TextBlock x:Uid="MusicHubPlayOpticalDisc" Text="play audio cd" Margin="5,20,0,0" Style="{StaticResource HubSectionHeaderSubHeaderStyle}" FontFamily="Global User Interface" />
+                                <TextBlock x:Uid="MusicHubPlayOpticalDisc" Text="play audio cd" Margin="5,21,0,0" Style="{StaticResource HubSectionHeaderSubHeaderStyle}" FontFamily="Global User Interface" />
                             </StackPanel>
                         </StackPanel>
                     </StackPanel>

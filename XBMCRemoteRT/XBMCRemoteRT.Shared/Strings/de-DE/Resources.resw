@@ -675,4 +675,7 @@ Und zudem ist diese App vollständig Open Source. Der Quellcode befindet sich au
   <data name="AllMusicPage_Songs" xml:space="preserve">
     <value>lieder</value>
   </data>
+  <data name="MusicHubPlayOpticalDisc.Text" xml:space="preserve">
+    <value>Audio-CD abspielen</value>
+  </data>
 </root>
