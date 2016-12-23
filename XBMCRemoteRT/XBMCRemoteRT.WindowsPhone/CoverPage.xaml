@@ -266,15 +266,10 @@
                                         </SymbolIcon>
                                     </AppBarButton.Icon>
                                 </AppBarButton>
-
                                 <AppBarButton x:Name="PreviousButton" VerticalAlignment="Center" Click="PreviousButton_Click" Icon="Previous" Style="{StaticResource LargeRoundButton}" IsEnabled="{Binding PlayerType, Converter={StaticResource PlayerTypeToBoolConverter}}"/>
-
                                 <AppBarButton x:Name="NextButton" VerticalAlignment="Center" Click="NextButton_Click" Icon="Next" Style="{StaticResource LargeRoundButton}" IsEnabled="{Binding PlayerType, Converter={StaticResource PlayerTypeToBoolConverter}}"/>
-
                                 <AppBarButton x:Name="CurrentPlaylistButton" VerticalAlignment="Center" Click="CurrentPlaylistButton_Click" Icon="List" Style="{StaticResource LargeRoundButton}" IsEnabled="{Binding PlayerType, Converter={StaticResource PlayerTypeToBoolConverter}, ConverterParameter=playlist}"/>
-
                             </StackPanel>
-
                         </Grid>
                     </Grid>
                 </DataTemplate>
@@ -290,11 +285,11 @@
                                 <TextBlock x:Uid="MusicHubSectionSubHeader" Text="see all music" Style="{StaticResource HubSectionHeaderSubHeaderStyle}" FontFamily="Global User Interface" />
                             </StackPanel>
                         </StackPanel>
-                        <StackPanel x:Name="MusicOpticalDiscWrapper" Orientation="Horizontal" Margin="100,0,0,0" Tapped="MusicOpticalDiscWrapper_Tapped">
-                            <BitmapIcon UriSource="/Assets/Icons/cdlogo.png" Height="40" Margin="0,-5,0,0" Foreground="{StaticResource PhoneForegroundBrush}" />
-                            <StackPanel>
-                                <TextBlock x:Uid="MusicHubPlayOpticalDisc" Text="play audio cd" Margin="5,21,0,0" Style="{StaticResource HubSectionHeaderSubHeaderStyle}" FontFamily="Global User Interface" />
-                            </StackPanel>
+                        <StackPanel x:Name="MusicOpticalDiscWrapper" Orientation="Horizontal" Margin="20,0,0,0" Tapped="MusicOpticalDiscWrapper_Tapped">
+                            <Grid Height="40">
+                                <BitmapIcon  UriSource="/Assets/Icons/cdlogo.png" Height="40" Margin="0,-15,0,0" Foreground="{StaticResource PhoneForegroundBrush}" />
+                                <TextBlock x:Uid="MusicHubPlayOpticalDisc" Text="play audio cd" Margin="0,21,0,0" Style="{StaticResource HubSectionHeaderSubHeaderStyle}" FontFamily="Global User Interface" />
+                            </Grid>
                         </StackPanel>
                     </StackPanel>
                 </HubSection.Header>

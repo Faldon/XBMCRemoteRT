@@ -20,9 +20,6 @@
         <x:String x:Key="ChevronGlyph">&#xE26B;</x:String>
     </Page.Resources>
 
-    <!--
-        This grid acts as a root panel for the page.
-    -->
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="163*"/>
@@ -63,6 +60,7 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="253"/>
                             <RowDefinition Height="120"/>
+                            <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
@@ -163,12 +161,21 @@
                                 </controls:RoundButton>
                             </StackPanel>
                         </Grid>
+                        <Button Grid.Column="0" Grid.Row="3" x:Name="MusicOpticalDiscWrapper" Margin="-2,10" Tapped="MusicOpticalDiscWrapper_Tapped">
+                            <Grid Height="50">
+                                <BitmapIcon  UriSource="/Assets/Icons/cdlogo.png" Height="50" Margin="0,-20,0,0" Foreground="{StaticResource ApplicationForegroundThemeBrush}" />
+                                <TextBlock x:Uid="MusicHubPlayOpticalDisc" Text="play audio cd" Margin="0,30,0,0" Opacity="0.5" FontSize="15" FontWeight="Thin" />
+                            </Grid>
+                        </Button>
+                        <Button x:Name="EjectButton" Grid.Row="3" Grid.Column="1" Click="EjectButton_Click" Margin="8,0,0,0">
+                            <FontIcon FontFamily="ms-appx:///Assets/iconFont.ttf#iconFont" FontSize="25" Glyph="&#57689;"/>
+                        </Button>
                     </Grid>
                 </DataTemplate>
             </HubSection>
             <HubSection x:Name="MusicHubSection" IsHeaderInteractive="True">
                 <HubSection.Header>
-                    <Grid x:Name="MusicHeaderWrapper" Tapped="MusicHeaderWrapper_Tapped">
+                    <Grid x:Name="MusicHeaderWrapper">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"></ColumnDefinition>
                             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -177,7 +184,7 @@
                                     Height="28" 
                                     Foreground="{StaticResource ApplicationForegroundThemeBrush}" 
                                     Grid.Column="0"/>
-                        <StackPanel Grid.Column="1">
+                        <StackPanel Grid.Column="1" Tapped="MusicHeaderWrapper_Tapped">
                             <TextBlock x:Uid="MusicHubSectionHeader" Text="MUSIC" Margin="8,0,0,0"/>
                             <TextBlock x:Uid="MusicHubSectionSubHeader" Text="see all music" Opacity="0.5" FontSize="15" Margin="8,-5,0,0" FontWeight="Thin"/>
                         </StackPanel>
