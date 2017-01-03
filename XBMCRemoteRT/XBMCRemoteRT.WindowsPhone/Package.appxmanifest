@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="48208pWare.KodiAssistant" Publisher="CN=54C66771-0DAE-40FB-BFB8-163361F3BD8F" Version="1.5.0.0" />
+  <Identity Name="48208pWare.KodiAssistant" Publisher="CN=54C66771-0DAE-40FB-BFB8-163361F3BD8F" Version="1.6.1.1" />
   <mp:PhoneIdentity PhoneProductId="3358506f-b72d-4959-8280-2c718363f553" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Kodi Assistant</DisplayName>
