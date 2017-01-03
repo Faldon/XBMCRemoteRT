@@ -236,10 +236,6 @@ namespace XBMCRemoteRT
             Frame.Navigate(typeof (NowPlaying));
         }
 
-        private void MusicOpticalDiscWrapper_Tapped(object sender, TappedRoutedEventArgs e) {
-            Player.PlayDirectory("cdda://local/");
-        }
-
         private async void EjectButton_Click(object sender, RoutedEventArgs e) {
             await Input.ExecuteAction(SystemCommands.EjectOpticalDrive);
         }
@@ -253,6 +249,10 @@ namespace XBMCRemoteRT
         void slider_PointerReleased(object sender, PointerRoutedEventArgs e) {
             var percentage = (slider.Value * 100) / slider.Maximum;
             Player.Seek(GlobalVariables.CurrentPlayerState.PlayerType, percentage);
+        }
+
+        private void PlayAudioCDAppBarButton_Click(object sender, RoutedEventArgs e) {
+            Player.PlayDirectory("cdda://local/");
         }
     }
 }

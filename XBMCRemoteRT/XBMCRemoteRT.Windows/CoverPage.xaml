@@ -61,7 +61,6 @@
                             <RowDefinition Height="253"/>
                             <RowDefinition Height="120"/>
                             <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="253"/>
@@ -107,12 +106,12 @@
                             <Grid Margin="0">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="auto"/>
-                                    <ColumnDefinition/>
+                                    <ColumnDefinition />
                                     <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Text="{Binding Path=Value, ElementName=ProgressSlider, Converter={StaticResource SecondsToStringConverter}}" VerticalAlignment="Center" />
-                                <Slider x:Name="ProgressSlider" Minimum="0" Maximum="{Binding TotalTimeSeconds}" Value="{Binding TimeSeconds, Mode=TwoWay}" Loaded="ProgressSlider_Loaded" IsEnabled="{Binding PlayerType, Converter={StaticResource PlayerTypeToBoolConverter}}" Grid.Column="1" VerticalAlignment="Center" Margin="6,0"/>
-                                <TextBlock Text="{Binding Path=Maximum, ElementName=ProgressSlider, Converter={StaticResource SecondsToStringConverter}}" VerticalAlignment="Center" Grid.Column="2" />
+                                <TextBlock Grid.Column="0" Text="{Binding Path=Value, ElementName=ProgressSlider, Converter={StaticResource SecondsToStringConverter}}" VerticalAlignment="Center" />
+                                <Slider Grid.Column="1" x:Name="ProgressSlider" Minimum="0" Maximum="{Binding TotalTimeSeconds}" Value="{Binding TimeSeconds, Mode=TwoWay}" Loaded="ProgressSlider_Loaded" IsEnabled="{Binding PlayerType, Converter={StaticResource PlayerTypeToBoolConverter}}" VerticalAlignment="Center" Margin="6,0" />
+                                <TextBlock Grid.Column="2" Text="{Binding Path=Maximum, ElementName=ProgressSlider, Converter={StaticResource SecondsToStringConverter}}" VerticalAlignment="Center" />
                             </Grid>
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock x:Name="NowPlayingItemTrackTextBlock" FontSize="25" Text="{Binding Track}" Visibility="{Binding Track, Converter={StaticResource IntegerToVisibilityConverter}}" Margin="0,0,10,0" />
@@ -161,15 +160,6 @@
                                 </controls:RoundButton>
                             </StackPanel>
                         </Grid>
-                        <Button Grid.Column="0" Grid.Row="3" x:Name="MusicOpticalDiscWrapper" Margin="-2,10" Tapped="MusicOpticalDiscWrapper_Tapped">
-                            <Grid Height="50">
-                                <BitmapIcon  UriSource="/Assets/Icons/cdlogo.png" Height="50" Margin="0,-20,0,0" Foreground="{StaticResource ApplicationForegroundThemeBrush}" />
-                                <TextBlock x:Uid="MusicHubPlayOpticalDisc" Text="play audio cd" Margin="0,30,0,0" Opacity="0.5" FontSize="15" FontWeight="Thin" />
-                            </Grid>
-                        </Button>
-                        <Button x:Name="EjectButton" Grid.Row="3" Grid.Column="1" Click="EjectButton_Click" Margin="8,0,0,0">
-                            <FontIcon FontFamily="ms-appx:///Assets/iconFont.ttf#iconFont" FontSize="25" Glyph="&#57689;"/>
-                        </Button>
                     </Grid>
                 </DataTemplate>
             </HubSection>
@@ -273,6 +263,11 @@
     </Grid>
     <Page.BottomAppBar>
         <CommandBar>
+            <AppBarButton x:Uid="PlayAudioCDAppBarMenu" x:Name="PlayAudioCDAppBarButton" Label="Play CD" Click="PlayAudioCDAppBarButton_Click">
+                <AppBarButton.Icon>
+                    <BitmapIcon Width="30" UriSource="/Assets/Icons/cdlogo.png" Foreground="{StaticResource ApplicationForegroundThemeBrush}" />
+                </AppBarButton.Icon>
+            </AppBarButton>
             <AppBarButton x:Uid="ConnectionsAppBarMenu" x:Name="ConnectionsAppBarButton" Label="Connections" Icon="Globe" Click="ConnectionsAppBarButton_OnClick"/>
             <AppBarButton x:Uid="FilesAppBarMenu" x:Name="FilesAppBarButton" Label="Files" Icon="Library" Click="FilesAppBarButton_OnClick" />
             <AppBarButton x:Uid="RemoteAppBarMenu" x:Name="RemoteAppBarButton" Label="Remote" Icon="Remote" Click="RemoteAppBarButton_OnClick"/>

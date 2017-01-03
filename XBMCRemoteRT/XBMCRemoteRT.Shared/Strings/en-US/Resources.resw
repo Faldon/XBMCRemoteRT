@@ -678,4 +678,7 @@ And to top it all, the app is fully open source. You can view, edit and modify e
   <data name="MusicHubPlayOpticalDisc.Text" xml:space="preserve">
     <value>play audio cd</value>
   </data>
+  <data name="PlayAudioCDAppBarMenu.Label" xml:space="preserve">
+    <value>play cd</value>
+  </data>
 </root>

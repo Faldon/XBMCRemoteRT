@@ -10,13 +10,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:Coding4Fun.Toolkit.Controls"
     mc:Ignorable="d">
-
-    <!--
-        This grid acts as a root panel for the page that defines two rows:
-        * Row 0 contains the back button and page title
-        * Row 1 contains the rest of the page layout
-    -->
-
     <Page.Resources>
         <Style x:Key="RemoteButton" TargetType="Button">
             <Setter Property="Padding" Value="10,5,10,6"/>
@@ -42,9 +35,6 @@
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
                             <Path x:Name="ButtonBackground" Stroke="{TemplateBinding BorderBrush}" Margin="0,30,0,-10" StrokeThickness="3" Data="m 0,0 a 190,190 0 0 1 268.7,0 l -77.8,77.8 a 80,80 0 0 0 -113.1,0 z" />
-                            <!--<Border x:Name="ButtonBackground" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" CornerRadius="0" Margin="{StaticResource PhoneTouchTargetOverhang}">-->
-                            <!--<ContentControl x:Name="ContentContainer" Foreground="{TemplateBinding Foreground}" >-->
-                            <!--</Border>-->
                             <Path x:Name="ContentArrow" Fill="{TemplateBinding Foreground}" Data="m 0,25 l 50,0 l -25,-25 z" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-40,0,0" Height="auto"/>
                         </Grid>
                     </ControlTemplate>
@@ -140,7 +130,6 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <!--<c4d:RoundButton x:Name="QuitButton" ImageSource="/Assets/Glyphs/power.png" Click="QuitButton_Click" />-->
                 <TextBox x:Name="SendTextBox" KeyUp="SendTextBox_KeyUp" Grid.Column="1"/>
                 <StackPanel Orientation="Horizontal" Grid.Column="2" HorizontalAlignment="Right">
                     <controls:RoundButton x:Name="EjectButton" Click="EjectButton_Click" ButtonHeight="50" ButtonWidth="50" Margin="0,0,10,0">
@@ -148,6 +137,7 @@
                             <FontIcon FontFamily="ms-appx:///Assets/iconFont.ttf#iconFont" FontSize="15" Glyph="&#57689;"/>
                         </controls:RoundButton.Content>
                     </controls:RoundButton>
+                    
                     <controls:RoundButton x:Name="QuitButton" Click="QuitButton_Click" ButtonHeight="50" ButtonWidth="50">
                         <controls:RoundButton.Content>
                             <FontIcon FontFamily="ms-appx:///Assets/iconFont.ttf#iconFont" FontSize="15" Glyph="&#57659;"/>

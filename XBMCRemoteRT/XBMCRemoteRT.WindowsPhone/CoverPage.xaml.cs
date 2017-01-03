@@ -296,9 +296,5 @@ namespace XBMCRemoteRT
         {
             await Launcher.LaunchUriAsync(Windows.ApplicationModel.Store.CurrentApp.LinkUri);
         }
-
-        private void MusicOpticalDiscWrapper_Tapped(object sender, TappedRoutedEventArgs e) {
-            Player.PlayDirectory("cdda://local/");
-        }
     }
 }

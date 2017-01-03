@@ -678,4 +678,7 @@ Und zudem ist diese App vollständig Open Source. Der Quellcode befindet sich au
   <data name="MusicHubPlayOpticalDisc.Text" xml:space="preserve">
     <value>Audio-CD abspielen</value>
   </data>
+  <data name="PlayAudioCDAppBarMenu.Label" xml:space="preserve">
+    <value>CD abspielen</value>
+  </data>
 </root>
