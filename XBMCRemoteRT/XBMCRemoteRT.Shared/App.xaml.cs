@@ -94,7 +94,7 @@ namespace XBMCRemoteRT
         /// search results, and so forth.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected async override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override async void OnLaunched(LaunchActivatedEventArgs e)
         {
 #if DEBUG
             Debug.WriteLine("Launched with tile id " + e.TileId);

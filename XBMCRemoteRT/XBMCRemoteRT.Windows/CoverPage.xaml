@@ -110,7 +110,7 @@
                                     <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
                                 <TextBlock Grid.Column="0" Text="{Binding Path=Value, ElementName=ProgressSlider, Converter={StaticResource SecondsToStringConverter}}" VerticalAlignment="Center" />
-                                <Slider Grid.Column="1" x:Name="ProgressSlider" Minimum="0" Maximum="{Binding TotalTimeSeconds}" Value="{Binding TimeSeconds, Mode=TwoWay}" Loaded="ProgressSlider_Loaded" IsEnabled="{Binding PlayerType, Converter={StaticResource PlayerTypeToBoolConverter}}" VerticalAlignment="Center" Margin="6,0" />
+                                <Slider Grid.Column="1" x:Name="ProgressSlider" Minimum="0" Maximum="{Binding TotalTimeSeconds}" Value="{Binding TimeSeconds, Mode=TwoWay}" Loaded="ProgressSlider_Loaded" IsEnabled="{Binding PlayerType, Converter={StaticResource PlayerTypeToBoolConverter}}" VerticalAlignment="Center" Margin="6,0" Height="45" />
                                 <TextBlock Grid.Column="2" Text="{Binding Path=Maximum, ElementName=ProgressSlider, Converter={StaticResource SecondsToStringConverter}}" VerticalAlignment="Center" />
                             </Grid>
                             <StackPanel Orientation="Horizontal">

@@ -217,5 +217,9 @@ namespace XBMCRemoteRT.Pages.Audio
         {
             Frame.Navigate(typeof(SearchMusicPivot));
         }
+
+        private void PlayAudioCDAppBarButton_Click(object sender, RoutedEventArgs e) {
+            Player.PlayDirectory("cdda://local/");
+        }
     }
 }

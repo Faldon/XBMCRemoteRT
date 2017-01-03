@@ -143,6 +143,11 @@
     <Page.BottomAppBar>
         <CommandBar>
             <CommandBar.PrimaryCommands>
+                <AppBarButton x:Uid="PlayAudioCDAppBarMenu" x:Name="PlayAudioCDAppBarButton" Label="Play CD" Click="PlayAudioCDAppBarButton_Click">
+                    <AppBarButton.Icon>
+                        <BitmapIcon UriSource="/Assets/Icons/cdlogo.png" Foreground="{StaticResource ApplicationForegroundThemeBrush}" />
+                    </AppBarButton.Icon>
+                </AppBarButton>
                 <AppBarButton x:Name="RefreshMusicAppBarButton" x:Uid="RefreshAppBarMenu" Click="RefreshMusicAppBarButton_Click" Label="refresh" Icon="Refresh"/>
                 <AppBarButton x:Name="PartyModeAppBarButton" x:Uid="PartyModeMenuItem" Click="PartyModeAppBarButton_Click" Label="party mode">
                     <AppBarButton.Icon>

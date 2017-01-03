@@ -115,8 +115,6 @@ namespace XBMCRemoteRT
                 Frame.BackStack.Clear();
             }
 
-            GlobalVariables.CurrentTracker.SendView("MainPage");
-
             await App.ConnectionsVM.ReloadConnections();
 
             bool isAutoConnectEnabled = (bool)SettingsHelper.GetValue("AutoConnect", true);

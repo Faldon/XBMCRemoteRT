@@ -236,10 +236,6 @@ namespace XBMCRemoteRT
             Frame.Navigate(typeof (NowPlaying));
         }
 
-        private async void EjectButton_Click(object sender, RoutedEventArgs e) {
-            await Input.ExecuteAction(SystemCommands.EjectOpticalDrive);
-        }
-
         Slider slider;
         private void ProgressSlider_Loaded(object sender, RoutedEventArgs e) {
             slider = sender as Slider;
