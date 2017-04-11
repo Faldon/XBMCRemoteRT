@@ -9,6 +9,10 @@
     mc:Ignorable="d"
     x:Name="pageRoot">
 
+    <Page.Resources>
+        <converters:IntegerToVisibilityConverter x:Key="IntegerToVisibilityConverter" />
+    </Page.Resources>
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         
         <Grid.ChildrenTransitions>
@@ -107,7 +111,11 @@
                                     <TextBlock Text="-" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" FontSize="25" Margin="0,-2,0,0" FontWeight="SemiBold" VerticalAlignment="Center" FontFamily="Global User Interface"/>
                                     <TextBlock Text="{Binding Label}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" FontSize="25" Margin="0,-2,0,0" FontWeight="SemiBold" VerticalAlignment="Center" FontFamily="Global User Interface"/>
                                 </StackPanel>
-                                <TextBlock Text="{Binding Album}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" FontSize="19" Margin="10,-2,0,0" FontWeight="Normal" Opacity="0.5" VerticalAlignment="Center" FontFamily="Global User Interface"/>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Album}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" FontSize="19" Margin="10,-2,0,0" FontWeight="Normal" Opacity="0.5" VerticalAlignment="Center" FontFamily="Global User Interface"/>
+                                    <TextBlock Text="- Disc" Visibility="{Binding Disc, Converter={StaticResource IntegerToVisibilityConverter}}" FontSize="19" Margin="5,-2,0,0" FontWeight="Thin" Opacity="0.5" VerticalAlignment="Center" FontFamily="Global User Interface"/>
+                                    <TextBlock Text="{Binding Path=Disc}" Visibility="{Binding Disc, Converter={StaticResource IntegerToVisibilityConverter}}" FontSize="19" Margin="5,-2,0,0" FontWeight="Thin" Opacity="0.5" VerticalAlignment="Center" FontFamily="Global User Interface"/>
+                                </StackPanel>
                             </StackPanel>
                         </StackPanel>
                     </DataTemplate>

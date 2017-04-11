@@ -192,7 +192,30 @@
                     </Grid>
                 </DataTemplate>
             </HubSection>
-            
+
+            <HubSection x:Name="MoviesHubSection" IsHeaderInteractive="True">
+                <HubSection.Header>
+                    <StackPanel x:Name="MoviesHeaderWrapper" Orientation="Horizontal" Tapped="MoviesHeaderWrapper_Tapped">
+                        <BitmapIcon UriSource="/Assets/Icons/movie.png" Height="28" Foreground="{StaticResource ApplicationForegroundThemeBrush}" />
+                        <StackPanel>
+                            <TextBlock x:Uid="MoviesHubSectionHeader" Text="MOVIES" Margin="8,0,0,0"/>
+                            <TextBlock x:Uid="MoviesHubSectionSubHeader" Text="see all movies" Opacity="0.5" FontSize="15" Margin="8,-5,0,0" FontWeight="Thin"/>
+                        </StackPanel>
+                    </StackPanel>
+                </HubSection.Header>
+                <DataTemplate>
+                    <Grid>
+                        <GridView ItemsSource="{Binding}"
+                                  ScrollViewer.HorizontalScrollMode="Disabled"
+                                  IsSwipeEnabled="False"
+                                  IsItemClickEnabled="True"
+                                  ItemClick="MovieGridView_ItemClick"
+                                  ItemTemplate="{StaticResource MoviePosterTemplate}"
+                                  SelectionMode="None"/>
+                    </Grid>
+                </DataTemplate>
+            </HubSection>
+
             <HubSection x:Name="TVHubSection" IsHeaderInteractive="True">
                 <HubSection.Header>
                     <StackPanel x:Name="TVShowsHeaderWrapper" Orientation="Horizontal" Tapped="TVShowsHeaderWrapper_Tapped">
@@ -236,29 +259,7 @@
                     </Grid>
                 </DataTemplate>
             </HubSection>
-
-            <HubSection x:Name="MoviesHubSection" IsHeaderInteractive="True">
-                <HubSection.Header>
-                    <StackPanel x:Name="MoviesHeaderWrapper" Orientation="Horizontal" Tapped="MoviesHeaderWrapper_Tapped">
-                        <BitmapIcon UriSource="/Assets/Icons/movie.png" Height="28" Foreground="{StaticResource ApplicationForegroundThemeBrush}" />
-                        <StackPanel>
-                            <TextBlock x:Uid="MoviesHubSectionHeader" Text="MOVIES" Margin="8,0,0,0"/>
-                            <TextBlock x:Uid="MoviesHubSectionSubHeader" Text="see all movies" Opacity="0.5" FontSize="15" Margin="8,-5,0,0" FontWeight="Thin"/>
-                        </StackPanel>
-                    </StackPanel>
-                </HubSection.Header>
-                <DataTemplate>
-                    <Grid>
-                        <GridView ItemsSource="{Binding}"
-                                  ScrollViewer.HorizontalScrollMode="Disabled"
-                                  IsSwipeEnabled="False"
-                                  IsItemClickEnabled="True"
-                                  ItemClick="MovieGridView_ItemClick"
-                                  ItemTemplate="{StaticResource MoviePosterTemplate}"
-                                  SelectionMode="None"/>
-                    </Grid>
-                </DataTemplate>
-            </HubSection>
+            
         </Hub>
     </Grid>
     <Page.BottomAppBar>

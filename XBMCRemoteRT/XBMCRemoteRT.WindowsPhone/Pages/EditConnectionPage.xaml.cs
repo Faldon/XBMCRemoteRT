@@ -168,7 +168,7 @@ namespace XBMCRemoteRT.Pages
             currentConnection.SubnetMask = subnetMask;
             currentConnection.AutoWake = AutoWakeToggle.IsOn;
 
-            App.ConnectionsVM.UpdateConnectionItem();
+            await App.ConnectionsVM.SaveConnections().ConfigureAwait(true);
             Frame.GoBack();
         }
 
