@@ -240,7 +240,7 @@
                             <TextBlock Text="{Binding Path=Maximum, ElementName=ProgressSlider, Converter={StaticResource SecondsToStringConverter}}" VerticalAlignment="Center" Grid.Column="2" Style="{StaticResource ScrubberTimeStyle}"/>
                         </Grid>
 
-                        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Margin="0,6,24,6">
+                        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Margin="0,6,24,0">
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock x:Name="NowPlayingItemTrackTextBlock" FontSize="25" Text="{Binding Track}" Visibility="{Binding Track, Converter={StaticResource IntegerToVisibilityConverter}}" Margin="0,0,10,0" />
                                 <TextBlock FontSize="25" Text="-" Visibility="{Binding Track, Converter={StaticResource IntegerToVisibilityConverter}}" Margin="0,0,10,0" />
@@ -248,18 +248,20 @@
                             </StackPanel>
                             <Grid>
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Text="{Binding Album}" FontSize="18" Opacity="0.7" TextTrimming="WordEllipsis"/>
-                                    <TextBlock x:Name="NowPlayingByNameTextBlock" FontSize="18" Opacity="0.7" Text="{Binding Artist, Converter={StaticResource ListToStringConverter}, ConverterParameter=false}" TextTrimming="WordEllipsis"/>
+                                    <TextBlock Text="{Binding Album}" FontSize="17" Opacity="0.7" TextTrimming="WordEllipsis"/>
+                                    <TextBlock x:Name="NowPlayingByNameTextBlock" FontSize="17" Opacity="0.7" Text="{Binding Artist, Converter={StaticResource ListToStringConverter}, ConverterParameter=false}" TextTrimming="WordEllipsis"/>
                                 </StackPanel>
-                                <TextBlock Text="{Binding Tagline}" FontSize="18" Opacity="0.7" TextTrimming="WordEllipsis"/>
-                                <TextBlock Text="{Binding ShowTitle}" FontSize="18" Opacity="0.7" TextTrimming="WordEllipsis"/>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="{Binding Tagline}" FontSize="17" Opacity="0.7" TextTrimming="WordEllipsis"/>
+                                    <TextBlock Text="{Binding ShowTitle}" FontSize="17" Opacity="0.7" TextTrimming="WordEllipsis"/>
+                                </StackPanel>
                             </Grid>
                         </StackPanel>
-                        <Grid Grid.Row="3" VerticalAlignment="Bottom">
-                            <StackPanel Orientation="Horizontal" >
+                        <Grid Grid.Row="3" VerticalAlignment="Top" Margin="0,6,0,0">
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
                                 <AppBarButton x:Name="PlayPauseButton" Click="PlayPauseButton_Click" Style="{StaticResource ExtraLargeRoundButton}" IsEnabled="{Binding PlayerType, Converter={StaticResource PlayerTypeToBoolConverter}}">
                                     <AppBarButton.Icon>
-                                        <SymbolIcon Symbol="{Binding Speed, Converter={StaticResource SpeedToSymbolIconConverter}}" RenderTransformOrigin="0.5,0.5" >
+                                        <SymbolIcon Symbol="{Binding Speed, Converter={StaticResource SpeedToSymbolIconConverter}}" RenderTransformOrigin="0.5,0.5">
                                             <SymbolIcon.RenderTransform>
                                                 <CompositeTransform ScaleX="1.6" ScaleY="1.6"/>
                                             </SymbolIcon.RenderTransform>
@@ -313,6 +315,44 @@
                 </DataTemplate>
             </HubSection>
 
+            <HubSection x:Name="MoviesHubSection">
+                <HubSection.Header>
+                    <StackPanel x:Name="MoviesHeaderWrapper" Orientation="Horizontal" Tapped="MoviesHeaderWrapper_Tapped">
+                        <BitmapIcon UriSource="/Assets/Icons/movie.png" Height="28" Foreground="{StaticResource PhoneForegroundBrush}" />
+                        <StackPanel>
+                            <TextBlock x:Uid="MoviesHubSectionHeader" Text="MOVIES" Margin="5,0,0,0"/>
+                            <TextBlock x:Uid="MoviesHubSectionSubHeader" Text="see all movies" Style="{StaticResource HubSectionHeaderSubHeaderStyle}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </HubSection.Header>
+                <DataTemplate>
+                    <ScrollViewer>
+                        <GridView ItemsSource="{Binding}" Margin="0,0,0,36">
+                            <GridView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid x:Name="MovieWrapper" Height="270" Background="{StaticResource PhoneChromeBrush}" Width="150" Margin="0,0,12,12" Tapped="MovieWrapper_Tapped">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="225"/>
+                                            <RowDefinition Height="auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Image Stretch="UniformToFill">
+                                            <Image.Source>
+                                                <BitmapImage DecodePixelType="Logical" DecodePixelHeight="175" UriSource="/Assets/DefaultArt.jpg"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <Image Stretch="UniformToFill" VerticalAlignment="Top" Source="{Binding Thumbnail, Converter={StaticResource AuthBitmapConverter}, ConverterParameter=w150}" />
+                                        <Border Margin="10,205,0,0" Height="40" Width="40" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="50" Background="{StaticResource PhoneAccentBrush}" Grid.RowSpan="2" >
+                                            <Image Source="Assets/Icons/movie.png" Margin="10" />
+                                        </Border>
+                                        <TextBlock Grid.Row="1" Width="95" Height="35" TextAlignment="Right" Margin="0,5,5,0" HorizontalAlignment="Right" VerticalAlignment="Top" Text="{Binding Label}" TextWrapping="Wrap" TextTrimming="WordEllipsis" FontWeight="Bold"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </GridView.ItemTemplate>
+                        </GridView>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
             <HubSection x:Name="TVHubSection">
                 <HubSection.Header>
                     <StackPanel x:Name="TVShowsHeaderWrapper" Orientation="Horizontal" Tapped="TVShowsHeaderWrapper_Tapped">
@@ -354,45 +394,6 @@
                         </ListView>
                     </ScrollViewer>
                 </DataTemplate>
-            </HubSection>
-
-            <HubSection x:Name="MoviesHubSection">
-                <HubSection.Header>
-                    <StackPanel x:Name="MoviesHeaderWrapper" Orientation="Horizontal" Tapped="MoviesHeaderWrapper_Tapped">
-                        <BitmapIcon UriSource="/Assets/Icons/movie.png" Height="28" Foreground="{StaticResource PhoneForegroundBrush}" />
-                        <StackPanel>
-                            <TextBlock x:Uid="MoviesHubSectionHeader" Text="MOVIES" Margin="5,0,0,0"/>
-                            <TextBlock x:Uid="MoviesHubSectionSubHeader" Text="see all movies" Style="{StaticResource HubSectionHeaderSubHeaderStyle}"/>
-                        </StackPanel>
-                    </StackPanel>
-                </HubSection.Header>
-                <DataTemplate>
-                    <ScrollViewer>
-                        <GridView ItemsSource="{Binding}" Margin="0,0,0,36">
-                            <GridView.ItemTemplate>
-                                <DataTemplate>
-                                    <Grid x:Name="MovieWrapper" Height="270" Background="{StaticResource PhoneChromeBrush}" Width="150" Margin="0,0,12,12" Tapped="MovieWrapper_Tapped">
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="225"/>
-                                            <RowDefinition Height="auto"/>
-                                        </Grid.RowDefinitions>
-                                        <Image Stretch="UniformToFill">
-                                            <Image.Source>
-                                                <BitmapImage DecodePixelType="Logical" DecodePixelHeight="175" UriSource="/Assets/DefaultArt.jpg"/>
-                                            </Image.Source>
-                                        </Image>
-                                        <Image Stretch="UniformToFill" VerticalAlignment="Top" Source="{Binding Thumbnail, Converter={StaticResource AuthBitmapConverter}, ConverterParameter=w150}" />
-                                        <Border Margin="10,205,0,0" Height="40" Width="40" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="50" Background="{StaticResource PhoneAccentBrush}" Grid.RowSpan="2" >
-                                            <Image Source="Assets/Icons/movie.png" Margin="10" />
-                                        </Border>
-                                        <TextBlock Grid.Row="1" Width="95" Height="35" TextAlignment="Right" Margin="0,5,5,0" HorizontalAlignment="Right" VerticalAlignment="Top" Text="{Binding Label}" TextWrapping="Wrap" TextTrimming="WordEllipsis" FontWeight="Bold"/>
-                                    </Grid>
-                                </DataTemplate>
-                            </GridView.ItemTemplate>
-                        </GridView>
-                    </ScrollViewer>
-                </DataTemplate>
-
             </HubSection>
         </Hub>
     </Grid>

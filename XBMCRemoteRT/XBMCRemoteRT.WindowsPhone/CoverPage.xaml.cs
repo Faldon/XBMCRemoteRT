@@ -112,7 +112,7 @@ namespace XBMCRemoteRT
         {
             this.navigationHelper.OnNavigatedTo(e);
             GlobalVariables.CurrentTracker.SendView("CoverPage");
-            RefreshListsIfNull();
+            RefreshListsIfNull((bool)e.Parameter);
             ServerNameTextBlock.Text = ConnectionManager.CurrentConnection.ConnectionName;
             Frame.BackStack.Clear();
             TileHelper.UpdateAllTiles();
@@ -151,21 +151,21 @@ namespace XBMCRemoteRT
             Frame.Navigate(typeof(MovieDetailsHub));
         }
 
-        private async void RefreshListsIfNull()
+        private async void RefreshListsIfNull(bool? force)
         {
-            if (Albums == null)
+            if (Albums == null || force == true)
             {
                 Albums = await AudioLibrary.GetRecentlyAddedAlbums(new Limits { Start = 0, End = 12 });
                 MusicHubSection.DataContext = Albums;
             }
 
-            if (Episodes == null)
+            if (Episodes == null || force == true)
             {
                 Episodes = await VideoLibrary.GetRecentlyAddedEpisodes(new Limits { Start = 0, End = 10 });
                 TVHubSection.DataContext = Episodes;
             }
 
-            if (Movies == null)
+            if (Movies == null || force == true)
             {
                 Movies = await VideoLibrary.GetRecentlyAddedMovies(new Limits { Start = 0, End = 12 });
                 MoviesHubSection.DataContext = Movies;

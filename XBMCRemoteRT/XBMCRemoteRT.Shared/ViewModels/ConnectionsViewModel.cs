@@ -72,11 +72,10 @@ namespace XBMCRemoteRT.ViewModels
             SaveConnections();
         }
 
-        private async void SaveConnections()
-        {
+        private async void SaveConnections() {
             connections = await roamingFolder.CreateFileAsync("connections.json", CreationCollisionOption.OpenIfExists);
             string jsonString = JArray.FromObject(ConnectionItems).ToString();
-            await FileIO.WriteTextAsync(connections, jsonString);
+            await FileIO.WriteTextAsync(connections, jsonString).AsTask().ConfigureAwait(true);
         }
 
         //public event PropertyChangedEventHandler PropertyChanged;

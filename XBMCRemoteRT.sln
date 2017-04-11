@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XBMCRemoteRT", "XBMCRemoteRT", "{A7ADAFBB-AC8D-4FEA-AC5F-1FCC0AC75447}"
 EndProject
@@ -13,9 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XBMCRemoteRT.WindowsPhone",
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		XBMCRemoteRT\XBMCRemoteRT.Shared\XBMCRemoteRT.Shared.projitems*{0bf43aba-4186-4e58-a3ea-2463df2b5f1d}*SharedItemsImports = 4
 		XBMCRemoteRT\XBMCRemoteRT.Shared\XBMCRemoteRT.Shared.projitems*{2fe376b0-e674-4746-9239-5333daa28f5e}*SharedItemsImports = 4
 		XBMCRemoteRT\XBMCRemoteRT.Shared\XBMCRemoteRT.Shared.projitems*{9f7f7fe2-e4a7-4e9c-adc3-736eb399d82d}*SharedItemsImports = 13
-		XBMCRemoteRT\XBMCRemoteRT.Shared\XBMCRemoteRT.Shared.projitems*{0bf43aba-4186-4e58-a3ea-2463df2b5f1d}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

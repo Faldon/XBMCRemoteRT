@@ -47,7 +47,7 @@ namespace XBMCRemoteRT.RPCWrappers
             JObject parameters = new JObject(new JProperty("playlistid", playlistId));
 
             if (playlistType == PlayelistType.Audio) {
-                parameters.Add(new JProperty("properties", new JArray("album", "artist", "duration", "track")));
+                parameters.Add(new JProperty("properties", new JArray("album", "artist", "duration", "track", "disc")));
             } else if (playlistType == PlayelistType.Video) {
                 parameters.Add(new JProperty("properties", new JArray("runtime", "showtitle", "season", "title", "artist")));
             }
@@ -68,7 +68,8 @@ namespace XBMCRemoteRT.RPCWrappers
                     AlbumArtist = i["artist"].ToObject<List<String>>(),
                     Label = i["label"].ToString(),
                     Track = i["track"].ToObject<int>(),
-                    Duration = i["duration"].ToObject<int>()
+                    Duration = i["duration"].ToObject<int>(),
+                    Disc = i["disc"].ToObject<int>()
                 }).ToList();
 
                 return songs;
@@ -77,8 +78,12 @@ namespace XBMCRemoteRT.RPCWrappers
             //TODO: check the video return output -- currently in the app this is not used but should it be in the future, this will have to be checked
             if (playlistType == PlayelistType.Video)
             {
-                List<Movie> listToReturn = itemsListObject.ToObject<List<Movie>>();
-                return listToReturn;
+                var movies = itemsListObject.Select(i => new Movie() {
+                    MovieId = i["id"].ToObject<int>(),
+                    Title = i["title"].ToString(),
+                    Runtime = i["runtime"].ToObject<int>()
+                }).ToList();
+                return movies;
             }
 
             return new List<Object>();

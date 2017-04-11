@@ -167,7 +167,6 @@ namespace XBMCRemoteRT.Pages
             currentConnection.MACAddress = mac;
             currentConnection.SubnetMask = subnetMask;
             currentConnection.AutoWake = AutoWakeToggle.IsOn;
-           
 
             App.ConnectionsVM.UpdateConnectionItem();
             Frame.GoBack();

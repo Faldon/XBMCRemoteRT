@@ -20,8 +20,11 @@
         </TransitionCollection>
     </Page.Transitions>
 
-    <Grid>
+    <Page.Resources>
+        <converters:IntegerToVisibilityConverter x:Key="IntegerToVisibilityConverter" />
+    </Page.Resources>
 
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -33,7 +36,6 @@
             <TextBlock Text="NOW PLAYING" x:Uid="NowPlayingHeader" Style="{StaticResource PageHeaderTextStyle}"/>
         </StackPanel>
 
-        <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" Margin="12,15,12,0">
             <ScrollViewer>
                 <StackPanel Margin="0,0,0,36">
@@ -41,7 +43,7 @@
                         <converters:IdToColourConverter x:Name="IdToColourConverter" CurrentItemId="{Binding ItemId}"/>
                         <converters:IdToThicknessConverter x:Name="IdToThicknessConverter" CurrentItemId="{Binding ItemId}"/>
                     </StackPanel.Resources>
-                    
+
                     <Grid Margin="0,0,0,30" x:Name="PlaylistStats" >
                         <Border Height="40" CornerRadius="20" Background="{StaticResource PhoneChromeBrush}" HorizontalAlignment="Left" VerticalAlignment="Top">
                             <StackPanel Margin="12,0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -49,7 +51,7 @@
                                 <TextBlock x:Name="TracksTextBlock" FontSize="22" Text="tracks" Margin="4,0,0,0"/>
                             </StackPanel>
                         </Border>
-                        
+
                         <Border x:Name="TotalPlaytime" Height="40" CornerRadius="20" Background="{StaticResource PhoneChromeBrush}" HorizontalAlignment="Right" VerticalAlignment="Top">
                             <StackPanel Margin="12,0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                                 <TextBlock x:Name="HoursEditTextBlock" FontSize="22" Text="{Binding TotalPlaytimeHours}" Foreground="{StaticResource PhoneAccentBrush}"/>
@@ -59,7 +61,7 @@
                             </StackPanel>
                         </Border>
                     </Grid>
-                    
+
                     <ListView ItemsSource="{Binding SongsInPlaylist}">
 
                         <ListView.ItemContainerTransitions>
@@ -83,10 +85,14 @@
                                         CornerRadius="25" 
                                         Width="50" 
                                         Height="50">
-                                        <BitmapIcon Margin="12" UriSource="/Assets/Icons/musicnote.png" Foreground="{StaticResource PhoneForegroundBrush}" ></BitmapIcon>
+                                        <BitmapIcon Margin="12" UriSource="/Assets/Icons/musicnote.png" Foreground="{StaticResource PhoneForegroundBrush}" />
                                     </Border>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBlock Text="{Binding Path=AlbumArtist[0]}" FontSize="17" Margin="10,-2,0,0" FontWeight="Thin" Opacity="0.5" VerticalAlignment="Center" FontFamily="Global User Interface"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="{Binding Path=Album}" FontSize="17" Margin="10,-2,0,0" FontWeight="Thin" Opacity="0.5" VerticalAlignment="Center" FontFamily="Global User Interface"/>
+                                            <TextBlock Text="- Disc" Visibility="{Binding Disc, Converter={StaticResource IntegerToVisibilityConverter}}" FontSize="17" Margin="5,-2,0,0" FontWeight="Thin" Opacity="0.5" VerticalAlignment="Center" FontFamily="Global User Interface"/>
+                                            <TextBlock Text="{Binding Path=Disc}" Visibility="{Binding Disc, Converter={StaticResource IntegerToVisibilityConverter}}" FontSize="17" Margin="5,-2,0,0" FontWeight="Thin" Opacity="0.5" VerticalAlignment="Center" FontFamily="Global User Interface"/>
+                                        </StackPanel>
                                         <StackPanel Orientation="Horizontal">
                                             <TextBlock Text="{Binding Track}" FontSize="25" Margin="10,-2,10,0" FontWeight="SemiBold" VerticalAlignment="Center" FontFamily="Global User Interface" />
                                             <TextBlock Text="-" FontSize="25" Margin="0,-2,0,0" FontWeight="SemiBold" VerticalAlignment="Center" FontFamily="Global User Interface"/>
@@ -98,9 +104,8 @@
                         </ListView.ItemTemplate>
                     </ListView>
                 </StackPanel>
-                
+
             </ScrollViewer>
         </Grid>
-
-        </Grid>
+    </Grid>
 </Page>
