@@ -55,21 +55,21 @@ namespace XBMCRemoteRT.ViewModels
             }
         }
 
-        public void AddConnectionItem(ConnectionItem itemToAdd)
+        public async Task AddConnectionItem(ConnectionItem itemToAdd)
         {
             ConnectionItems.Add(itemToAdd);
-            SaveConnections();
+            await SaveConnections().ConfigureAwait(true);
         }
 
-        public void RemoveConnectionItem(ConnectionItem itemToRemove)
+        public async Task RemoveConnectionItem(ConnectionItem itemToRemove)
         {           
             ConnectionItems.Remove(itemToRemove);
-            SaveConnections();
+            await SaveConnections().ConfigureAwait(true);
         }
 
-        public void UpdateConnectionItem()
+        public async Task UpdateConnectionItem()
         {
-            SaveConnections();
+            await SaveConnections().ConfigureAwait(true);
         }
 
         public async Task SaveConnections() {
@@ -77,14 +77,5 @@ namespace XBMCRemoteRT.ViewModels
             string jsonString = JArray.FromObject(ConnectionItems).ToString();
             await FileIO.WriteTextAsync(connections, jsonString).AsTask().ConfigureAwait(true);
         }
-
-        //public event PropertyChangedEventHandler PropertyChanged;
-        //private void NotifyPropertyChanged(string propertyName)
-        //{
-        //    if (PropertyChanged != null)
-        //    {
-        //        PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        //    }
-        //}
     }
 }

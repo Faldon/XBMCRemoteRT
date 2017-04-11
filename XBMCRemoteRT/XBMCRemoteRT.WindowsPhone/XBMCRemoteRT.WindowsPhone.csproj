@@ -283,6 +283,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Package.StoreAssociation.xml" />
+    <Content Include="ReadMe.Coding4Fun.Toolkit.txt" />
     <Content Include="StoreManifest.xml" />
     <Content Include="VCD.xml">
       <AutoGen>True</AutoGen>
@@ -296,6 +297,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Coding4Fun.Toolkit, Version=2.0.8.0, Culture=neutral, PublicKeyToken=c5fd7b72b1a17ce4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Coding4Fun.Toolkit.Controls.2.1.8\lib\wpa81\Coding4Fun.Toolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Coding4Fun.Toolkit.Controls, Version=2.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Coding4Fun.Toolkit.Controls.2.1.8\lib\wpa81\Coding4Fun.Toolkit.Controls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="GoogleAnalytics, Version=1.3.0.30472, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\GoogleAnalyticsSDK.1.3.00\lib\wpa81\GoogleAnalytics.winmd</HintPath>
       <Private>True</Private>

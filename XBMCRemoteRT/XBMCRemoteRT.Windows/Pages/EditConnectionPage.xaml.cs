@@ -134,7 +134,7 @@ namespace XBMCRemoteRT.Pages
             currentConnection.Username = UsernameTextBox.Text;
             currentConnection.Password = PasswordTextBox.Text;
 
-            await App.ConnectionsVM.SaveConnections().ConfigureAwait(true);
+            await App.ConnectionsVM.UpdateConnectionItem().ConfigureAwait(true);
             Frame.GoBack();
         }
 

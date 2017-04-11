@@ -258,7 +258,7 @@
                             </Grid>
                         </StackPanel>
                         <Grid Grid.Row="3" VerticalAlignment="Top" Margin="0,6,0,0">
-                            <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+                            <StackPanel Orientation="Horizontal" Margin="0,-20,0,0">
                                 <AppBarButton x:Name="PlayPauseButton" Click="PlayPauseButton_Click" Style="{StaticResource ExtraLargeRoundButton}" IsEnabled="{Binding PlayerType, Converter={StaticResource PlayerTypeToBoolConverter}}">
                                     <AppBarButton.Icon>
                                         <SymbolIcon Symbol="{Binding Speed, Converter={StaticResource SpeedToSymbolIconConverter}}" RenderTransformOrigin="0.5,0.5">

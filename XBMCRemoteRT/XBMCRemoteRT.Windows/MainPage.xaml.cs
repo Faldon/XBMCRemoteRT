@@ -199,10 +199,10 @@ namespace XBMCRemoteRT
             Frame.Navigate(typeof(AddConnectionPage));
         }
 
-        private void DeleteConnectionMFI_Click(object sender, RoutedEventArgs e)
+        private async void DeleteConnectionMFI_Click(object sender, RoutedEventArgs e)
         {
             ConnectionItem selectedConnection = (ConnectionItem)(sender as MenuFlyoutItem).DataContext;
-            App.ConnectionsVM.RemoveConnectionItem(selectedConnection);
+            await App.ConnectionsVM.RemoveConnectionItem(selectedConnection).ConfigureAwait(true);
         }
 
         private void EditConnectionMFI_Click(object sender, RoutedEventArgs e)

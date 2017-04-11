@@ -237,7 +237,7 @@ namespace XBMCRemoteRT
                 int newWakeupTime = (int)(DateTime.Now - wakeUpStart).TotalSeconds;
                 connectionItem.WakeUpTime = newWakeupTime < 5 ? connectionItem.WakeUpTime : newWakeupTime;
                 App.ConnectionsVM.UpdateConnectionItem();
-                Frame.Navigate(typeof(CoverPage), true);
+                Frame.Navigate(typeof(CoverPage), false);
             }         
             SetPageState(PageStates.Ready);
         }
@@ -257,10 +257,10 @@ namespace XBMCRemoteRT
             }
         }
 
-        private void DeleteConnectionMFI_Click(object sender, RoutedEventArgs e)
+        private async void DeleteConnectionMFI_Click(object sender, RoutedEventArgs e)
         {
             ConnectionItem selectedConnection = (ConnectionItem)(sender as MenuFlyoutItem).DataContext;
-            App.ConnectionsVM.RemoveConnectionItem(selectedConnection);
+            await App.ConnectionsVM.RemoveConnectionItem(selectedConnection).ConfigureAwait(true);
         }
 
         private void EditConnectionMFI_Click(object sender, RoutedEventArgs e)

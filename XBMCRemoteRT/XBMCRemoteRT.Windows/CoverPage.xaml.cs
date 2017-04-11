@@ -102,7 +102,7 @@ namespace XBMCRemoteRT
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             navigationHelper.OnNavigatedTo(e);
-            RefreshListsIfNull();
+            RefreshListsIfNull(e.NavigationMode==NavigationMode.Back);
             ServerNameTextBlock.Text = ConnectionManager.CurrentConnection.ConnectionName;
             Frame.BackStack.Clear();
             TileHelper.UpdateAllTiles();
@@ -120,21 +120,21 @@ namespace XBMCRemoteRT
         private List<Movie> Movies;
 
         
-        private async void RefreshListsIfNull()
+        private async void RefreshListsIfNull(bool? lazy)
         {
-            if (Albums == null)
+            if (Albums == null ||lazy == false)
             {
                 Albums = await AudioLibrary.GetRecentlyAddedAlbums(new Limits { Start = 0, End = 8 });
                 MusicHubSection.DataContext = Albums;
             }
 
-            if (Episodes == null)
+            if (Episodes == null || lazy == false)
             {
                 Episodes = await VideoLibrary.GetRecentlyAddedEpisodes(new Limits { Start = 0, End = 8 });
                 TVHubSection.DataContext = Episodes;
             }
 
-            if (Movies == null)
+            if (Movies == null || lazy == false)
             {
                 Movies = await VideoLibrary.GetRecentlyAddedMovies(new Limits { Start = 0, End = 8 });
                 MoviesHubSection.DataContext = Movies;

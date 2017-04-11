@@ -112,7 +112,7 @@ namespace XBMCRemoteRT
         {
             this.navigationHelper.OnNavigatedTo(e);
             GlobalVariables.CurrentTracker.SendView("CoverPage");
-            RefreshListsIfNull((bool)e.Parameter);
+            RefreshListsIfNull(e.NavigationMode==NavigationMode.Back);
             ServerNameTextBlock.Text = ConnectionManager.CurrentConnection.ConnectionName;
             Frame.BackStack.Clear();
             TileHelper.UpdateAllTiles();
@@ -151,23 +151,23 @@ namespace XBMCRemoteRT
             Frame.Navigate(typeof(MovieDetailsHub));
         }
 
-        private async void RefreshListsIfNull(bool? force)
+        private async void RefreshListsIfNull(bool? lazy)
         {
-            if (Albums == null || force == true)
+            if (Albums == null || lazy == false)
             {
-                Albums = await AudioLibrary.GetRecentlyAddedAlbums(new Limits { Start = 0, End = 12 });
+                Albums = await AudioLibrary.GetRecentlyAddedAlbums(new Limits { Start = 0, End = 8 });
                 MusicHubSection.DataContext = Albums;
             }
 
-            if (Episodes == null || force == true)
+            if (Episodes == null || lazy == false)
             {
-                Episodes = await VideoLibrary.GetRecentlyAddedEpisodes(new Limits { Start = 0, End = 10 });
+                Episodes = await VideoLibrary.GetRecentlyAddedEpisodes(new Limits { Start = 0, End = 8 });
                 TVHubSection.DataContext = Episodes;
             }
 
-            if (Movies == null || force == true)
+            if (Movies == null || lazy == false)
             {
-                Movies = await VideoLibrary.GetRecentlyAddedMovies(new Limits { Start = 0, End = 12 });
+                Movies = await VideoLibrary.GetRecentlyAddedMovies(new Limits { Start = 0, End = 8 });
                 MoviesHubSection.DataContext = Movies;
             }
         }
